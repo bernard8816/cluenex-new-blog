@@ -14,8 +14,7 @@ keywords:
   - trading indicators
   - momentum analysis
 breadcrumbs:
-  - Technical Analysis
-  - technical-analysis
+  - Education
 ---
 
 ## Technical Analysis

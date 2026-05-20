@@ -13,8 +13,7 @@ keywords:
   - trading signals
 category: "Technical Analysis"
 breadcrumbs:
-  - "Technical Analysis"
-  - "technical-analysis"
+  - "Education"
 author: "Cluenex"
 date: 2024-05-19
 dateModified: 2024-05-19

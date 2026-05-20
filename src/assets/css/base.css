@@ -203,6 +203,7 @@ body {
     transition: color .15s;
 }
 .breadcrumb a:hover  { color: var(--gold-l); }
+.breadcrumb-category { color: var(--text-2); }
 .breadcrumb-cur      { color: var(--gold-l); }
 .breadcrumb-sep      { color: var(--text-3); }
 

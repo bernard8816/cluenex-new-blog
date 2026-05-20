@@ -13,8 +13,7 @@ keywords:
   - support and resistance
 category: "Technical Analysis"
 breadcrumbs:
-  - "Technical Analysis"
-  - "technical-analysis"
+  - "Education"
 author: "Cluenex"
 date: 2026-05-20
 dateModified: 2026-05-20
