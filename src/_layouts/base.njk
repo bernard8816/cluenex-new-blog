@@ -160,7 +160,7 @@
             </div>
             <ul>
                 {% for takeaway in keyTakeaways %}
-                <li>{{ takeaway }}</li>
+                <li>{{ takeaway | safe }}</li>
                 {% endfor %}
             </ul>
         </aside>
@@ -202,7 +202,7 @@
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment and options flow on 5,000+ tickers.</p>
+                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
