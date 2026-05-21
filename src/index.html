@@ -69,99 +69,98 @@ permalink: /index.html
             margin-bottom: 40px;
             text-align: center;
         }
-        .carousel-wrapper {
-            position: relative;
-            overflow: hidden;
-        }
-        .carousel-container {
-            display: flex;
-            overflow-x: auto;
-            scroll-behavior: smooth;
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
-            padding: 0;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
         }
-        .carousel-container::-webkit-scrollbar {
-            display: none;
+        @media (max-width: 1024px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
         }
-        .post-card {
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+        .article-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: var(--r-lg);
-            padding: 24px;
+            padding: 16px;
+            padding-top: 8px;
             text-decoration: none;
             display: flex;
             flex-direction: column;
-            transition: border-color 0.2s, transform 0.2s;
-            flex-shrink: 0;
-            width: min(100%, 380px);
-            scroll-snap-align: start;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            color: inherit;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
-        .post-card:hover {
-            border-color: var(--gold-border);
-            transform: translateY(-4px);
-        }
-        .post-tag {
-            font-size: 0.7em;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        .post-title {
-            font-size: 1.15em;
-            color: var(--text-1);
-            font-weight: 600;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-        .post-desc {
-            font-size: 0.9em;
-            color: var(--text-2);
-            line-height: 1.6;
-            flex-grow: 1;
-        }
-        .carousel-controls {
-            display: flex;
-            gap: 12px;
-            margin-top: 24px;
-            justify-content: center;
-        }
-        .carousel-btn {
+        .article-card:hover {
             background: var(--bg-card);
-            border: 1px solid var(--border);
-            color: var(--text-1);
-            padding: 8px 12px;
+            border-color: var(--gold-border);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+        @media (max-width: 768px) {
+            .article-card:hover {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .article-card {
+                transition: border-color 0.2s ease-out;
+            }
+            .article-card:hover {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            }
+        }
+        .card-category {
+            margin-bottom: 12px;
+        }
+        .category-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            background: var(--gold);
+            color: var(--text-inv);
             border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
+            font-size: 12px;
             font-weight: 600;
         }
-        .carousel-btn:hover {
-            background: var(--border);
-            border-color: var(--gold);
-            color: var(--gold);
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-1);
+            line-height: 1.4;
+            margin: 0 0 12px 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
-        .carousel-dots {
+        .card-excerpt {
+            font-size: 15px;
+            color: var(--text-2);
+            margin: 0 0 12px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.6;
+        }
+        .card-meta {
+            font-size: 13px;
+            color: var(--text-2);
             display: flex;
-            gap: 8px;
-            justify-content: center;
-            margin-top: 24px;
+            align-items: center;
+            gap: 6px;
+            margin-top: auto;
         }
-        .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--border);
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .dot.active {
-            background: var(--gold);
-            width: 24px;
-            border-radius: 4px;
+        .card-meta .separator {
+            opacity: 0.5;
         }
         .cta-section {
             background: var(--bg-card);
@@ -248,27 +247,25 @@ permalink: /index.html
             </div>
         </div>
 
-        <!-- FEATURED CAROUSEL -->
+        <!-- LATEST LEARNING GRID -->
         <section id="featured">
             <h2 class="section-title">Latest Learning</h2>
-            <div class="carousel-wrapper">
-                <div class="carousel-container" id="carousel">
-                    {%- set latestPosts = collections.posts | slice(0, 3) -%}
-                    {%- for post in latestPosts %}
-                    <a href="{{ post.url }}" class="post-card">
-                        <div class="post-tag">{{ post.data.category }}</div>
-                        <div class="post-title">{{ post.data.title }}</div>
-                        <div class="post-desc">{{ post.data.description }}</div>
-                    </a>
-                    {%- endfor %}
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-btn" id="prev-btn">← Previous</button>
-                <button class="carousel-btn" id="next-btn">Next →</button>
-            </div>
-            <div class="carousel-dots" id="dots">
-                <!-- Dots dynamically added -->
+            <div class="articles-grid">
+                {%- set latestArticles = collections.posts | slice(0, 3) -%}
+                {%- for article in latestArticles %}
+                <a href="{{ article.url }}" class="article-card">
+                    <div class="card-category">
+                        <span class="category-pill">{{ article.data.category }}</span>
+                    </div>
+                    <h3 class="card-title">{{ article.data.title }}</h3>
+                    <p class="card-excerpt">{{ article.data.excerpt or (article.data.description | slice(0, 140)) }}</p>
+                    <div class="card-meta">
+                        <span class="read-time">{{ article.data.readingTime or 8 }} min read</span>
+                        <span class="separator">·</span>
+                        <time datetime="{{ article.data.date | isoDate }}">{{ article.data.date | dateFilter('MMM D') }}</time>
+                    </div>
+                </a>
+                {%- endfor %}
             </div>
         </section>
 
@@ -314,60 +311,7 @@ permalink: /index.html
             });
         });
 
-        // Carousel functionality
-        const carousel = document.getElementById('carousel');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const dotsContainer = document.getElementById('dots');
-
-        function initCarousel() {
-            // Create dots based on number of cards
-            const cards = carousel.querySelectorAll('.post-card');
-            dotsContainer.innerHTML = '';
-            cards.forEach((_, idx) => {
-                const dot = document.createElement('button');
-                dot.className = `dot ${idx === 0 ? 'active' : ''}`;
-                dot.onclick = () => scrollToIndex(idx);
-                dotsContainer.appendChild(dot);
-            });
-        }
-
-        function scrollToIndex(idx) {
-            const cardWidth = carousel.querySelector('.post-card')?.offsetWidth || 380;
-            const gap = 24;
-            carousel.scrollLeft = idx * (cardWidth + gap);
-            updateDots(idx);
-        }
-
-        function updateDots(idx) {
-            document.querySelectorAll('.dot').forEach((dot, i) => {
-                dot.classList.toggle('active', i === idx);
-            });
-        }
-
-        prevBtn.onclick = () => {
-            carousel.scrollLeft -= (carousel.querySelector('.post-card')?.offsetWidth || 380) + 24;
-        };
-
-        nextBtn.onclick = () => {
-            carousel.scrollLeft += (carousel.querySelector('.post-card')?.offsetWidth || 380) + 24;
-        };
-
-        // Track scroll for dot updates
-        carousel.addEventListener('scroll', () => {
-            const cardWidth = carousel.querySelector('.post-card')?.offsetWidth || 380;
-            const idx = Math.round(carousel.scrollLeft / (cardWidth + 24));
-            updateDots(Math.min(idx, 2));
-        });
-
-        // Initialize on page load
-        window.addEventListener('load', initCarousel);
-        // Also init immediately in case load fires too late
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initCarousel);
-        } else {
-            initCarousel();
-        }
+        // Articles grid is static (no carousel behavior)
     </script>
 
     <script src="/assets/js/main.js"></script>

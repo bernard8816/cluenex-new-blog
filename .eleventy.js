@@ -26,8 +26,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary('md', md);
 
   // Filter: Format date
-  eleventyConfig.addFilter('dateFilter', (dateObj) => {
+  eleventyConfig.addFilter('dateFilter', (dateObj, format = 'long') => {
     const date = new Date(dateObj);
+
+    // Custom format support: MMM D (e.g., "May 20")
+    if (format === 'MMM D') {
+      const options = { month: 'short', day: 'numeric' };
+      return date.toLocaleDateString('en-US', options);
+    }
+
+    // Default long format
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('en-US', options);
   });
