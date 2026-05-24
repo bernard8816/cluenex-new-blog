@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Squeeze</strong> (bands close together) = low volatility, trend paused. Precedes <data value=\"70\">70</data>%+ of major breakouts. Most reliable setup."
   - "<strong>Band breakout</strong> = price closes outside upper or lower band. Signals volatility expansion + new trend beginning. High probability if confirmed by volume."
   - "<strong>Band bounce</strong> = price bounces off middle band in range-bound market. Mid-band = dynamic support/resistance. Traders fade extremes here."
-  - "On Cluenex, Bollinger Bands display with real-time sentiment scores. When squeeze + bullish sentiment spike = 75%+ probability of sustained breakout across top 1,000 stocks."
+  - "Cluenex AI ingests Bollinger Band data — including squeezes and band width — to calculate predicted short-term and long-term price movement. While not displayed on the platform, band compression is a core input in every Cluenex price forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/bollinger-bands/
 ---
@@ -204,9 +204,9 @@ Bollinger Band squeeze followed by bullish breakout:
 
 ## How Cluenex Uses Bollinger Bands
 
-Cluenex automatically detects Bollinger Band squeezes and alerts traders the moment they form. When a squeeze is identified and sentiment scores spike (bullish or bearish), the probability of an impending breakout jumps to 75%+. Real-time alerts notify traders on the squeeze *before* the breakout happens, giving them time to set stop losses and profit targets.
+Cluenex AI ingests Bollinger Band data — including squeeze detection, band width, and breakout signals — as a core input when calculating predicted short-term and long-term price movement for each stock. Bollinger Bands aren't displayed directly on the Cluenex platform, but the AI processes band compression and expansion across the top 1,000 US-listed stocks continuously.
 
-Cluenex also calculates band width across the top 1,000 US-listed stocks, highlighting which stocks are about to move based on compression relative to their 20-day average.
+When a squeeze forms or a band breakout triggers, those signals feed directly into Cluenex's prediction models. The sentiment scores and price forecasts visible on the platform already reflect this analysis. Cluenex AI digests all of these metrics — even those not shown on the frontend — to deliver the most accurate short-term and long-term price movement forecasts.
 
 ## Frequently Asked Questions
 

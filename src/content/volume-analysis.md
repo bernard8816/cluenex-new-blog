@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Volume spike</strong> = conviction. When price breaks resistance AND volume spikes, buyers are serious. When price breaks resistance on low volume, expect bounce within <data value=\"1\">1</data>–<data value=\"2\">2</data> bars."
   - "<strong>Divergence</strong> = volume declining while price rises. Price new high but volume lower than prior = exhaustion. Reversal coming within <data value=\"3\">3</data>–<data value=\"5\">5</data> bars."
   - "<strong>Accumulation</strong> (high volume at support) = institutions buying. <strong>Distribution</strong> (high volume at resistance) = institutions selling. Watch for these patterns to predict next major move."
-  - "On Cluenex, volume bars display with moving average (20-bar). When price action + volume divergence align, traders receive high-probability reversal alerts."
+  - "Cluenex AI ingests volume data — including volume spikes, divergences, and accumulation/distribution patterns — to calculate predicted short-term and long-term price movement. Volume analysis is a core AI input even though volume bars aren't displayed on the frontend."
 layout: base.njk
 permalink: /learn/technical-analysis/volume-analysis/
 ---
@@ -236,14 +236,9 @@ High volume breakout above resistance with sustained follow-through:
 
 ## How Cluenex Uses Volume
 
-Cluenex displays volume bars with a <data value="20">20</data>-bar moving average for the top 1,000 US-listed stocks. When price approaches resistance/support, the system flags:
-- Current volume vs. 20-bar average
-- Breakout probability based on volume levels
-- Volume divergence warnings (new price high on lower volume = reversal risk)
-- Accumulation/distribution patterns at support/resistance
-- Real-time alerts when breakout occurs on 2x+ volume confirmation
+Cluenex AI ingests volume data — including volume vs. 20-bar average, breakout volume confirmation, and accumulation/distribution patterns — as core inputs when calculating predicted short-term and long-term price movement for each stock. Volume bars aren't displayed directly on the Cluenex platform, but volume analysis is one of the most heavily weighted signals in the AI's prediction engine.
 
-Volume bars color-coded: green (volume spike up) and red (volume declining).
+When price makes new highs on declining volume (divergence warning) or breaks out on 2x+ average volume (confirmation), those signals feed directly into the AI's models. The sentiment scores and price forecasts visible on Cluenex already reflect volume analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term forecasts.
 
 ## Frequently Asked Questions
 

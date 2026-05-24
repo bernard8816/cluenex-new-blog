@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>VIX below 15</strong> = low volatility, complacency. Often precedes correction or reversal (top forming). <strong>VIX above 30</strong> = extreme fear, crash zone. Market bottoms often form when VIX spikes above <data value=\"40\">40</data>."
   - "<strong>VIX inverse to S&P 500</strong>: When market down 3%+ (bad news), VIX spikes 20%+ (fear). When market up 2%+ (good news), VIX falls 5%+ (relief). They move opposite."
   - "<strong>VIX spike + S&P 500 support hold = <data value=\"70\">70</data>%+ probability</strong> market bottom forms within <data value=\"5\">5</data> days. This is the highest-probability market-timing signal available."
-  - "On Cluenex, VIX displays alongside S&P 500. When VIX spikes to <data value=\"35\">35</data>+ and S&P closes above support, traders receive \"market bottom\" alerts (<data value=\"75\">75\">75</data>% accuracy historically)."
+  - "Cluenex AI ingests VIX data to calculate predicted short-term and long-term price movement. VIX isn't displayed on the platform but extreme fear/complacency readings are key inputs in the AI's reversal probability models."
 layout: base.njk
 permalink: /learn/technical-analysis/vix-explained/
 ---
@@ -208,14 +208,9 @@ VIX spike to <data value="40">40</data> predicting S&P 500 bottom within <data v
 
 ## How Cluenex Uses VIX
 
-Cluenex displays VIX real-time alongside S&P 500 performance for all traders. When VIX spikes above 35 and S&P tests key support:
-- Alert: "Market Fear High. Support Level: 4,850"
-- Shows prior VIX spikes and outcomes (accuracy tracking)
-- Displays put/call ratio alongside VIX (additional fear gauge)
-- Real-time sentiment scores alongside VIX level
-- Probability of bounce within 5 days based on historical VIX patterns
+Cluenex AI ingests VIX data — including current levels, VIX spike patterns, and put/call ratios — as inputs when calculating predicted short-term and long-term price movement. VIX isn't displayed directly on the Cluenex platform, but extreme fear readings (VIX above 35) and complacency signals feed directly into the AI's reversal probability models.
 
-Traders see the complete panic signal before making buy/sell decisions.
+When VIX spikes alongside market support tests, the AI's confidence in a short-term bounce increases. When VIX is suppressed at multi-year lows, that feeds into the AI's downside risk models. The sentiment scores and price forecasts visible on Cluenex already reflect VIX analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 

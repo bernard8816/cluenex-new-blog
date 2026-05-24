@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Interpreting P/E</strong>: P/E <data value=\"10\">10\">10</data> = very cheap (value trap or true value). P/E <data value=\"15\">15\">15\">–<data value=\"25\">25</data> = fair value. P/E <data value=\"30\">30\">30</data>+ = expensive (growth priced in or bubble). Use sector average as benchmark."
   - "<strong>P/E compression</strong> (falling) = stock expensive, underperforming market. <strong>P/E expansion</strong> (rising) = market re-rating stock higher, outperforming. P/E changes often precede price moves."
   - "<strong>Low P/E + positive earnings growth + sentiment rising</strong> = <data value=\"65\">65\">65</data>–<data value=\"75\">75\">75</data>% probability sustained rally. Traders use P/E expansion to catch 20%+ gains."
-  - "On Cluenex, P/E displays with sector average + earnings growth + historical P/E range. When stock cheap (P/E <sector) + fundamentals improving, traders receive value alerts."
+  - "On Cluenex, P/E ratio is displayed directly alongside key financial metrics for every covered stock. Sector average P/E comparison and earnings growth context are calculated by Cluenex AI to inform the valuation signal."
 layout: base.njk
 permalink: /learn/technical-analysis/pe-ratio-valuation/
 ---
@@ -186,14 +186,9 @@ NVDA P/E expansion as earnings accelerated and market re-rated:
 
 ## How Cluenex Uses P/E
 
-Cluenex displays P/E alongside:
-- Sector average P/E (comparison)
-- 5-year historical P/E range (context)
-- Current earnings growth rate (justification)
-- Analyst EPS revisions (improving vs deteriorating)
-- Insider buying/selling (smart money conviction)
+Cluenex displays P/E ratio directly on the platform for every covered stock as part of its full financial metrics suite. Alongside the displayed P/E, Cluenex AI calculates additional context — including sector average P/E comparison, 5-year historical P/E range, and current earnings growth rate — to help assess whether a stock is cheap or expensive relative to fundamentals.
 
-When stock at low P/E + earnings growing + sentiment positive, traders receive "Value Setup" alert.
+Insider buying and selling activity is also visible on Cluenex, providing smart money conviction signals alongside the valuation data. When a stock trades at a low P/E relative to its sector, earnings are growing, and sentiment is positive, these signals combine in the AI's models to surface the most compelling value setups — with all financial metrics available directly on the platform.
 
 ## Frequently Asked Questions
 

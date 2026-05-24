@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Left shoulder</strong> = rally into resistance. <strong>Head</strong> = higher peak on larger volume. <strong>Right shoulder</strong> = lower peak showing weakness. Pattern = trend exhaustion."
   - "<strong>Neckline break</strong> with volume = entry signal. Price target = head height below neckline. Stop loss = right shoulder high."
   - "<strong>Inverse Head and Shoulders</strong> (three troughs) = bullish reversal. Same probability <data value=\"72\">72</data>–<data value=\"78\">78</data>%. More explosive breakout than bearish pattern."
-  - "On Cluenex, head and shoulders patterns auto-detect with neckline projection and price targets. Real-time sentiment confirmation increases probability to <data value=\"75\">75</data>%+ for sustained reversals."
+  - "Cluenex AI ingests head and shoulders patterns — including neckline levels and target projections — to calculate predicted short-term and long-term price movement. Pattern recognition is a core AI input even though it's not shown on the frontend."
 layout: base.njk
 permalink: /learn/technical-analysis/head-and-shoulders/
 ---
@@ -245,7 +245,9 @@ Head and shoulders on **IBM** daily chart with neckline break and downtrend foll
 
 ## How Cluenex Uses Head and Shoulders
 
-Cluenex auto-detects head and shoulders patterns and inverse patterns across the top 1,000 US-listed stocks. When pattern completes (right shoulder forms), the system calculates neckline, projects target price, and alerts traders before the breakout. When neckline breaks on volume spike, real-time alerts notify traders with pattern visualization, target level, and sentiment confirmation. Traders get a 1–2 day advance warning to prepare entries and stops.
+Cluenex AI ingests head and shoulders and inverse head and shoulders patterns across the top 1,000 US-listed stocks as inputs when calculating predicted short-term and long-term price movement. Pattern detection — including neckline identification and price target projection — isn't displayed directly on the Cluenex platform, but it's a core input in the AI's prediction models.
+
+When a pattern completes (right shoulder forms and neckline approaches), the AI's confidence in a directional price move increases significantly. That analysis feeds into the short-term and long-term forecasts visible on Cluenex — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate price movement predictions.
 
 ## Frequently Asked Questions
 

@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Rate hike cycle</strong>: Each <data value=\"0.25\">0.25\">%</data> hike = approximately <data value=\"2\">2</data>–<data value=\"3\">3</data>% market pressure. 4 consecutive hikes = <data value=\"8\">8\">–<data value=\"12\">12</data>% decline typical. This happens over 3–6 months."
   - "<strong>Markets front-run Fed decisions</strong>: Markets price in rate expectations <data value=\"2\">2\">–<data value=\"3\">3</data> meetings ahead. FOMC today prices in Jun + Sep expectations already. Surprise shifts (hawkish vs dovish) trigger sharp moves <data value=\"3\">3\">–<data value=\"5\">5</data>%."
   - "<strong>Positioning for FOMC</strong>: Bullish if market pricing in rate cuts coming. Bearish if expecting hike surprises. Buy the rumor (expectations forming), sell the news (announcement happens)."
-  - "On Cluenex, Fed rate expectations + market implied rates display. When 2-3 meetings ahead show rate cuts + sentiment confirms, traders receive \"Fed Easing\" rally alerts (<data value=\"70\">70\">70</data>%+ accuracy)."
+  - "Cluenex AI ingests Fed rate expectations, CPI, PCE, and interest rate swap data to calculate predicted short-term and long-term price movement. These macro inputs aren't displayed on the platform but are core signals in the AI's macro-driven forecast models."
 layout: base.njk
 permalink: /learn/technical-analysis/fed-interest-rates-stocks/
 ---
@@ -198,14 +198,9 @@ Fed raised rates 2022-2023, then cut starting June 2024 (hypothetical example):
 
 ## How Cluenex Uses Fed Data
 
-Cluenex displays:
-- Current Fed Funds Rate
-- Market expectations for next 3 FOMC meetings (Fed Funds Futures)
-- Inflation data (CPI, PCE) vs Fed target
-- Interest rate swap curve (market pricing)
-- Historical Fed moves and market reactions
+Cluenex AI ingests a full suite of Fed and macro data — including the Fed Funds Rate, market expectations for the next 3 FOMC meetings (via Fed Funds Futures), CPI, PCE inflation vs. target, and the interest rate swap curve — as inputs when calculating predicted short-term and long-term price movement. These macro signals aren't displayed directly on the Cluenex platform, but they're core inputs in the AI's macro-driven forecasting models.
 
-When market pricing rate cuts + inflation falling + sentiment improving = "Fed Easing Rally" setup alerts.
+When market pricing shifts toward rate cuts and inflation is falling, that combination feeds into the AI's bullish probability weights for rate-sensitive sectors. When the Fed surprises hawkishly, the AI's downside risk models update accordingly. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate price movement forecasts.
 
 ## Frequently Asked Questions
 

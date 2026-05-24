@@ -23,7 +23,7 @@ keyTakeaways:
   - "Fast MA (20, 50) = responsive to recent changes; Slow MA (200) = confirms long-term trend. Use fast + slow crossover for entry signals."
   - "Golden Cross (50-MA crosses above 200-MA) = bullish; Death Cross (50-MA crosses below 200-MA) = bearish. Highest-probability trend reversal signal."
   - "Moving averages act as dynamic support/resistance. Price bouncing off a rising 200-MA confirms uptrend strength; breaks below signal trend reversal."
-  - "On Cluenex, moving averages overlay with real-time sentiment scores to confirm trend signals across the top 1,000 US-listed stocks."
+  - "Cluenex AI ingests moving averages — including MA alignment and crossovers — to calculate predicted short-term and long-term price movement. MAs aren't displayed on the platform but are a core AI input in every forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/moving-averages/
 ---
@@ -67,7 +67,7 @@ Multiplier = 2 ÷ (Period + 1) = 2 ÷ 6 = 0.333
 - **50-period MA (medium)** — Balanced responsiveness. Common for swing trading.
 - **200-period MA (slow)** — Confirms long-term trend. Rarely false, but lags price action.
 
-On Cluenex, moving averages are calculated in real time across the top 1,000 US-listed stocks, displayed alongside real-time sentiment intensity scores.
+Cluenex AI ingests moving averages across the top 1,000 US-listed stocks as inputs when calculating predicted short-term and long-term price movement. While MAs aren't displayed on the platform, their signals — trend direction, alignment structure, and crossovers — feed directly into the AI's forecasting engine.
 
 ## Moving Average Zones
 
@@ -183,7 +183,7 @@ Moving averages are trend followers — they perform poorly in ranges. Use RSI o
 <div class="callout callout-red">
 <div class="callout-label">✗ Mistake 4</div>
 <p class="callout-text"><strong>"I should only use moving averages."</strong><br>
-MAs work best paired with momentum (RSI) or volume. On Cluenex, MAs combine with real-time sentiment scores for higher-probability setups.</p>
+MAs work best paired with momentum (RSI) or volume. On Cluenex, the AI combines MA analysis with sentiment and other signals internally — the short-term and long-term forecasts you see already reflect this multi-indicator approach.</p>
 </div>
 
 ## Example: Golden Cross on AAPL
@@ -258,9 +258,9 @@ Golden Cross signal on **AAPL** daily chart, May 2024:
 
 ## How Cluenex Uses Moving Averages
 
-Cluenex displays 20-MA, 50-MA, and 200-MA alongside real-time sentiment scores across the top 1,000 US-listed stocks. When a Golden Cross aligns with rising sentiment intensity, the probability of a sustained uptrend increases significantly.
+Cluenex AI ingests 20-MA, 50-MA, and 200-MA alignment as core inputs when calculating predicted short-term and long-term price movement for each stock. Moving averages aren't displayed directly on the Cluenex platform, but the AI monitors MA structure (price vs. 20-MA vs. 50-MA vs. 200-MA) and alignment shifts across the top 1,000 US-listed stocks continuously.
 
-Cluenex's snapshot generator also flags *MA alignment shifts* — moments when the fast/medium/slow structure changes from bullish to bearish or vice versa, often before institutional traders react. This multi-signal approach reduces false signals and improves entry quality for traders.
+When MA alignment shifts from bullish to bearish or vice versa — or when a Golden Cross or Death Cross forms — those signals feed directly into the AI's prediction models. The sentiment scores and price forecasts visible on Cluenex already reflect this moving average analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term forecasts.
 
 ## Frequently Asked Questions
 

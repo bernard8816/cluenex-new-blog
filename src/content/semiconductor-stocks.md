@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Wafer starts</strong> (production capacity) = future supply indicator. Rising wafer starts 3–6 months ahead = future oversupply coming. Falling wafer starts = undersupply coming. Lead indicator for prices."
   - "<strong>Lead times</strong> = wait time to get chips. Long lead times (<data value=\"20\">20\">+ weeks) = shortage (bullish pricing power). Short lead times (<data value=\"10\">10</data> weeks) = glut (bearish pricing pressure). 70% correlation to semi stock prices."
   - "<strong>Inventory levels</strong> = customer buffer stock. Rising inventory = demand weakening (customers stopping buys = excess). Falling inventory = demand strong (customers buying fast = shortage). Inventory turns in 3–6 months."
-  - "On Cluenex, wafer starts + lead times + inventory levels display. When lead times rising + wafer starts stable/falling + inventory low = 'Semi Bull Signal' (<data value=\"70\">70\">%+ accuracy)."
+  - "Cluenex AI ingests semiconductor cycle data — wafer starts, lead times, and inventory levels — to calculate predicted short-term and long-term price movement for semi stocks. These inputs aren't displayed on the platform but drive the AI's cycle-aware forecasting models."
 layout: base.njk
 permalink: /learn/technical-analysis/semiconductor-stocks/
 ---
@@ -229,14 +229,9 @@ Bears market can wipe <data value=\"30\">30\">–<data value=\"40\">40</data>% f
 
 ## How Cluenex Uses Semiconductor Analysis
 
-Cluenex displays:
-- Current lead times (industry average)
-- Wafer starts trend (rising/falling)
-- Inventory levels (customer stock position)
-- SOX/semi index performance
-- Cycle position (shortage/oversupply/recovery)
+Cluenex AI ingests semiconductor cycle data — including lead times, wafer starts trends, inventory levels, and SOX/semi index performance — as inputs when calculating predicted short-term and long-term price movement for semiconductor stocks. These cycle metrics aren't displayed directly on the Cluenex platform, but they're core inputs in the AI's sector-specific forecasting models.
 
-When lead times rising + wafer starts stable/falling + inventory low = "Semi Bull Cycle" signal.
+When lead times rise, wafer starts stabilize, and inventory falls (classic shortage setup), those signals shift the AI's probability weighting toward bullish for semi stocks. When the cycle reverses (inventory builds, lead times collapse), the AI's models update to reflect rising downside risk. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate sector-level price movement forecasts.
 
 ## Frequently Asked Questions
 

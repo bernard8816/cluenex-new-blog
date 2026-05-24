@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>How to use</strong>: Measure up-move (from swing low to swing high). Retracement levels = high − (high − low) × ratio. Price pulling back to <data value=\"38.2\">38.2</data>% or <data value=\"61.8\">61.8\">61.8</data>% = bounce signal."
   - "<strong>38.2% retracement</strong> = shallow pullback; uptrend remains healthy. <strong>61.8% retracement</strong> = deep pullback; buyer conviction tested. <strong>78.6% retracement</strong> = trend breaking; watch for reversal."
   - "<strong>Confluence</strong> (Fib + support/resistance + volume) = highest probability. When price reaches Fib level AND prior support holds AND volume spikes = <data value=\"70\">70</data>%+ bounce probability."
-  - "On Cluenex, Fibonacci retracements auto-calculate on all swings. When price approaches Fib level + sentiment confirms, traders receive alerts for entries with tight stops."
+  - "Cluenex AI ingests Fibonacci retracement levels to calculate predicted short-term and long-term price movement. While Fib levels aren't displayed on the platform, they're a core input in every Cluenex price forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/fibonacci-retracements/
 ---
@@ -231,14 +231,9 @@ Deep retracement to 61.8% level with bounce and trend resumption:
 
 ## How Cluenex Uses Fibonacci Retracements
 
-Cluenex automatically identifies all significant swings on the top 1,000 US-listed stocks and calculates Fibonacci retracement levels for each. When price enters a retracement zone (38.2% or 61.8%), traders receive alerts showing:
-- Retracement level and percentage
-- Distance remaining to bounce zone
-- Volume requirement to confirm bounce vs. break
-- Sentiment confirmation (bullish spike at Fib level = higher bounce probability)
-- Prior support/resistance near Fib level (confluence = highest probability)
+Cluenex AI automatically identifies all significant swings across the top 1,000 US-listed stocks and calculates Fibonacci retracement levels for each as inputs when forecasting predicted short-term and long-term price movement. Fibonacci levels aren't displayed directly on the Cluenex platform, but the AI processes them continuously — tracking when price approaches the 38.2%, 50%, and 61.8% zones.
 
-Real-time updates as new swings form.
+When price enters a key retracement zone, that signal feeds into the AI's prediction models alongside sentiment, volume, and other indicators. The short-term and long-term forecasts you see on Cluenex already reflect Fibonacci analysis beneath the surface — Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 

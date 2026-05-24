@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Static support/resistance</strong> = round numbers ($100, $50, $200) and prior swing highs/lows. <strong>Dynamic support</strong> = moving averages that adjust as price evolves."
   - "<strong>Support break + volume</strong> = next support level becomes resistance. Reverse true for resistance breaks. Support becomes resistance; resistance becomes support."
   - "Support/resistance test probability: First test = <data value=\"65\">65</data>–<data value=\"70\">70</data>% bounce. Break on high volume = <data value=\"60\">60</data>–<data value=\"70\">70</data>% probability move to next level. Second test = <data value=\"50\">50</data>% bounce."
-  - "On Cluenex, support/resistance auto-calculate from price history. When price approaches level + sentiment confirms, probability of bounce/break increases to <data value=\"72\">72</data>%+."
+  - "Cluenex AI ingests support and resistance levels to calculate predicted short-term and long-term price movement. S/R zones aren't displayed on the platform but are a core input in every Cluenex bounce and breakout probability model."
 layout: base.njk
 permalink: /learn/technical-analysis/support-resistance/
 ---
@@ -239,14 +239,9 @@ Support hold + bounce on MSFT daily chart with target hit:
 
 ## How Cluenex Uses Support and Resistance
 
-Cluenex automatically identifies all support and resistance levels for the top 1,000 US-listed stocks by analyzing price history (swing highs/lows, moving averages, round numbers). When price approaches within <data value="3">3</data>% of any level, traders receive alerts showing:
-- Level type (swing high/low, moving average, round)
-- Number of prior tests (1st test vs 3rd test = different probability)
-- Volume requirement for breakout
-- Projected target if break occurs
-- Real-time sentiment confirming bounce or break
+Cluenex AI ingests support and resistance levels — derived from swing highs/lows, moving averages, and round numbers — as core inputs when calculating predicted short-term and long-term price movement for each stock. Support and resistance zones aren't displayed directly on the Cluenex platform, but the AI maps them across the top 1,000 US-listed stocks and tracks when price approaches key levels.
 
-Dynamic support/resistance updates daily as price evolves.
+When price nears a support or resistance zone, the number of prior tests and the volume profile at that level feed into the AI's bounce and breakout probability models. The sentiment scores and price forecasts visible on Cluenex already reflect this analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term price movement forecasts.
 
 ## Frequently Asked Questions
 

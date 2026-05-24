@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>3 rules of proper trendlines</strong>: (1) Minimum <data value=\"2\">2</data> touches at swing points. (2) Price bounces from line, never penetrates. (3) Break on volume + close below = reversal signal."
   - "<strong>Uptrend trendline angle matters</strong>: Steep angle (<data value=\"45\">45\">45</data>+ degrees) = unsustainable; likely to break. Shallow angle (<data value=\"15\">15\">15</data>–<data value=\"30\">30</data> degrees) = sustainable trend. Slope shows trend strength."
   - "<strong>Trendline break + volume</strong> = trend ending with <data value=\"65\">65</data>–<data value=\"70\">70\">70</data>% probability. Price often tests the broken trendline once (now resistance/support) before major move. Use for stop loss placement."
-  - "On Cluenex, trendlines auto-draw on price history. When price breaks trendline on volume + sentiment confirms reversal, traders receive alerts with reversal probability and next target."
+  - "Cluenex AI ingests trendline data to calculate predicted short-term and long-term price movement. Trendline breaks and bounces aren't shown on the platform but are key inputs in every Cluenex reversal and continuation forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/trendlines/
 ---
@@ -290,14 +290,9 @@ Trendline support holds 3 times, breaks on 4th touch with volume:
 
 ## How Cluenex Uses Trendlines
 
-Cluenex automatically identifies all significant trendlines across the top 1,000 US-listed stocks. When trendline forms (<data value="2">2</data>+ bounces), traders see:
-- Trendline angle (degrees; steep = less durable)
-- Number of touches (3+ = strong)
-- Bounce probability at next touch
-- Volume required to break trendline (higher volume = more likely to sustain)
-- Reversal probability if break occurs on volume
+Cluenex AI ingests trendline data across the top 1,000 US-listed stocks as inputs when calculating predicted short-term and long-term price movement. Trendlines aren't displayed directly on the Cluenex platform, but the AI automatically identifies significant trend structures — tracking angle, number of touches, and volume patterns at each touch.
 
-Real-time alerts when price approaches trendline or breaks on volume.
+When price approaches a trendline (potential bounce) or breaks one on volume (potential reversal or acceleration), those signals feed directly into the AI's prediction models. The short-term and long-term forecasts visible on Cluenex already reflect this trendline analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 

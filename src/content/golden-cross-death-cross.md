@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Death Cross</strong> — 50-day MA crosses below 200-day MA = bearish trend reversal signal. Major downtrend often follows."
   - "<strong>Why it works</strong>: 50-MA = medium-term momentum (traders); 200-MA = long-term trend (institutions). Crossover = momentum overtaking long-term weakness (or strength)."
   - "Golden Cross + price above both MAs + rising volume = <data value=\"70\">70</data>%+ probability of sustained uptrend over next 3–6 months."
-  - "On Cluenex, Golden Cross and Death Cross alert automatically. Real-time sentiment scores confirm momentum shift across top 1,000 US stocks."
+  - "Cluenex AI ingests Golden Cross and Death Cross signals to calculate predicted short-term and long-term price movement. Moving average crossovers aren't displayed on the platform but are core inputs in every Cluenex forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/golden-cross-death-cross/
 ---
@@ -216,9 +216,9 @@ Golden Cross on **AAPL** with follow-through to multi-month uptrend:
 
 ## How Cluenex Uses Golden Cross and Death Cross
 
-Cluenex automatically flags Golden Cross and Death Cross signals across the top 1,000 US-listed stocks, alerting traders the moment the crossover occurs. Real-time sentiment scores confirm whether institutional positioning is shifting — when Golden Cross aligns with rising sentiment, probability of sustained uptrend increases to 75%+.
+Cluenex AI ingests Golden Cross and Death Cross signals — along with full moving average alignment (price vs. 50-MA vs. 200-MA) — as core inputs when calculating predicted short-term and long-term price movement for each stock. These crossover signals aren't displayed directly on the Cluenex platform, but the AI monitors them across the top 1,000 US-listed stocks continuously.
 
-Cluenex's trend scanner also shows MA alignment (price > 50-MA > 200-MA for bullish; price < 50-MA < 200-MA for bearish), so traders see not just the crossover but the complete bullish or bearish structure before entry.
+When a Golden Cross forms (bullish structure) or Death Cross forms (bearish structure), those signals feed directly into the AI's prediction models. The sentiment scores and price forecasts visible on Cluenex already reflect moving average crossover analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term forecasts.
 
 ## Frequently Asked Questions
 

@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Beat/miss probability drives short-term move</strong>: EPS beat = <data value=\"3\">3</data>–<data value=\"5\">5\">5</data>% up typical. EPS miss = <data value=\"3\">3</data>–<data value=\"5\">5</data>% down typical. But magnitude varies by sector (growth: bigger move, value: smaller)."
   - "<strong>Guidance raise = 5–10% upside</strong> (future earnings higher). <strong>Guidance lower = 10–15% downside</strong> (future earnings lower). Guidance surprise often matters more than current quarter beat/miss."
   - "<strong>Margins matter</strong>: Gross margin improving = pricing power / efficiency. Operating margin improving = scale. If EPS beat but margins declining = red flag. Beat is hollow if costs rising."
-  - "On Cluenex, earnings calendar + beat/miss probabilities display. When stock likely to beat + guidance raising + sentiment bullish = <data value=\"70\">70</data>–<data value=\"75\">75</data>% probability 5–15% gain within 5 days of earnings."
+  - "On Cluenex, earnings dates and full financial metrics are displayed for every covered stock. Beat/miss probabilities, guidance trend analysis, and post-earnings move forecasts are calculated by Cluenex AI as part of its short-term and long-term price prediction models."
 layout: base.njk
 permalink: /learn/technical-analysis/earnings-report/
 ---
@@ -205,15 +205,9 @@ Nvidia earnings: beat on EPS + raised guidance = massive rally:
 
 ## How Cluenex Uses Earnings Data
 
-Cluenex displays:
-- Earnings calendar (dates, estimates)
-- Estimate revisions (trending up/down)
-- Analyst surprise probability (beating or missing likely?)
-- Historical beat/miss rates by company
-- Guidance history (raised/lowered trend)
-- Post-earnings move stats (typical % move on beat/miss)
+Cluenex displays earnings dates and a full suite of financial metrics directly on the platform for every covered stock — including revenue, EPS, margins, and guidance data from the latest earnings report. These are visible to every user.
 
-When stock likely to beat + guidance raising + margins improving = "Strong Earnings Setup" alert.
+Cluenex AI goes further, ingesting additional earnings signals as inputs for its short-term and long-term price movement predictions: estimate revision trends (are analysts raising or lowering expectations?), historical beat/miss rates by company, guidance trajectory (raised vs. lowered history), and typical post-earnings price move statistics. These aren't displayed as standalone fields but feed directly into the AI's earnings probability models — so the sentiment scores and price forecasts you see on Cluenex already reflect earnings setup quality. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate price movement predictions around earnings events.
 
 ## Frequently Asked Questions
 

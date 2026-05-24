@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>How to identify</strong>: Look for sharp price moves (2–5% in 1 bar) with volume spike. That zone where price rejected = order block. Mark it and watch for price return."
   - "<strong>Reversal probability</strong>: When price returns to old order block, <data value=\"70\">70\">70</data>%+ bounce/reversal probability. Order blocks are highest-probability reversal zones available."
   - "<strong>Bullish order block</strong> = zone where smart money bought heavily, rejected upside, then bounced. <strong>Bearish order block</strong> = zone where smart money sold heavily, rejected downside, then bounced."
-  - "On Cluenex, order blocks auto-detect on high volume + sharp moves. When price approaches historical order block + sentiment confirms, reversal probability = <data value=\"75\">75\">75</data>%+."
+  - "Cluenex AI ingests order block zones to calculate predicted short-term and long-term price movement. Order blocks aren't displayed on the platform but are a key input in the AI's reversal probability models."
 layout: base.njk
 permalink: /learn/technical-analysis/order-blocks/
 ---
@@ -236,14 +236,9 @@ Bullish order block formed, price returns 4 weeks later for reversal:
 
 ## How Cluenex Uses Order Blocks
 
-Cluenex auto-identifies all order blocks from the past 3–6 months of price history. When price approaches historical order block, traders see:
-- Order block location (price zone)
-- Volume on original formation
-- Time since block formed
-- Historical accuracy (how often reversed from this block)
-- Current price distance from block
+Cluenex AI ingests order block data from the past 3–6 months of price history as inputs when calculating predicted short-term and long-term price movement for each stock. Order blocks aren't displayed directly on the Cluenex platform, but the AI identifies high-volume formation zones and tracks when price approaches them.
 
-Real-time alerts when price within 1–2% of old order block.
+Order block proximity — including volume on original formation and block age — feeds directly into the AI's reversal probability models. When price approaches a strong historical order block, that signal influences the short-term sentiment score and price forecast visible on Cluenex. Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 

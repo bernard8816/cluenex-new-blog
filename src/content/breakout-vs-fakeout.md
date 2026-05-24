@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Real breakout</strong>: Closes above range on <data value=\"2\">2</data>x+ volume AND holds above range on next bar. Probability of sustained move: <data value=\"70\">70</data>–<data value=\"75\">75</data>%."
   - "<strong>Fakeout</strong>: Closes above range on low volume or closes marginally above range. Next bar opens below breakout = reversal. Probability of bounce back: <data value=\"60\">60</data>–<data value=\"70\">70\">70</data>%."
   - "<strong>2-day confirmation rule</strong>: Day 1 = breakout on volume. Day 2 = closes above breakout high. Only then is breakout confirmed; most traders exit on Day 2 spike after buying Day 1."
-  - "On Cluenex, real breakouts detected by volume + close > range + sentiment. Fakeouts flagged by low volume or marginal close. Real breakout alerts = <data value=\"72\">72\">72</data>% win rate historically."
+  - "Cluenex AI uses breakout and fakeout signals — volume confirmation, close position, consolidation range — to calculate predicted short-term and long-term price movement. These are core inputs in every Cluenex price forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/breakout-vs-fakeout/
 ---
@@ -257,20 +257,13 @@ Real breakout with Day 2 confirmation vs fakeout that reversed:
 
 ## How Cluenex Uses Breakout Detection
 
-Cluenex automatically identifies:
-1. Consolidations (tight range for 2+ weeks)
-2. Breakout bars (closes above range on volume)
-3. Volume level (2x+ average = real; <data value=\"1">1</data>x = fake)
-4. Close position (top 25% = strong; bottom 50% = weak)
-5. Next day hold (confirms or denies breakout)
+Cluenex AI ingests breakout and fakeout signals as core inputs when calculating predicted short-term and long-term price movement for each stock. The AI evaluates:
+- Consolidation tightness (range width over 2+ weeks)
+- Breakout close position (top 25% of range = strong; bottom 50% = weak)
+- Volume confirmation ratio (2x+ average = real breakout signal)
+- Next-bar follow-through (holds above breakout level = sustained)
 
-When real breakout forms (all 5 conditions), traders receive alerts showing:
-- Breakout type: Real (70%+ probability) or Fakeout (70%+ reversal probability)
-- Volume confirmation ratio
-- Target price if real breakout sustains
-- Historical accuracy of similar setups
-
-Fakeouts flagged to avoid; real breakouts prioritized.
+While these signals aren't displayed as raw indicators on the Cluenex platform, they feed directly into the AI's prediction models. The sentiment scores and price forecasts you see already reflect breakout and fakeout analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term price movement forecasts.
 
 ## Frequently Asked Questions
 

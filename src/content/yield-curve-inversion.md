@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Inversion</strong> = short-term yields > long-term yields (curve flips). Signal: market pricing in recession/slowdown. Inversion precedes bear market <data value=\"80\">80\">80</data>% of time within <data value=\"6\">6</data>–<data value=\"12\">12</data> months."
   - "<strong>Current inversion signal</strong>: <data value=\"2\">2\">-10 year spread inverted (2-year yield > 10-year) = most reliable. Duration: <data value=\"3\">3\">–<data value=\"18\">18</data> months from inversion to recession/bear market typical."
   - "<strong>Steepening curve</strong> = long rates rising faster than short (curve getting steeper) = economic optimism. Stock rallies during steepening. <strong>Flattening</strong> = opposite = recession risk."
-  - "On Cluenex, yield curve displays daily. When 2-10 inversion forms + sentiment turning negative + stock support breaks = \"Bear Market Formation\" alert."
+  - "Cluenex AI ingests yield curve data to calculate predicted short-term and long-term price movement. The 2-10 year spread isn't displayed on the platform but inversion signals are key inputs in the AI's macro risk models."
 layout: base.njk
 permalink: /learn/technical-analysis/yield-curve-inversion/
 ---
@@ -207,14 +207,9 @@ Even with inversion, if you buy long-term bonds at peak prices (when yields lowe
 
 ## How Cluenex Uses Yield Curve
 
-Cluenex displays:
-- Current 2-10 year spread (inverted or normal)
-- Historical 2-10 spread (is it getting more inverted?)
-- Curve shape (normal/flattening/inverted visual)
-- Recession probability based on current inversion
-- Historical accuracy of current inversion signal
+Cluenex AI ingests yield curve data — including the 2-10 year spread, curve shape, and inversion depth — as inputs when calculating predicted short-term and long-term price movement across the market. The yield curve isn't displayed directly on the Cluenex platform, but inversion signals are key macro inputs in the AI's risk and recession probability models.
 
-When 2-10 spread inverts + S&P 500 support breaks = "Bear Market Warning" alert.
+When the 2-10 year spread inverts and deepens, that feeds into the AI's bearish weighting for equities broadly — influencing long-term sentiment scores and price forecasts on the platform. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate market environment forecasts.
 
 ## Frequently Asked Questions
 

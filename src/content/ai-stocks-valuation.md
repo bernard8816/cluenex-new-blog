@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>AI capex leaders</strong> (NVDA, MSFT, TSLA, GOOG) spending <data value=\"10\">10\">–<data value=\"20\">20</data>% of revenue on AI buildout. High capex = high belief in AI ROI. Monitor capex guidance; increases = bullish signal."
   - "<strong>GPU demand is the moat.</strong> Nvidia's GPU allocation, waits lists, price stability = true demand gauge. If Nvidia raising GPU prices + full allocation = AI capex cycle heating. If cutting prices + excess inventory = cycle cooling."
   - "<strong>AI revenue breakdown matters.</strong> Split revenue: traditional vs AI segment. Which growing faster? If AI segment 30%+ growth while overall 10% = company transitioning to AI leader. High probability of multiple expansion."
-  - "On Cluenex, AI capex spending + GPU demand + segment revenue growth displayed. When all three improving + price bullish breakout = <data value=\"70\">70\">70</data>–<data value=\"75\">75</data>% probability sustained AI rally."
+  - "Cluenex AI ingests capex guidance, GPU/AI shipment trends, AI revenue breakout data, and margin trajectory to calculate predicted short-term and long-term price movement for AI stocks. These inputs aren't on the frontend but are core signals in the AI's sector forecasting models."
 layout: base.njk
 permalink: /learn/technical-analysis/ai-stocks-valuation/
 ---
@@ -231,16 +231,9 @@ NVDA fundamentals vs traditional peer (Intel) in 2024:
 
 ## How Cluenex Uses AI Stock Analysis
 
-Cluenex displays:
-- Capex guidance + historical capex spend
-- GPU/AI shipment trends (quarterly)
-- AI revenue breakout (% of total, growth rate)
-- Operating margin trajectory
-- Peer comparison (which AI leader strongest)
+Cluenex AI ingests a full suite of AI-sector inputs — including capex guidance, historical capex spend, GPU/AI shipment trends, AI revenue as a % of total revenue, revenue growth rate, operating margin trajectory, and peer comparison metrics — when calculating predicted short-term and long-term price movement for AI stocks. These metrics aren't displayed directly on the Cluenex platform, but they're core signals in the AI's sector-specific forecasting models.
 
-When AI leader's 4 metrics all improving + price bullish breakout = "AI Leader Continuation" alert (<data value="70">70</data>–<data value="75">75</data>% accuracy).
-
-When metrics deteriorating + price technical breakdown = "AI Hype Reversal" alert (<data value="65">65</data>–<data value="70">70</data>% accuracy).
+When all four key metrics improve simultaneously alongside a bullish price structure, the AI's confidence in a sustained move increases significantly. When metrics deteriorate alongside technical breakdown, the AI's downside risk weighting increases. Cluenex AI digests all of these inputs — even those not shown on the frontend — to deliver the most accurate short-term and long-term price movement forecasts for AI sector stocks.
 
 ## Frequently Asked Questions
 

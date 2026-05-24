@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Bullish FVG</strong> = gap up (price jumps higher, leaves zone unfilled below). <strong>Bearish FVG</strong> = gap down (price crashes, leaves zone unfilled above). Both create reversals when price returns."
   - "<strong>FVG lifespan</strong>: Fills within <data value=\"5\">5\">–<data value=\"20\">20</data> bars (intraday) or <data value=\"5\">5\">–<data value=\"30\">30</data> days (daily). Older gaps more likely to fill. Recent gaps = still being filled."
   - "<strong>FVG + order block</strong> = extreme confluence (both gaps + institutional zone). Reversal probability: <data value=\"75\">75\">75</data>–<data value=\"85\">85\">85</data>%. Tightest stops, highest win rate."
-  - "On Cluenex, FVGs auto-identify. When price approaches gap + sentiment confirms, reversal alert displays with <data value=\"72\">72\">72</data>% historical accuracy."
+  - "Cluenex AI ingests Fair Value Gaps to calculate predicted short-term and long-term price movement. FVGs aren't displayed on the platform but are a key input in the AI's price forecast models."
 layout: base.njk
 permalink: /learn/technical-analysis/fair-value-gaps/
 ---
@@ -201,12 +201,9 @@ Bullish FVG fills with order block confirmation:
 
 ## How Cluenex Uses FVGs
 
-Cluenex auto-identifies all FVGs from past 3–6 months. When price approaches gap zone, traders see:
-- FVG location (price zone)
-- Gap age (days since formed)
-- Order blocks near gap (confluence zones)
-- Probability of fill based on historical accuracy
-- Real-time alerts when price entering gap zone
+Cluenex AI ingests Fair Value Gaps from the past 3–6 months of price history as inputs when calculating predicted short-term and long-term price movement for each stock. FVGs aren't displayed directly on the Cluenex platform, but the AI processes gap zones, gap age, and proximity to price continuously.
+
+When price approaches a historical FVG zone, that signal feeds into the AI's prediction models — influencing the short-term sentiment score and price forecast visible on the platform. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate price movement forecasts.
 
 ## Frequently Asked Questions
 

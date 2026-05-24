@@ -23,7 +23,7 @@ keyTakeaways:
   - "RSI above <data value=\"70\">70</data> = overbought (potential sell); below <data value=\"30\">30</data> = oversold (potential buy). Context matters — not the number alone."
   - "Standard period is <strong>14 bars</strong>. Use 7–9 for day trading; 21–28 for weekly charts."
   - "<strong>Divergence</strong> — price hits a new extreme but RSI does not — is the highest-probability RSI signal and often precedes trend reversals."
-  - "On Cluenex, RSI is displayed alongside real-time sentiment scores to confirm momentum shifts across the top 1,000 US-listed stocks."
+  - "Cluenex AI ingests RSI to calculate predicted short-term and long-term price movement. While RSI isn't displayed directly on the platform, every sentiment score you see on Cluenex already reflects RSI analysis under the hood."
 layout: base.njk
 permalink: /learn/technical-analysis/rsi-explained/
 ---
@@ -55,7 +55,7 @@ Period selection affects sensitivity vs. reliability:
 - **14 periods (default)** — standard for swing trading (days to weeks).
 - **21–28 periods** — slower, fewer but higher-confidence setups. Suited for position trading and weekly charts.
 
-RSI is mean-reverting: extreme readings above 80 or below 20 rarely persist. On Cluenex, RSI is calculated in real time across the top 1,000 US-listed stocks, displayed alongside real-time sentiment intensity scores.
+RSI is mean-reverting: extreme readings above 80 or below 20 rarely persist. Cluenex AI ingests RSI across the top 1,000 US-listed stocks as part of its prediction engine — the resulting short-term and long-term sentiment scores on the platform reflect RSI conditions without displaying the raw indicator.
 
 ## RSI Threshold Reference
 Each RSI zone carries a distinct interpretation:
@@ -172,7 +172,7 @@ A 14-period RSI on a 1-minute chart is too slow. Use 5–7 periods for sub-hourl
 <div class="callout callout-red">
 <div class="callout-label">✗ Mistake 4</div>
 <p class="callout-text"><strong>"I should trade RSI in isolation."</strong><br>
-RSI alone leads to whipsaws. Pair with volume, trend direction, support/resistance, or — on Cluenex — real-time sentiment scores for confirmation.</p>
+RSI alone leads to whipsaws. Pair with volume, trend direction, support/resistance, or — on Cluenex — check the short-term and long-term sentiment scores, which already incorporate RSI analysis.</p>
 </div>
 
 ## Example: Bearish Divergence on NVDA
@@ -239,9 +239,9 @@ Bearish divergence signal on **NVDA** daily chart, November 2024:
 </div>
 
 ## How Cluenex Uses RSI
-Cluenex displays RSI alongside real-time sentiment scores across the top 1,000 US-listed stocks. When RSI above 70 aligns with a sentiment score drop, the probability of a reversal increases significantly.
+Cluenex AI ingests RSI as one of its core inputs when calculating predicted short-term and long-term price movement for each stock. While RSI itself isn't displayed directly on the Cluenex platform, the AI digests it — alongside dozens of other signals — so every sentiment score and price forecast you see already reflects RSI momentum analysis beneath the surface.
 
-Cluenex's <abbr title="Artificial Intelligence">AI</abbr> snapshot generator also flags *momentum divergences* — situations where RSI and sentiment readings diverge, signaling a potential reversal before price action becomes obvious. This multi-signal approach reduces whipsaws and improves entry quality for traders.
+When RSI signals overbought or oversold conditions, or when divergence forms, those signals feed directly into Cluenex's short-term and long-term prediction models. The sentiment scores visible on the platform are the AI's synthesized output of all these inputs, including RSI. Cluenex AI also processes all of this even for metrics not visible on the frontend — because the AI digests everything to deliver the most accurate prediction.
 
 ## Frequently Asked Questions
 - **What's the difference between a 14-period RSI and a 7-period RSI?**

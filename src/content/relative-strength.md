@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>RS breakout above prior high</strong> = stock outperforming AND breaking upside = dual confirmation. Win rate: <data value=\"65\">65</data>–<data value=\"70\">70\">70</data>% probability of sustained outperformance."
   - "<strong>RS divergence</strong> = stock new high but RS lower (underperforming market) = weakness hidden. Stock likely to underperform on next market correction."
   - "<strong>Top RS performers in bull markets</strong> lead rallies: Tech in 2023, AI in 2024, Semis in late 2024. Buying top RS stocks during corrections = <data value=\"70\">70\">70</data>%+ win rate."
-  - "On Cluenex, RS lines auto-calculate. When stock breaks above prior high AND RS at all-time high = <data value=\"72\">72\">72</data>%+ probability of sustained leadership."
+  - "Cluenex AI ingests Relative Strength (RS) lines to calculate predicted short-term and long-term price movement. RS vs. the S&P 500 isn't displayed on the platform but is a core input in the AI's leadership and momentum models."
 layout: base.njk
 permalink: /learn/technical-analysis/relative-strength/
 ---
@@ -236,14 +236,9 @@ Nvidia's RS at all-time high preceding breakout and sustained leadership:
 
 ## How Cluenex Uses Relative Strength
 
-Cluenex displays RS lines for the top 1,000 US-listed stocks vs S&P 500. When stock breaks above prior high AND RS is at or near all-time high, traders receive alerts showing:
-- Current RS level vs all-time high
-- RS trend (uptrend = outperforming; downtrend = underperforming)
-- RS divergence warnings (price new high but RS lower = hidden weakness)
-- Historical accuracy: RS leader breakouts = 70%+ sustained outperformance
-- Sector RS trends (which sectors leading market overall)
+Cluenex AI ingests Relative Strength (RS) lines — each stock's performance vs. the S&P 500 — as inputs when calculating predicted short-term and long-term price movement. RS lines aren't displayed directly on the Cluenex platform, but the AI tracks RS trends, RS divergences, and sector leadership patterns across the top 1,000 US-listed stocks continuously.
 
-Real-time updates as RS lines evolve daily.
+When a stock breaks to new highs while RS is also at all-time highs, or when RS divergence signals hidden weakness, those signals feed into the AI's prediction models. The short-term and long-term forecasts visible on Cluenex already incorporate relative strength analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 

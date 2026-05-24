@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>MACD line</strong> crosses above <strong>signal line</strong> = bullish momentum (buy signal). Cross below = bearish momentum (sell signal). Highest probability when histogram diverges."
   - "<strong>Histogram</strong> (MACD minus signal line) shows momentum strength. Expanding histogram = strengthening trend; shrinking = weakening trend before reversal."
   - "<strong>Zero-line crossover</strong> — MACD crosses above zero = trend shift from bearish to bullish. Cross below zero = bearish shift. Confirms major momentum change."
-  - "On Cluenex, MACD displays alongside RSI, moving averages, and real-time sentiment scores to confirm momentum shifts across the top 1,000 US-listed stocks."
+  - "Cluenex AI ingests MACD — along with RSI and moving averages — to calculate predicted short-term and long-term price movement. These indicators aren't displayed on the platform but are core inputs in every Cluenex sentiment score and price forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/macd-explained/
 ---
@@ -185,7 +185,7 @@ Zero-line crosses happen *after* significant momentum shift. Price may have alre
 <div class="callout callout-red">
 <div class="callout-label">✗ Mistake 3</div>
 <p class="callout-text"><strong>"I trade MACD in isolation."</strong><br>
-MACD alone generates too many whipsaws in choppy markets. Pair with RSI (overbought/oversold), moving averages (trend), volume, or sentiment. On Cluenex, MACD combines with all these signals for optimal entries.</p>
+MACD alone generates too many whipsaws in choppy markets. Pair with RSI (overbought/oversold), moving averages (trend), volume, or sentiment. On Cluenex, the AI combines MACD with all these signals internally — the resulting short-term and long-term sentiment scores reflect this multi-factor analysis.</p>
 </div>
 
 <div class="callout callout-red">
@@ -282,9 +282,9 @@ Bullish MACD crossover with histogram expansion on **TSLA** daily chart, May 202
 
 ## How Cluenex Uses MACD
 
-Cluenex displays MACD with automatic histogram color coding (green = bullish, red = bearish) alongside RSI, moving averages, and real-time sentiment scores. When MACD crossover aligns with rising sentiment intensity, the probability of a sustained move climbs significantly.
+Cluenex AI ingests MACD — including histogram color shifts and divergence signals — as a core input when calculating predicted short-term and long-term price movement for each stock. MACD itself isn't displayed directly on the Cluenex platform, but the AI processes it across the top 1,000 US-listed stocks alongside RSI, moving averages, and other signals.
 
-Cluenex's momentum scanner also flags *MACD divergence* — situations where price makes new highs but MACD makes lower highs — signaling momentum failure before price reverses. This proactive detection prevents traders from holding losing positions.
+When MACD crossover aligns with momentum shifts, or when MACD divergence forms (price new high, MACD lower high), those signals feed directly into Cluenex's prediction models. The sentiment scores you see on the platform already reflect this analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term price movement forecasts.
 
 ## Frequently Asked Questions
 
@@ -304,7 +304,7 @@ Cluenex's momentum scanner also flags *MACD divergence* — situations where pri
   Different purposes. MACD shows momentum *change* and trend shifts. RSI shows overbought/oversold conditions. Use both: MACD for entries, RSI for exits. Together, they filter 60-70% of false signals.
 
 - **What success rate for MACD crossover signals?**
-  Signal line crossover alone: 45-55% win rate. Signal line + histogram confirmation + price action filter: 65-75% win rate. On Cluenex, adding sentiment data increases to 70-80%.
+  Signal line crossover alone: 45-55% win rate. Signal line + histogram confirmation + price action filter: 65-75% win rate. On Cluenex, the AI combines MACD with sentiment and other inputs, targeting 70-80% accuracy in its short-term and long-term price movement predictions.
 
 ## Related Concepts
 

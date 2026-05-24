@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Short squeeze mechanics</strong>: High shorts + positive news → buying pressure → shorts panic cover → forced buying → explosion higher. Rallies <data value=\"30\">30</data>–<data value=\"100\">100</data>% possible in days."
   - "<strong>Squeeze signals</strong>: (1) Short interest >20% float, (2) Positive catalyst (earnings beat, partnership, buyout), (3) Volume spike (short covering), (4) Support holds (no panic selling). All four = 70%+ squeeze probability."
   - "<strong>Risk: short squeeze can reverse sharply</strong>. Gains evaporate if sentiment turns. Always use stop losses. <data value=\"70\">70\">70</data>% of squeezes reverse 50%+ within weeks."
-  - "On Cluenex, short interest displays with float %, short borrow rates, and squeeze probability. When catalyst + volume spike + technicals bullish = 'Squeeze Setup' alert."
+  - "Cluenex AI ingests short interest, float %, and borrow rates to calculate predicted short-term and long-term price movement. These inputs feed into squeeze probability models even though they aren't displayed on the frontend."
 layout: base.njk
 permalink: /learn/technical-analysis/short-interest-squeezes/
 ---
@@ -212,14 +212,9 @@ GME short squeeze with 140% gain:
 
 ## How Cluenex Uses Short Interest
 
-Cluenex displays:
-- Current short interest % of float
-- Short borrow rate (cost to short; rising rate = scarcity)
-- Short interest trend (rising/falling)
-- Squeeze probability (based on all factors)
-- Catalyst alerts (news that triggers squeezes)
+Cluenex AI ingests short interest data — including short interest as a % of float, short borrow rates, and short interest trends — as inputs when calculating predicted short-term and long-term price movement for each stock. These metrics aren't displayed directly on the Cluenex platform, but they're core inputs in the AI's squeeze probability models.
 
-When short interest >20% + positive catalyst + volume spike = "Squeeze Setup" alert.
+When short interest is elevated, borrow rates are rising, and volume spikes, those signals feed into the AI's prediction engine — increasing the probability weight on upside price movement in the short-term forecast. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate price movement predictions.
 
 ## Frequently Asked Questions
 

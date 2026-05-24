@@ -22,7 +22,7 @@ keyTakeaways:
   - "<strong>MACD shows momentum shift direction</strong> (when to trade); <strong>RSI confirms overbought/oversold extremes</strong> (confirmation). Use together for high-conviction entries."
   - "<strong>Bullish setup</strong>: MACD crosses above signal line AND RSI below <data value=\"70\">70</data> (room to run). Avoid when RSI already above 70 — momentum may reverse."
   - "<strong>Bearish setup</strong>: MACD crosses below signal line AND RSI above <data value=\"30\">30</data> (room to fall). Avoid when RSI already below 30."
-  - "On Cluenex, MACD and RSI display side-by-side with real-time sentiment scores across the top 1,000 US-listed stocks."
+  - "Cluenex AI ingests both MACD and RSI together to calculate predicted short-term and long-term price movement. Neither is displayed on the platform, but their combined signal is a primary input in every Cluenex forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/macd-and-rsi-together/
 ---
@@ -64,7 +64,7 @@ MACD detects *momentum shifts* — when buying or selling pressure changes direc
 
 The key insight: A MACD crossover alone has 40–50% win rate. With RSI confirmation, accuracy jumps to 70%+ because you're trading only when the move has room to develop.
 
-On Cluenex, MACD (with histogram color coding) and RSI display side-by-side, eliminating the need to switch between windows and showing traders immediately when both conditions align.
+Cluenex AI ingests both MACD and RSI together as combined inputs when calculating predicted short-term and long-term price movement — eliminating the need to manually check alignment, since the AI processes both signals and surfaces the result as sentiment scores and price forecasts directly on the platform.
 
 ## How to Use MACD + RSI in Practice
 
@@ -214,9 +214,9 @@ Bullish MACD crossover with RSI confirmation on **NVDA** daily chart, May 2024:
 
 ## How Cluenex Uses MACD + RSI
 
-Cluenex displays MACD (with automatic histogram color coding: green for bullish, red for bearish) and RSI side-by-side on the same chart across the top 1,000 US-listed stocks. When a MACD crossover aligns with RSI in the neutral zone (30–70) and real-time sentiment scores turn bullish, traders see the setup confirmed three ways before committing capital.
+Cluenex AI ingests MACD and RSI together as combined inputs when calculating predicted short-term and long-term price movement for each stock. Neither indicator is displayed directly on the Cluenex platform, but the AI monitors their alignment across the top 1,000 US-listed stocks continuously — detecting when MACD crossover aligns with RSI in neutral territory, and when divergences form on either indicator.
 
-Cluenex's AI snapshot generator also flags "MACD + RSI alignment moments" — when both indicators confirm simultaneously — reducing the manual work of scanning charts and increasing precision in entry selection.
+When both signals confirm simultaneously, that combined reading feeds directly into the AI's prediction models, increasing confidence in the directional forecast. The sentiment scores and price movement predictions visible on Cluenex already reflect this multi-indicator analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 
@@ -236,7 +236,7 @@ Cluenex's AI snapshot generator also flags "MACD + RSI alignment moments" — wh
   Hold until MACD crosses back through the signal line (momentum reversing). Exit partial profit (50% position) when RSI hits 70 (bullish) or 30 (bearish). Trail stop on the remainder. Average holding time: 3–7 days on daily charts, 2–4 hours on intraday.
 
 - **Do I need to watch MACD + RSI in real time, or is end-of-day scanning enough?**
-  End-of-day works fine for swing trading (1–5 day holds). For day trading, real-time monitoring is better. Cluenex alerts notify traders when MACD + RSI alignment occurs, eliminating the need to watch charts constantly.
+  End-of-day works fine for swing trading (1–5 day holds). For day trading, real-time monitoring is better. On Cluenex, the AI continuously monitors MACD + RSI alignment under the hood — when both signals align, the AI's short-term and long-term price movement predictions update accordingly.
 
 ## Related Concepts
 

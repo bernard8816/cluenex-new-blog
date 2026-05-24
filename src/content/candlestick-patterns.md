@@ -25,7 +25,7 @@ keyTakeaways:
   - "<strong>Hammer</strong> (small body, long lower wick) = oversold bounce signal. Close above open = bullish reversal. Probability: <data value=\"70\">70</data>% sustained uptrend follows."
   - "<strong>Engulfing</strong> (large candle fully engulfs prior) = momentum shift. Bullish engulfing after downtrend = reversal. Bearish engulfing after uptrend = reversal. High reliability: <data value=\"72\">72</data>%."
   - "<strong>Morning Star</strong> (3-candle reversal: down, gap down doji, up) = bullish reversal signal. Evening Star inverse = bearish reversal. Probability: <data value=\"68\">68</data>%+."
-  - "On Cluenex, candlestick patterns auto-detect with sentiment confirmation. When pattern + bullish sentiment spike = <data value=\"75\">75</data>%+ probability sustained breakout."
+  - "Cluenex AI ingests candlestick patterns to calculate predicted short-term and long-term price movement. All 12 major patterns are processed by the AI even though they aren't displayed directly on the platform."
 layout: base.njk
 permalink: /learn/technical-analysis/candlestick-patterns/
 ---
@@ -316,7 +316,9 @@ Bullish engulfing after downtrend with volume confirmation:
 
 ## How Cluenex Uses Candlestick Patterns
 
-Cluenex automatically detects all <data value="12">12</data> candlestick patterns across the top 1,000 US-listed stocks in real time. When a pattern forms and sentiment scores spike (bullish or bearish), traders receive alerts showing the pattern name, confidence level, and next resistance/support level to watch. Real-time alerts notify traders seconds after patterns complete, giving time to analyze context before market reacts.
+Cluenex AI ingests all <data value="12">12</data> major candlestick patterns across the top 1,000 US-listed stocks as inputs when calculating predicted short-term and long-term price movement. Candlestick patterns aren't displayed as overlays on the Cluenex platform, but the AI detects and processes them continuously — engulfing candles, doji formations, morning/evening stars, hammers, and more all feed into the prediction models.
+
+When a high-probability pattern forms and aligns with other signals, the AI's confidence in its short-term price movement prediction increases. The sentiment scores you see on Cluenex already incorporate this pattern analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 

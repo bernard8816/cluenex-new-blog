@@ -23,7 +23,7 @@ keyTakeaways:
   - "<strong>Accumulation</strong> = high volume at support, price stalls, then breakout. <strong>Distribution</strong> = high volume at resistance, price stalls, then breakdown. Spot these patterns to trade with smart money."
   - "<strong>Order blocks</strong> = zones where large orders executed (price rejection zones). When price returns to old order block, smart money likely to defend or reverse. Highest probability reversal points: <data value=\"70\">70\">70</data>%+."
   - "<strong>Retail vs Smart Money</strong>: Retail buys breakouts (loses), smart money sells breakouts. Retail shorts breakdowns (loses), smart money buys breakdowns. Trade opposite retail = align with smart money."
-  - "On Cluenex, volume profile + order flow visualization shows where smart money accumulated. When price returns to smart money zones + sentiment confirms, reversal probability jumps to <data value=\"75\">75\">75</data>%+."
+  - "Cluenex AI ingests volume profile and order flow data to calculate predicted short-term and long-term price movement. Smart money accumulation zones aren't displayed on the platform but are key inputs in every Cluenex price forecast."
 layout: base.njk
 permalink: /learn/technical-analysis/smart-money-order-flow/
 ---
@@ -267,14 +267,9 @@ Meta's smart money accumulation at $200 support before breakout to $300+:
 
 ## How Cluenex Uses Smart Money Tracking
 
-Cluenex displays volume profile and order flow visualization for the top 1,000 US stocks. When accumulation pattern forms (repeated support tests, high volume, oscillation), traders see:
-- Accumulation zone (where smart money buying)
-- Distribution zone (where smart money selling)
-- Order blocks (historical execution zones)
-- Probability of breakout after accumulation pattern
-- Real-time alerts when price breaks accumulation zones on volume
+Cluenex AI ingests volume profile and order flow data as core inputs when calculating predicted short-term and long-term price movement for each stock. Smart money accumulation and distribution zones aren't displayed directly on the Cluenex platform, but the AI identifies institutional fingerprints — repeated support tests, high-volume oscillation zones, and order block clusters — across the top 1,000 US-listed stocks.
 
-Institutional fingerprints identified automatically.
+When accumulation patterns form or smart money distribution is detected, those signals feed directly into the AI's prediction models. The short-term and long-term forecasts visible on Cluenex already reflect this order flow analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.
 
 ## Frequently Asked Questions
 
