@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "P/E Ratio Explained: When is a Stock Expensive and How to Use P/E for Valuation",             "item": "https://cluenex.com/learn/technical-analysis/pe-ratio-valuation/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "P/E Ratio Explained: When is a Stock Expensive and How to Use P/E for Valuation", "item": "https://cluenex.com/learn/technical-analysis/pe-ratio-valuation/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is forward P/E or trailing P/E better?","acceptedAnswer":{"@type":"Answer","text":"Trailing = actual (audited). Forward = projected (can miss). Use both. Compare stock’s forward P/E to sector forward average."}},{"@type":"Question","name":"Can I use P/E on cyclical stocks?","acceptedAnswer":{"@type":"Answer","text":"Difficult. Cyclical P/E varies wildly based on cycle position. Use for growth/stable stocks; less useful for cyclicals."}},{"@type":"Question","name":"Why do high P/E stocks outperform?","acceptedAnswer":{"@type":"Answer","text":"Market rewards growth. High P/E justifies fast growth; if growth materializes, stock continues rallying. If growth disappoints, severe crash."}},{"@type":"Question","name":"Should I buy cheap P/E value stocks?","acceptedAnswer":{"@type":"Answer","text":"Only if earnings are improving or catalysts exist. Cheap P/E alone = value trap (cheap for reason). Pair with growth + sentiment."}},{"@type":"Question","name":"How often do I check/update P/E?","acceptedAnswer":{"@type":"Answer","text":"Quarterly (after earnings). P/E calculated from EPS; updates quarterly when earnings reported."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">P/E Ratio Explained: When is a Stock Expensive and How to Use P/E for Valuation</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 P/E Ratio Explained: When is a Stock Expensive and How to Use P/E for Valuation
@@ -168,7 +174,7 @@
                 
                 <li><strong>Low P/E + positive earnings growth + sentiment rising</strong> = <data value="65">65">65</data>–<data value="75">75">75</data>% probability sustained rally. Traders use P/E expansion to catch 20%+ gains.</li>
                 
-                <li>On Cluenex, P/E displays with sector average + earnings growth + historical P/E range. When stock cheap (P/E <sector) + fundamentals improving, traders receive value alerts.</li>
+                <li>On Cluenex, P/E ratio is displayed directly alongside key financial metrics for every covered stock. Sector average P/E comparison and earnings growth context are calculated by Cluenex AI to inform the valuation signal.</li>
                 
             </ul>
         </aside>
@@ -355,15 +361,8 @@ PEG (P/E to Growth) is useful but doesn't protect against valuation crashes. Hig
 <p class="callout-text">NVDA started 2023 at $150 and reached $950 by mid-2024 — <data value=\"533\">533\">533</data>% gain. But P/E compressed from 100 → 66 (fair-value). The move wasn't P/E expansion (bubble); it was earnings explosion (<data value=\"847\">847\">847\">% EPS growth). Investors who understood this (high-growth = high P/E justified) held through volatility. Investors who thought P/E 100 was bubble sold early and missed <data value=\"600\">600</data>% rally.</p>
 </div>
 <h2 id="how-cluenex-uses-p%2Fe" tabindex="-1">How Cluenex Uses P/E</h2>
-<p>Cluenex displays P/E alongside:</p>
-<ul>
-<li>Sector average P/E (comparison)</li>
-<li>5-year historical P/E range (context)</li>
-<li>Current earnings growth rate (justification)</li>
-<li>Analyst EPS revisions (improving vs deteriorating)</li>
-<li>Insider buying/selling (smart money conviction)</li>
-</ul>
-<p>When stock at low P/E + earnings growing + sentiment positive, traders receive “Value Setup” alert.</p>
+<p>Cluenex displays P/E ratio directly on the platform for every covered stock as part of its full financial metrics suite. Alongside the displayed P/E, Cluenex AI calculates additional context — including sector average P/E comparison, 5-year historical P/E range, and current earnings growth rate — to help assess whether a stock is cheap or expensive relative to fundamentals.</p>
+<p>Insider buying and selling activity is also visible on Cluenex, providing smart money conviction signals alongside the valuation data. When a stock trades at a low P/E relative to its sector, earnings are growing, and sentiment is positive, these signals combine in the AI’s models to surface the most compelling value setups — with all financial metrics available directly on the platform.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -400,26 +399,92 @@ Quarterly (after earnings). P/E calculated from EPS; updates quarterly when earn
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#understanding-p%2Fe-levels" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>Understanding P/E Levels</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#p%2Fe-comparison-framework" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>P/E Comparison Framework</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#p%2Fe-expansion-vs-compression" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>P/E Expansion vs Compression</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-trade-p%2Fe-valuations" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>How to Trade P/E Valuations</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-p%2Fe-expansion-rally-(nvidia%2C-nvda)" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>Example: P/E Expansion Rally (Nvidia, NVDA)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-p%2Fe" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>How Cluenex Uses P/E</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">10</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -430,6 +495,387 @@ Quarterly (after earnings). P/E calculated from EPS; updates quarterly when earn
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

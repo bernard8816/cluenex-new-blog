@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "{{ breadcrumbs[0] }}", "item": "https://cluenex.com/learn/{{ breadcrumbs[1] }}" },
-        { "@type": "ListItem", "position": 4, "name": "{{ title }}",             "item": "https://cluenex.com{{ page.url }}" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "{{ category }}", "item": "https://learn.cluenex.com/learn/{{ category | slug }}/" },
+        { "@type": "ListItem", "position": 4, "name": "{{ title }}", "item": "https://cluenex.com{{ page.url }}" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    {% set faqJson = content | faqSchema %}
+    {% if faqJson %}
+    <script type="application/ld+json">{{ faqJson | safe }}</script>
+    {% endif %}
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,7 +127,7 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">{{ breadcrumbs[0] }}</span>
+            <a href="https://learn.cluenex.com/learn/{{ category | slug }}/" class="breadcrumb-category">{{ category }}</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">{{ title }}</span>
         </nav>
@@ -129,7 +135,7 @@
         <!-- ARTICLE HEADER -->
         <header class="article-header">
             <span class="cat-badge">
-                {{ breadcrumbs[0] }}
+                {{ category }}
             </span>
 
             <h1 class="article-title" itemprop="headline">
@@ -183,26 +189,29 @@
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            {% set headings = content | extractHeadings %}
             <aside class="toc-sidebar" aria-label="Table of contents">
+                {% if headings.length %}
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        {% for h in headings %}
+                        <li>
+                            <a href="#{{ h.id }}" class="toc-link">
+                                <span class="toc-num">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+                                <span>{{ h.text }}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                {% endif %}
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -213,14 +222,25 @@
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
-                {% for post in collections.posts | slice(0, 3) %}
-                {% if post.data.title != title %}
+                {% set sameCat = [] %}
+                {% for post in collections.posts %}
+                    {% if post.data.category == category and post.url != page.url %}
+                        {% set sameCat = (sameCat.push(post), sameCat) %}
+                    {% endif %}
+                {% endfor %}
+                {% set others = [] %}
+                {% for post in collections.posts %}
+                    {% if post.data.category != category and post.url != page.url %}
+                        {% set others = (others.push(post), others) %}
+                    {% endif %}
+                {% endfor %}
+                {% set related = (sameCat.concat(others)) | limit(3) %}
+                {% for post in related %}
                 <a href="{{ post.url }}" class="related-card">
                     <div class="related-tag">{{ post.data.category }}</div>
                     <div class="related-title">{{ post.data.title }}</div>
-                    <div class="related-desc">{{ post.data.description }}</div>
+                    <div class="related-desc">{{ post.data.excerpt or post.data.description }}</div>
                 </a>
-                {% endif %}
                 {% endfor %}
             </div>
         </section>

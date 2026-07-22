@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "What is Relative Strength? How to Identify Outperforming Stocks Before Price Spikes",             "item": "https://cluenex.com/learn/technical-analysis/relative-strength/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "What is Relative Strength? How to Identify Outperforming Stocks Before Price Spikes", "item": "https://cluenex.com/learn/technical-analysis/relative-strength/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is relative strength the same as RSI?","acceptedAnswer":{"@type":"Answer","text":"No. RSI = Relative Strength Index (overbought/oversold momentum). RS = Relative Strength (comparison to S&P 500). Different indicators, different purposes. Don’t confuse them."}},{"@type":"Question","name":"How do I calculate RS myself?","acceptedAnswer":{"@type":"Answer","text":"Stock price ÷ (S&P 500 price / 100). Example: $800 stock ÷ (5,000 / 100) = 16.0 RS. Most charting platforms calculate this automatically."}},{"@type":"Question","name":"Does RS work in downtrends?","acceptedAnswer":{"@type":"Answer","text":"Yes. In bear markets, find RS leaders among the losers (least bad performers). Stocks with least declining RS often bounce first in bear market recoveries."}},{"@type":"Question","name":"Can I use RS on individual sectors?","acceptedAnswer":{"@type":"Answer","text":"Yes. RS of Tech sector vs S&P 500 shows if Tech is outperforming market. Same logic applies to any sector comparison."}},{"@type":"Question","name":"How long should RS be rising before I buy?","acceptedAnswer":{"@type":"Answer","text":"3+ weeks minimum (short-term RS rises and falls with noise). Best setups: RS rising for 2+ months at all-time peaks = highest conviction."}},{"@type":"Question","name":"RS breakout without price breakout = trade?","acceptedAnswer":{"@type":"Answer","text":"Possible but lower probability. Best setup: RS breakout + price breakout together = dual confirmation = 70%+ win rate."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">What is Relative Strength? How to Identify Outperforming Stocks Before Price Spikes</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 What is Relative Strength? How to Identify Outperforming Stocks Before Price Spikes
@@ -168,7 +174,7 @@
                 
                 <li><strong>Top RS performers in bull markets</strong> lead rallies: Tech in 2023, AI in 2024, Semis in late 2024. Buying top RS stocks during corrections = <data value="70">70">70</data>%+ win rate.</li>
                 
-                <li>On Cluenex, RS lines auto-calculate. When stock breaks above prior high AND RS at all-time high = <data value="72">72">72</data>%+ probability of sustained leadership.</li>
+                <li>Cluenex AI ingests Relative Strength (RS) lines to calculate predicted short-term and long-term price movement. RS vs. the S&P 500 isn't displayed on the platform but is a core input in the AI's leadership and momentum models.</li>
                 
             </ul>
         </aside>
@@ -362,15 +368,8 @@ Stocks with falling RS are falling FOR REASON. Earnings miss, competitive loss, 
 <p class="callout-text">The May 15 entry at $1,015 combined two signals: (1) price breakout above $1,000 resistance, (2) RS simultaneously at all-time peak. This dual confirmation captured a <data value=\"160\">$160</data> move ($1,015 → $1,175) in 1 month. The RS signal identified NVDA as the market's strongest stock; the price breakout timed entry. This is how institutional investors find leaders: RS lines show who's winning, then they buy the breakout.</p>
 </div>
 <h2 id="how-cluenex-uses-relative-strength" tabindex="-1">How Cluenex Uses Relative Strength</h2>
-<p>Cluenex displays RS lines for the top 1,000 US-listed stocks vs S&amp;P 500. When stock breaks above prior high AND RS is at or near all-time high, traders receive alerts showing:</p>
-<ul>
-<li>Current RS level vs all-time high</li>
-<li>RS trend (uptrend = outperforming; downtrend = underperforming)</li>
-<li>RS divergence warnings (price new high but RS lower = hidden weakness)</li>
-<li>Historical accuracy: RS leader breakouts = 70%+ sustained outperformance</li>
-<li>Sector RS trends (which sectors leading market overall)</li>
-</ul>
-<p>Real-time updates as RS lines evolve daily.</p>
+<p>Cluenex AI ingests Relative Strength (RS) lines — each stock’s performance vs. the S&amp;P 500 — as inputs when calculating predicted short-term and long-term price movement. RS lines aren’t displayed directly on the Cluenex platform, but the AI tracks RS trends, RS divergences, and sector leadership patterns across the top 1,000 US-listed stocks continuously.</p>
+<p>When a stock breaks to new highs while RS is also at all-time highs, or when RS divergence signals hidden weakness, those signals feed into the AI’s prediction models. The short-term and long-term forecasts visible on Cluenex already incorporate relative strength analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -411,26 +410,85 @@ Possible but lower probability. Best setup: RS breakout + price breakout togethe
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#understanding-relative-strength" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>Understanding Relative Strength</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#rs-signals-and-interpretations" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>RS Signals and Interpretations</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-use-relative-strength-in-trading" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>How to Use Relative Strength in Trading</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-rs-leader-breakout-(nvidia%2C-nvda)" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: RS Leader Breakout (Nvidia, NVDA)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-relative-strength" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses Relative Strength</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -441,6 +499,387 @@ Possible but lower probability. Best setup: RS breakout + price breakout togethe
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

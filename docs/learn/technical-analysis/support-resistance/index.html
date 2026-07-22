@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "Support and Resistance Levels: How to Identify and Trade Price Rejection Points",             "item": "https://cluenex.com/learn/technical-analysis/support-resistance/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "Support and Resistance Levels: How to Identify and Trade Price Rejection Points", "item": "https://cluenex.com/learn/technical-analysis/support-resistance/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which is more important — support or resistance?","acceptedAnswer":{"@type":"Answer","text":"Both equally important. Support protects downside; resistance limits upside. Master both."}},{"@type":"Question","name":"Should I use round numbers ($100, $50) as support/resistance?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only as secondary levels. Prioritize prior swing highs/lows first. Round numbers are weak alone but strong when they coincide with swing levels."}},{"@type":"Question","name":"How many times can support hold before it breaks?","acceptedAnswer":{"@type":"Answer","text":"Median: 2–3 bounces. By 3rd test, support typically weakens. On 4th+ test, break imminent unless support is extremely strong (major trendline, long-term MA)."}},{"@type":"Question","name":"Does support/resistance work on crypto?","acceptedAnswer":{"@type":"Answer","text":"Yes, identical logic. Crypto supports/resistances less stable (more breakfakes due to volatility) but same probability (<data value=\"65\">65 –<data value=\"70\">70 %) on daily+ timeframes."}},{"@type":"Question","name":"If price breaks support, does it become resistance?","acceptedAnswer":{"@type":"Answer","text":"Yes, always. Prior support becomes resistance after break. Price often tests the broken support once (resistance test) before falling further. This gives traders a second entry opportunity short."}},{"@type":"Question","name":"How wide should my support/resistance band be?","acceptedAnswer":{"@type":"Answer","text":"1–2% range. If wider, you’re not pinpointing levels; if tighter, normal volatility causes false breaks. Use 1–2% bands for entries/stops."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">Support and Resistance Levels: How to Identify and Trade Price Rejection Points</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 Support and Resistance Levels: How to Identify and Trade Price Rejection Points
@@ -168,7 +174,7 @@
                 
                 <li>Support/resistance test probability: First test = <data value="65">65</data>–<data value="70">70</data>% bounce. Break on high volume = <data value="60">60</data>–<data value="70">70</data>% probability move to next level. Second test = <data value="50">50</data>% bounce.</li>
                 
-                <li>On Cluenex, support/resistance auto-calculate from price history. When price approaches level + sentiment confirms, probability of bounce/break increases to <data value="72">72</data>%+.</li>
+                <li>Cluenex AI ingests support and resistance levels to calculate predicted short-term and long-term price movement. S/R zones aren't displayed on the platform but are a core input in every Cluenex bounce and breakout probability model.</li>
                 
             </ul>
         </aside>
@@ -409,15 +415,8 @@ Low volume breakouts often reverse within <data value=\"1\">1</data>–<data val
 <p class="callout-text">Support at $420 bounced 7 consecutive times before breaking 8 months later. First bounce (Apr 23) at exactly support level captured <data value=\"35\">$35</data> move ($420 → $455). The key: recognizing support strength, waiting for bounce confirmation (hammer + volume), and then following price to next resistance. Support/resistance becomes a roadmap for the entire move.</p>
 </div>
 <h2 id="how-cluenex-uses-support-and-resistance" tabindex="-1">How Cluenex Uses Support and Resistance</h2>
-<p>Cluenex automatically identifies all support and resistance levels for the top 1,000 US-listed stocks by analyzing price history (swing highs/lows, moving averages, round numbers). When price approaches within <data value="3">3</data>% of any level, traders receive alerts showing:</p>
-<ul>
-<li>Level type (swing high/low, moving average, round)</li>
-<li>Number of prior tests (1st test vs 3rd test = different probability)</li>
-<li>Volume requirement for breakout</li>
-<li>Projected target if break occurs</li>
-<li>Real-time sentiment confirming bounce or break</li>
-</ul>
-<p>Dynamic support/resistance updates daily as price evolves.</p>
+<p>Cluenex AI ingests support and resistance levels — derived from swing highs/lows, moving averages, and round numbers — as core inputs when calculating predicted short-term and long-term price movement for each stock. Support and resistance zones aren’t displayed directly on the Cluenex platform, but the AI maps them across the top 1,000 US-listed stocks and tracks when price approaches key levels.</p>
+<p>When price nears a support or resistance zone, the number of prior tests and the volume profile at that level feed into the AI’s bounce and breakout probability models. The sentiment scores and price forecasts visible on Cluenex already reflect this analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term price movement forecasts.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -458,26 +457,85 @@ Yes, always. Prior support becomes resistance after break. Price often tests the
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#types-of-support-and-resistance" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>Types of Support and Resistance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-support-and-resistance-work" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>How Support and Resistance Work</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-trade-support-and-resistance" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>How to Trade Support and Resistance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-support-bounce-on-microsoft-(msft)" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: Support Bounce on Microsoft (MSFT)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-support-and-resistance" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses Support and Resistance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -488,6 +546,387 @@ Yes, always. Prior support becomes resistance after break. Price often tests the
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

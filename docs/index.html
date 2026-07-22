@@ -15,13 +15,13 @@
         .hero h1 {
             font-family: var(--ff-display);
             font-size: clamp(2em, 5vw, 3.5em);
-            color: #f0ece3;
+            color: var(--ink);
             margin-bottom: 20px;
             line-height: 1.1;
         }
         .hero p {
             font-size: 1.15em;
-            color: #b5afa3;
+            color: var(--text-2);
             margin-bottom: 35px;
             max-width: 600px;
             margin-left: auto;
@@ -51,18 +51,18 @@
             transform: translateY(-2px);
         }
         .btn-secondary-lg {
-            background: var(--bg-card);
+            background: #fff;
             border: 1px solid var(--border-l);
             color: var(--text-1);
         }
         .btn-secondary-lg:hover {
             border-color: var(--gold);
-            color: var(--gold-l);
+            color: var(--gold-ink);
         }
         .section-title {
             font-family: var(--ff-display);
             font-size: 2em;
-            color: #f0ece3;
+            color: var(--ink);
             margin-bottom: 40px;
             text-align: center;
         }
@@ -134,8 +134,9 @@
             align-items: center;
             gap: 6px;
             padding: 6px 10px;
-            background: var(--gold);
-            color: var(--text-inv);
+            background: var(--gold-dim);
+            border: 1px solid var(--gold-border);
+            color: var(--gold-ink);
             border-radius: 6px;
             font-size: 12px;
             font-weight: 600;
@@ -183,12 +184,12 @@
         .cta-section h3 {
             font-family: var(--ff-display);
             font-size: 1.8em;
-            color: #f0ece3;
+            color: var(--ink);
             margin-bottom: 15px;
         }
         .cta-section p {
             font-size: 1em;
-            color: #b5afa3;
+            color: var(--text-2);
             margin-bottom: 24px;
             max-width: 500px;
             margin-left: auto;
@@ -217,14 +218,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="/learn/technical-analysis/">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="/learn/fundamental-analysis/">Fundamental Analysis</a></li>
+                        <li><a href="/learn/portfolio-management/">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="/learn/markets/">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -261,40 +262,40 @@
         <section id="featured">
             <h2 class="section-title">Latest Learning</h2>
             <div class="articles-grid">
-                    <a href="/learn/technical-analysis/yield-curve-inversion/" class="article-card">
+                    <a href="/learn/markets/yield-curve-inversion/" class="article-card">
                         <div class="card-category">
-                            <span class="category-pill">Technical Analysis</span>
+                            <span class="category-pill">Markets</span>
                         </div>
                         <h3 class="card-title">What is the Yield Curve and What Does an Inversion Mean for Stocks</h3>
-                        <p class="card-excerpt">Yield curve inversion is the most reliable recession predictor. When 2-year Treasury yield &gt; 10-year yield, bear market follows 80% of time within 6-12 months. Learn to monitor the curve for macro signals.</p>
+                        <p class="card-excerpt">Yield curve inversion = 2-year Treasury yield exceeds 10-year Treasury yield. Signal: recession within 12-24 months (preceded every US recession since 1955). Not an immediate sell signal -- S&amp;P 500 averages +13% in the 12 months after inversion before the eventual decline.</p>
                         <div class="card-meta">
                             <span class="read-time">10 min read</span>
                             <span class="separator">·</span>
-                            <time datetime="2026-05-20">May 20</time>
+                            <time datetime="2026-05-25">May 25</time>
                         </div>
                     </a>
-                    <a href="/learn/technical-analysis/volume-analysis/" class="article-card">
+                    <a href="/learn/markets/us-dollar-strength-multinational-earnings/" class="article-card">
                         <div class="card-category">
-                            <span class="category-pill">Technical Analysis</span>
+                            <span class="category-pill">Markets</span>
                         </div>
-                        <h3 class="card-title">Volume Analysis Explained: Why Volume Confirms Price Moves and Invalidates False Breakouts</h3>
-                        <p class="card-excerpt">Price without volume is noise. High volume + breakout = real move. Low volume + breakout = fakeout. Master volume confirmation to eliminate 60% of false signals.</p>
+                        <h3 class="card-title">US Dollar Strength and Its Effect on Multinational Stock Earnings</h3>
+                        <p class="card-excerpt">Dollar strengthens → foreign earnings worth less in USD. Rule of thumb: every 1% rise in the DXY reduces S&amp;P 500 aggregate EPS by 0.3–0.5% from translation effects alone. Companies with 50%+ international revenue hit hardest. Strong dollar benefits domestic US businesses and importers; hurts exporters.</p>
                         <div class="card-meta">
-                            <span class="read-time">10 min read</span>
+                            <span class="read-time">9 min read</span>
                             <span class="separator">·</span>
-                            <time datetime="2026-05-20">May 20</time>
+                            <time datetime="2026-05-25">May 25</time>
                         </div>
                     </a>
-                    <a href="/learn/technical-analysis/vix-explained/" class="article-card">
+                    <a href="/learn/markets/trading-fomc-meetings/" class="article-card">
                         <div class="card-category">
-                            <span class="category-pill">Technical Analysis</span>
+                            <span class="category-pill">Markets</span>
                         </div>
-                        <h3 class="card-title">What is the VIX? The Stock Market&#39;s Fear Index Explained for Traders</h3>
-                        <p class="card-excerpt">VIX (Volatility Index) measures implied volatility of S&amp;P 500 options. VIX spikes above 30 = crash or correction (bottom often near). VIX below 15 = low volatility (top forming). Traders use VIX to time bottoms and predict reversals.</p>
+                        <h3 class="card-title">How to Trade Around FOMC Meetings: Historical Patterns and Volatility</h3>
+                        <p class="card-excerpt">FOMC meetings are 8 times per year. Markets drift up 0.5–1% in the 5 days before each meeting (pre-FOMC drift documented in academic literature). At 2 PM ET on decision day, a 30-second volatility spike occurs. The direction holds for 2–5 days after if the decision surprises. Don&#39;t fight the drift; size down into announcements.</p>
                         <div class="card-meta">
-                            <span class="read-time">11 min read</span>
+                            <span class="read-time">9 min read</span>
                             <span class="separator">·</span>
-                            <time datetime="2026-05-20">May 20</time>
+                            <time datetime="2026-05-25">May 25</time>
                         </div>
                     </a>
             </div>

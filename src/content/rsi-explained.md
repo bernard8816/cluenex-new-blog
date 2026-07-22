@@ -197,14 +197,14 @@ Bearish divergence signal on **NVDA** daily chart, November 2024:
 <tr>
 <td><time datetime="2024-11-08">Nov 8</time></td>
 <td data-price="143.50">$143.50</td>
-<td><span class="rsi-val" style="color:#f97316">65</span></td>
+<td><span class="rsi-val" style="color:#c2410c">65</span></td>
 <td>Approaching overbought. Sentiment bullish (72).</td>
 <td>—</td>
 </tr>
 <tr class="signal-row">
 <td><time datetime="2024-11-12">Nov 12</time></td>
 <td data-price="148.20"><strong>$148.20 ↑ new high</strong></td>
-<td><span class="rsi-val" style="color:#f97316">76 ↓ lower</span></td>
+<td><span class="rsi-val" style="color:#c2410c">76 ↓ lower</span></td>
 <td>🔴 <strong>Bearish Divergence</strong> — price new high, RSI lower high. Signal confirmed.</td>
 <td>—</td>
 </tr>
@@ -225,7 +225,7 @@ Bearish divergence signal on **NVDA** daily chart, November 2024:
 <tr>
 <td><time datetime="2024-11-15">Nov 15</time></td>
 <td data-price="142.10">$142.10</td>
-<td><span class="rsi-val" style="color:#34d399">38</span></td>
+<td><span class="rsi-val" style="color:#059669">38</span></td>
 <td>Exit remaining position at $142.50.</td>
 <td><span class="pos">+4.0% total</span></td>
 </tr>

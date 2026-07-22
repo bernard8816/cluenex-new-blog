@@ -18,13 +18,13 @@ permalink: /index.html
         .hero h1 {
             font-family: var(--ff-display);
             font-size: clamp(2em, 5vw, 3.5em);
-            color: #f0ece3;
+            color: var(--ink);
             margin-bottom: 20px;
             line-height: 1.1;
         }
         .hero p {
             font-size: 1.15em;
-            color: #b5afa3;
+            color: var(--text-2);
             margin-bottom: 35px;
             max-width: 600px;
             margin-left: auto;
@@ -54,18 +54,18 @@ permalink: /index.html
             transform: translateY(-2px);
         }
         .btn-secondary-lg {
-            background: var(--bg-card);
+            background: #fff;
             border: 1px solid var(--border-l);
             color: var(--text-1);
         }
         .btn-secondary-lg:hover {
             border-color: var(--gold);
-            color: var(--gold-l);
+            color: var(--gold-ink);
         }
         .section-title {
             font-family: var(--ff-display);
             font-size: 2em;
-            color: #f0ece3;
+            color: var(--ink);
             margin-bottom: 40px;
             text-align: center;
         }
@@ -137,8 +137,9 @@ permalink: /index.html
             align-items: center;
             gap: 6px;
             padding: 6px 10px;
-            background: var(--gold);
-            color: var(--text-inv);
+            background: var(--gold-dim);
+            border: 1px solid var(--gold-border);
+            color: var(--gold-ink);
             border-radius: 6px;
             font-size: 12px;
             font-weight: 600;
@@ -186,12 +187,12 @@ permalink: /index.html
         .cta-section h3 {
             font-family: var(--ff-display);
             font-size: 1.8em;
-            color: #f0ece3;
+            color: var(--ink);
             margin-bottom: 15px;
         }
         .cta-section p {
             font-size: 1em;
-            color: #b5afa3;
+            color: var(--text-2);
             margin-bottom: 24px;
             max-width: 500px;
             margin-left: auto;
@@ -220,14 +221,14 @@ permalink: /index.html
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="/learn/technical-analysis/">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="/learn/fundamental-analysis/">Fundamental Analysis</a></li>
+                        <li><a href="/learn/portfolio-management/">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="/learn/markets/">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>

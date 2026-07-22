@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "The 12 Most Reliable Candlestick Patterns: How to Identify Reversals Before They Happen",             "item": "https://cluenex.com/learn/technical-analysis/candlestick-patterns/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "The 12 Most Reliable Candlestick Patterns: How to Identify Reversals Before They Happen", "item": "https://cluenex.com/learn/technical-analysis/candlestick-patterns/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which candlestick pattern is most reliable?","acceptedAnswer":{"@type":"Answer","text":"Bullish engulfing and bearish engulfing have highest single-pattern reliability at 72 – 75 % win rate. Morning star and evening star close behind at 68 – 72 %. Hammer/inverted hammer reliable only at support/resistance."}},{"@type":"Question","name":"Can I use candlestick patterns on intraday charts?","acceptedAnswer":{"@type":"Answer","text":"Yes, but quality decreases on 1-minute (noise). Use 5-minute or longer for day trading. Daily and weekly patterns most reliable."}},{"@type":"Question","name":"Do candlestick patterns work on crypto?","acceptedAnswer":{"@type":"Answer","text":"Yes, crypto patterns follow same logic. Crypto more volatile, so patterns more explosive. Use daily/4-hour timeframes; avoid 1-minute."}},{"@type":"Question","name":"Morning star vs. hammer — which is more reliable?","acceptedAnswer":{"@type":"Answer","text":"Morning star is a 3-candle pattern (higher bar to clear) but more reliable when it forms ( 68 %+). Hammer is 1 candle but needs context (support/resistance). Use both; don’t choose one."}},{"@type":"Question","name":"What if a candle looks like a pattern but volume is low?","acceptedAnswer":{"@type":"Answer","text":"Skip it. Low volume = weak conviction. Pattern without volume = false signal. Wait for volume confirmation."}},{"@type":"Question","name":"Can I combine candlestick patterns with MACD/RSI?","acceptedAnswer":{"@type":"Answer","text":"Yes, and highly recommended. Candlestick pattern + MACD crossover + RSI confirmation = 70 – 75 % win rate. One indicator is luck; three together is edge."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">The 12 Most Reliable Candlestick Patterns: How to Identify Reversals Before They Happen</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 The 12 Most Reliable Candlestick Patterns: How to Identify Reversals Before They Happen
@@ -168,7 +174,7 @@
                 
                 <li><strong>Morning Star</strong> (3-candle reversal: down, gap down doji, up) = bullish reversal signal. Evening Star inverse = bearish reversal. Probability: <data value="68">68</data>%+.</li>
                 
-                <li>On Cluenex, candlestick patterns auto-detect with sentiment confirmation. When pattern + bullish sentiment spike = <data value="75">75</data>%+ probability sustained breakout.</li>
+                <li>Cluenex AI ingests candlestick patterns to calculate predicted short-term and long-term price movement. All 12 major patterns are processed by the AI even though they aren't displayed directly on the platform.</li>
                 
             </ul>
         </aside>
@@ -411,7 +417,8 @@ Doji = indecision, not direction. Many doji form in middle of trends, generating
 <p class="callout-text">Bullish engulfing on May 17 with 2.8x volume captured a <data value="20\">$20</data>+ move ($411 → $432+) over 6 days. The pattern alone showed reversal; volume and uptrend follow-through confirmed it. Traders identifying the engulfing before the move captured early upside. This is why candlestick patterns lead price: they show control shift before price confirms it.</p>
 </div>
 <h2 id="how-cluenex-uses-candlestick-patterns" tabindex="-1">How Cluenex Uses Candlestick Patterns</h2>
-<p>Cluenex automatically detects all <data value="12">12</data> candlestick patterns across the top 1,000 US-listed stocks in real time. When a pattern forms and sentiment scores spike (bullish or bearish), traders receive alerts showing the pattern name, confidence level, and next resistance/support level to watch. Real-time alerts notify traders seconds after patterns complete, giving time to analyze context before market reacts.</p>
+<p>Cluenex AI ingests all <data value="12">12</data> major candlestick patterns across the top 1,000 US-listed stocks as inputs when calculating predicted short-term and long-term price movement. Candlestick patterns aren’t displayed as overlays on the Cluenex platform, but the AI detects and processes them continuously — engulfing candles, doji formations, morning/evening stars, hammers, and more all feed into the prediction models.</p>
+<p>When a high-probability pattern forms and aligns with other signals, the AI’s confidence in its short-term price movement prediction increases. The sentiment scores you see on Cluenex already incorporate this pattern analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -452,26 +459,78 @@ Yes, and highly recommended. Candlestick pattern + MACD crossover + RSI confirma
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#the-12-most-reliable-candlestick-patterns" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>The 12 Most Reliable Candlestick Patterns</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-use-candlestick-patterns-in-practice" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>How to Use Candlestick Patterns in Practice</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-bullish-engulfing-%2B-volume-on-spy" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Example: Bullish Engulfing + Volume on SPY</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-candlestick-patterns" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>How Cluenex Uses Candlestick Patterns</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -482,6 +541,387 @@ Yes, and highly recommended. Candlestick pattern + MACD crossover + RSI confirma
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

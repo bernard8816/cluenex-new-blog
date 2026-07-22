@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "Volume Analysis Explained: Why Volume Confirms Price Moves and Invalidates False Breakouts",             "item": "https://cluenex.com/learn/technical-analysis/volume-analysis/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "Volume Analysis Explained: Why Volume Confirms Price Moves and Invalidates False Breakouts", "item": "https://cluenex.com/learn/technical-analysis/volume-analysis/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is “normal” volume for a stock?","acceptedAnswer":{"@type":"Answer","text":"Use 20-bar average or 20-day average. Normal = within 0.5–1.5x of moving average. Below 0.5x = low. Above 2x = spike."}},{"@type":"Question","name":"Does volume matter on intraday (5-minute) charts?","acceptedAnswer":{"@type":"Answer","text":"Yes, but interpret differently. Intraday volume spikes show 1–2 hour bursts, not conviction. Use daily volume for real trend confirmation."}},{"@type":"Question","name":"High volume on down day = bearish?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. High volume on reversal day (down close but reversal pattern) = capitulation/bounce setup. Context matters."}},{"@type":"Question","name":"Can volume be manipulated?","acceptedAnswer":{"@type":"Answer","text":"No, exchange reports are live and audited. Volume is one of the least-manipulated data points (price/bids more prone to tricks)."}},{"@type":"Question","name":"Should I avoid low-volume stocks?","acceptedAnswer":{"@type":"Answer","text":"Yes, avoid stocks with average volume under 1M shares. They have wide spreads, stop hunts, and whipsaws. Stick to 10M+ average volume."}},{"@type":"Question","name":"Volume divergence = guaranteed reversal?","acceptedAnswer":{"@type":"Answer","text":"No, probability 65 – 70 %. Price can stay elevated 3–5+ bars before reversing. Use divergence to tighten stops and reduce size, not as exit trigger."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">Volume Analysis Explained: Why Volume Confirms Price Moves and Invalidates False Breakouts</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 Volume Analysis Explained: Why Volume Confirms Price Moves and Invalidates False Breakouts
@@ -168,7 +174,7 @@
                 
                 <li><strong>Accumulation</strong> (high volume at support) = institutions buying. <strong>Distribution</strong> (high volume at resistance) = institutions selling. Watch for these patterns to predict next major move.</li>
                 
-                <li>On Cluenex, volume bars display with moving average (20-bar). When price action + volume divergence align, traders receive high-probability reversal alerts.</li>
+                <li>Cluenex AI ingests volume data — including volume spikes, divergences, and accumulation/distribution patterns — to calculate predicted short-term and long-term price movement. Volume analysis is a core AI input even though volume bars aren't displayed on the frontend.</li>
                 
             </ul>
         </aside>
@@ -360,15 +366,8 @@ Divergence = warning, not confirmation. Price can stay elevated 3–5+ bars befo
 <p class="callout-text">The breakout on Apr 26 (78M shares, 2.2x average) was the critical confirmation. Without that volume spike, the $172 close would have been questionable. But the 2.2x volume proved institutional buyers were stepping in. Price rallied <data value=\"23\">$23</data> from entry ($172 → $195) over 2.5 weeks. Early exit on May 12 divergence (price new high, volume falling) locked in <data value=\"13.4\">13.4</data>% gain — a textbook volume-confirmed trade.</p>
 </div>
 <h2 id="how-cluenex-uses-volume" tabindex="-1">How Cluenex Uses Volume</h2>
-<p>Cluenex displays volume bars with a <data value="20">20</data>-bar moving average for the top 1,000 US-listed stocks. When price approaches resistance/support, the system flags:</p>
-<ul>
-<li>Current volume vs. 20-bar average</li>
-<li>Breakout probability based on volume levels</li>
-<li>Volume divergence warnings (new price high on lower volume = reversal risk)</li>
-<li>Accumulation/distribution patterns at support/resistance</li>
-<li>Real-time alerts when breakout occurs on 2x+ volume confirmation</li>
-</ul>
-<p>Volume bars color-coded: green (volume spike up) and red (volume declining).</p>
+<p>Cluenex AI ingests volume data — including volume vs. 20-bar average, breakout volume confirmation, and accumulation/distribution patterns — as core inputs when calculating predicted short-term and long-term price movement for each stock. Volume bars aren’t displayed directly on the Cluenex platform, but volume analysis is one of the most heavily weighted signals in the AI’s prediction engine.</p>
+<p>When price makes new highs on declining volume (divergence warning) or breaks out on 2x+ average volume (confirmation), those signals feed directly into the AI’s models. The sentiment scores and price forecasts visible on Cluenex already reflect volume analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate short-term and long-term forecasts.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -409,26 +408,85 @@ No, probability <data value="65">65</data>–<data value="70">70</data>%. Price 
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#understanding-volume-bars" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>Understanding Volume Bars</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#volume-signals-and-interpretations" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>Volume Signals and Interpretations</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-read-and-trade-volume" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>How to Read and Trade Volume</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-volume-breakout-on-google-(googl)" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: Volume Breakout on Google (GOOGL)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-volume" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses Volume</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -439,6 +497,387 @@ No, probability <data value="65">65</data>–<data value="70">70</data>%. Price 
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

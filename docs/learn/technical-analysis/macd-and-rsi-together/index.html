@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "How to Use MACD and RSI Together: Confirming Momentum for Higher-Probability Trades",             "item": "https://cluenex.com/learn/technical-analysis/macd-and-rsi-together/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "How to Use MACD and RSI Together: Confirming Momentum for Higher-Probability Trades", "item": "https://cluenex.com/learn/technical-analysis/macd-and-rsi-together/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I use the same MACD and RSI settings on all timeframes?","acceptedAnswer":{"@type":"Answer","text":"No. Use standard settings (MACD 12/26/9, RSI 14) for daily charts and above. For intraday trading (1-hour and below), shorten RSI period to 7 or 9 to make it more responsive to shorter-term overbought/oversold extremes. MACD stays at 12/26/9. Shorter timeframes generate more noise; tighter RSI periods filter that noise."}},{"@type":"Question","name":"Can I use MACD + RSI on crypto?","acceptedAnswer":{"@type":"Answer","text":"Yes, but crypto is more volatile. Use longer timeframes (4-hour minimum for day trading; daily for swing trading). Adjust RSI to 7 or 9 period to reduce overbought/oversold whipsaws. MACD settings remain standard. The logic (momentum shift + extreme confirmation) transfers directly to crypto."}},{"@type":"Question","name":"What if MACD crosses but RSI doesn’t move into the expected zone?","acceptedAnswer":{"@type":"Answer","text":"Skip the trade. RSI staying high on a bearish MACD cross (or staying low on a bullish cross) signals weakening momentum. The move likely reverses within 1–3 bars. Wait for a clearer setup where both indicators align."}},{"@type":"Question","name":"Is MACD + RSI better than MACD + moving averages?","acceptedAnswer":{"@type":"Answer","text":"Different purposes. MACD + RSI catches overbought/oversold bounces and reversals (mean-reversion trades). MACD + moving averages confirms trend continuation (trend-following trades). Use both approaches: MACD + RSI for reversal setups in extremes, MACD + MA for trend continuation trades in trending markets."}},{"@type":"Question","name":"How long do I hold a position after MACD + RSI entry?","acceptedAnswer":{"@type":"Answer","text":"Hold until MACD crosses back through the signal line (momentum reversing). Exit partial profit (50% position) when RSI hits 70 (bullish) or 30 (bearish). Trail stop on the remainder. Average holding time: 3–7 days on daily charts, 2–4 hours on intraday."}},{"@type":"Question","name":"Do I need to watch MACD + RSI in real time, or is end-of-day scanning enough?","acceptedAnswer":{"@type":"Answer","text":"End-of-day works fine for swing trading (1–5 day holds). For day trading, real-time monitoring is better. On Cluenex, the AI continuously monitors MACD + RSI alignment under the hood — when both signals align, the AI’s short-term and long-term price movement predictions update accordingly."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">How to Use MACD and RSI Together: Confirming Momentum for Higher-Probability Trades</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 How to Use MACD and RSI Together: Confirming Momentum for Higher-Probability Trades
@@ -168,7 +174,7 @@
                 
                 <li><strong>Bearish setup</strong>: MACD crosses below signal line AND RSI above <data value="30">30</data> (room to fall). Avoid when RSI already below 30.</li>
                 
-                <li>On Cluenex, MACD and RSI display side-by-side with real-time sentiment scores across the top 1,000 US-listed stocks.</li>
+                <li>Cluenex AI ingests both MACD and RSI together to calculate predicted short-term and long-term price movement. Neither is displayed on the platform, but their combined signal is a primary input in every Cluenex forecast.</li>
                 
             </ul>
         </aside>
@@ -245,7 +251,7 @@
 </tbody>
 </table>
 <p>The key insight: A MACD crossover alone has 40–50% win rate. With RSI confirmation, accuracy jumps to 70%+ because you’re trading only when the move has room to develop.</p>
-<p>On Cluenex, MACD (with histogram color coding) and RSI display side-by-side, eliminating the need to switch between windows and showing traders immediately when both conditions align.</p>
+<p>Cluenex AI ingests both MACD and RSI together as combined inputs when calculating predicted short-term and long-term price movement — eliminating the need to manually check alignment, since the AI processes both signals and surfaces the result as sentiment scores and price forecasts directly on the platform.</p>
 <h2 id="how-to-use-macd-%2B-rsi-in-practice" tabindex="-1">How to Use MACD + RSI in Practice</h2>
 <h3 id="bullish-entry-setup" tabindex="-1">Bullish Entry Setup</h3>
 <ol>
@@ -381,8 +387,8 @@ Even with both indicators aligned, 25–30% of trades fail due to surprise news,
 <p class="callout-text">Entry at $120.80 with both MACD crossover and RSI at 52 (neutral) captured a <data value="9.30">$9.30</data> move ($120.80 → $130.10). A trader using MACD alone might have entered the same bar but would have exited on the RSI>70 warning — missing profit potential. A trader using RSI alone might have entered at RSI 32 on May 10 and been stopped out on the bounce before MACD confirmed uptrend. Combined, both signals aligned: MACD showed uptrend beginning, RSI showed room to run without overextension.</p>
 </div>
 <h2 id="how-cluenex-uses-macd-%2B-rsi" tabindex="-1">How Cluenex Uses MACD + RSI</h2>
-<p>Cluenex displays MACD (with automatic histogram color coding: green for bullish, red for bearish) and RSI side-by-side on the same chart across the top 1,000 US-listed stocks. When a MACD crossover aligns with RSI in the neutral zone (30–70) and real-time sentiment scores turn bullish, traders see the setup confirmed three ways before committing capital.</p>
-<p>Cluenex’s AI snapshot generator also flags “MACD + RSI alignment moments” — when both indicators confirm simultaneously — reducing the manual work of scanning charts and increasing precision in entry selection.</p>
+<p>Cluenex AI ingests MACD and RSI together as combined inputs when calculating predicted short-term and long-term price movement for each stock. Neither indicator is displayed directly on the Cluenex platform, but the AI monitors their alignment across the top 1,000 US-listed stocks continuously — detecting when MACD crossover aligns with RSI in neutral territory, and when divergences form on either indicator.</p>
+<p>When both signals confirm simultaneously, that combined reading feeds directly into the AI’s prediction models, increasing confidence in the directional forecast. The sentiment scores and price movement predictions visible on Cluenex already reflect this multi-indicator analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -407,7 +413,7 @@ Hold until MACD crosses back through the signal line (momentum reversing). Exit 
 </li>
 <li>
 <p><strong>Do I need to watch MACD + RSI in real time, or is end-of-day scanning enough?</strong>
-End-of-day works fine for swing trading (1–5 day holds). For day trading, real-time monitoring is better. Cluenex alerts notify traders when MACD + RSI alignment occurs, eliminating the need to watch charts constantly.</p>
+End-of-day works fine for swing trading (1–5 day holds). For day trading, real-time monitoring is better. On Cluenex, the AI continuously monitors MACD + RSI alignment under the hood — when both signals align, the AI’s short-term and long-term price movement predictions update accordingly.</p>
 </li>
 </ul>
 <h2 id="related-concepts" tabindex="-1">Related Concepts</h2>
@@ -423,26 +429,78 @@ End-of-day works fine for swing trading (1–5 day holds). For day trading, real
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-macd-and-rsi-work-together" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>How MACD and RSI Work Together</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-use-macd-%2B-rsi-in-practice" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>How to Use MACD + RSI in Practice</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-bullish-macd-%2B-rsi-setup-on-nvda" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Example: Bullish MACD + RSI Setup on NVDA</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-macd-%2B-rsi" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>How Cluenex Uses MACD + RSI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -453,6 +511,387 @@ End-of-day works fine for swing trading (1–5 day holds). For day trading, real
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

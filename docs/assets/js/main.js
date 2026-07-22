@@ -10,18 +10,22 @@ window.addEventListener('scroll', () => {
     document.getElementById('progress').style.width = Math.min(100, pct) + '%';
 });
 
-// TOC Active Highlighting
+// TOC Active Highlighting — track article H2 sections
 const tocLinks = document.querySelectorAll('.toc-link');
-const sections = document.querySelectorAll('.article-body section[id]');
+const headings = document.querySelectorAll('.article-body h2[id]');
 
-const tocObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            tocLinks.forEach(l => l.classList.remove('active'));
-            const a = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
-            if (a) a.classList.add('active');
-        }
-    });
-}, { rootMargin: '-15% 0px -75% 0px' });
+if (tocLinks.length && headings.length) {
+    const tocObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('active'));
+                const a = document.querySelector(
+                    `.toc-link[href="#${CSS.escape(entry.target.id)}"]`
+                );
+                if (a) a.classList.add('active');
+            }
+        });
+    }, { rootMargin: '-10% 0px -80% 0px' });
 
-sections.forEach(s => tocObserver.observe(s));
+    headings.forEach(h => tocObserver.observe(h));
+}

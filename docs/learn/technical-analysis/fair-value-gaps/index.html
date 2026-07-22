@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "Fair Value Gaps (FVG) Explained: How Price Fills Gaps for High-Probability Reversals",             "item": "https://cluenex.com/learn/technical-analysis/fair-value-gaps/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "Fair Value Gaps (FVG) Explained: How Price Fills Gaps for High-Probability Reversals", "item": "https://cluenex.com/learn/technical-analysis/fair-value-gaps/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long before a gap fills?","acceptedAnswer":{"@type":"Answer","text":"5–30 days typical. Some fill within hours (intraday), others take weeks. Monitor all gaps; fill timing varies."}},{"@type":"Question","name":"Do all gaps fill?","acceptedAnswer":{"@type":"Answer","text":"70–75% fill. Remaining 25–30% don’t fill for months/ever (strong trends). But probability favors filling."}},{"@type":"Question","name":"Can I trade gap-down openings?","acceptedAnswer":{"@type":"Answer","text":"Yes. Gap down creates demand gap above. Price returns to fill it 70%+ of time. Trade the bounce."}},{"@type":"Question","name":"FVG vs traditional gap (earnings, news)?","acceptedAnswer":{"@type":"Answer","text":"Same principle. Both create imbalances. News gaps fill slower (days/weeks). Regular gaps fill faster (hours/days)."}},{"@type":"Question","name":"Should I fade gaps or trade their direction?","acceptedAnswer":{"@type":"Answer","text":"Both work. Fading (trading the reversal) = 70% win rate. Trading with gap = lower probability (30–50%). Fade for edge."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">Fair Value Gaps (FVG) Explained: How Price Fills Gaps for High-Probability Reversals</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 Fair Value Gaps (FVG) Explained: How Price Fills Gaps for High-Probability Reversals
@@ -168,7 +174,7 @@
                 
                 <li><strong>FVG + order block</strong> = extreme confluence (both gaps + institutional zone). Reversal probability: <data value="75">75">75</data>–<data value="85">85">85</data>%. Tightest stops, highest win rate.</li>
                 
-                <li>On Cluenex, FVGs auto-identify. When price approaches gap + sentiment confirms, reversal alert displays with <data value="72">72">72</data>% historical accuracy.</li>
+                <li>Cluenex AI ingests Fair Value Gaps to calculate predicted short-term and long-term price movement. FVGs aren't displayed on the platform but are a key input in the AI's price forecast models.</li>
                 
             </ul>
         </aside>
@@ -337,14 +343,8 @@ Old gaps (1–3 months) still fill 60–70% of time. Price has long memory. Real
 <p class="callout-text">The bullish FVG formed May 13 ($420–$432). Price returned Jun 5, hitting the gap at $428 (hammer). But the real confirmation was the old order block at $427 — both FVG + order block aligned. This <data value=\"75\">75\">75</data>–<data value=\"85\">85</data>% probability confluence caught a <data value=\"27\">$27</data> bounce ($428 → $455) in 10 days. FVG + order block = highest probability reversal available.</p>
 </div>
 <h2 id="how-cluenex-uses-fvgs" tabindex="-1">How Cluenex Uses FVGs</h2>
-<p>Cluenex auto-identifies all FVGs from past 3–6 months. When price approaches gap zone, traders see:</p>
-<ul>
-<li>FVG location (price zone)</li>
-<li>Gap age (days since formed)</li>
-<li>Order blocks near gap (confluence zones)</li>
-<li>Probability of fill based on historical accuracy</li>
-<li>Real-time alerts when price entering gap zone</li>
-</ul>
+<p>Cluenex AI ingests Fair Value Gaps from the past 3–6 months of price history as inputs when calculating predicted short-term and long-term price movement for each stock. FVGs aren’t displayed directly on the Cluenex platform, but the AI processes gap zones, gap age, and proximity to price continuously.</p>
+<p>When price approaches a historical FVG zone, that signal feeds into the AI’s prediction models — influencing the short-term sentiment score and price forecast visible on the platform. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate price movement forecasts.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -381,26 +381,85 @@ Both work. Fading (trading the reversal) = 70% win rate. Trading with gap = lowe
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-fvgs-form" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>How FVGs Form</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-trade-fair-value-gaps" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>How to Trade Fair Value Gaps</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#fvg-%2B-order-block-confluence-(extreme-probability)" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>FVG + Order Block Confluence (Extreme Probability)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-fvg-%2B-order-block-(microsoft%2C-msft)" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: FVG + Order Block (Microsoft, MSFT)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-fvgs" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses FVGs</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -411,6 +470,387 @@ Both work. Fading (trading the reversal) = 70% win rate. Trading with gap = lowe
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

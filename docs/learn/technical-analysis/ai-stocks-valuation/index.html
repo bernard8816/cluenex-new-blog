@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype",             "item": "https://cluenex.com/learn/technical-analysis/ai-stocks-valuation/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype", "item": "https://cluenex.com/learn/technical-analysis/ai-stocks-valuation/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I find AI revenue breakdown?","acceptedAnswer":{"@type":"Answer","text":"Check earnings transcripts (search “AI revenue” or “AI segment”). Companies increasingly disclosing. If not disclosed, estimate from segment growth."}},{"@type":"Question","name":"Which GPU vendor matters most?","acceptedAnswer":{"@type":"Answer","text":"Nvidia dominates 80%+ AI chip market. But AMD, custom chips (TSLA, GOOG, MSFT) growing. Monitor each company’s own chip strategy."}},{"@type":"Question","name":"AI stocks always go up?","acceptedAnswer":{"@type":"Answer","text":"No. AI cycles exist. Peak capex periods plateau. GPUs over-capacity. Over-investment can cause corrections. Monitor demand/ASP for signs."}},{"@type":"Question","name":"Should I buy unprofitable AI startups?","acceptedAnswer":{"@type":"Answer","text":"High risk. Only if capital efficient (low burn rate relative to revenue growth). Avoid if margin trajectory flat/negative. Better to wait for profitability path clearer."}},{"@type":"Question","name":"Is AI bubble going to burst?","acceptedAnswer":{"@type":"Answer","text":"Corrects, yes. Bubble burst? Unlikely in long term (AI is real). But valuation corrections (20–40%) definitely possible if growth disappoints."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype
@@ -168,7 +174,7 @@
                 
                 <li><strong>AI revenue breakdown matters.</strong> Split revenue: traditional vs AI segment. Which growing faster? If AI segment 30%+ growth while overall 10% = company transitioning to AI leader. High probability of multiple expansion.</li>
                 
-                <li>On Cluenex, AI capex spending + GPU demand + segment revenue growth displayed. When all three improving + price bullish breakout = <data value="70">70">70</data>–<data value="75">75</data>% probability sustained AI rally.</li>
+                <li>Cluenex AI ingests capex guidance, GPU/AI shipment trends, AI revenue breakout data, and margin trajectory to calculate predicted short-term and long-term price movement for AI stocks. These inputs aren't on the frontend but are core signals in the AI's sector forecasting models.</li>
                 
             </ul>
         </aside>
@@ -357,16 +363,8 @@ Growth without profitability path = VC poker, not investment. If margins flat/de
 <p class="callout-text">NVDA's metrics (revenue +126%, GPU demand accelerating, ASP rising, margins expanding) signal AI leader. INTC's metrics (revenue declining, demand weak, ASP falling, margins falling) signal dinosaur displaced by AI. NVDA at P/E 65 is cheap for growth; INTC at P/E 12 is value trap. This is why traditional metrics fail for AI stocks — you must look at capex, GPU demand, AI revenue, and margins. Metrics told the story 12 months before prices caught up.</p>
 </div>
 <h2 id="how-cluenex-uses-ai-stock-analysis" tabindex="-1">How Cluenex Uses AI Stock Analysis</h2>
-<p>Cluenex displays:</p>
-<ul>
-<li>Capex guidance + historical capex spend</li>
-<li>GPU/AI shipment trends (quarterly)</li>
-<li>AI revenue breakout (% of total, growth rate)</li>
-<li>Operating margin trajectory</li>
-<li>Peer comparison (which AI leader strongest)</li>
-</ul>
-<p>When AI leader’s 4 metrics all improving + price bullish breakout = “AI Leader Continuation” alert (<data value="70">70</data>–<data value="75">75</data>% accuracy).</p>
-<p>When metrics deteriorating + price technical breakdown = “AI Hype Reversal” alert (<data value="65">65</data>–<data value="70">70</data>% accuracy).</p>
+<p>Cluenex AI ingests a full suite of AI-sector inputs — including capex guidance, historical capex spend, GPU/AI shipment trends, AI revenue as a % of total revenue, revenue growth rate, operating margin trajectory, and peer comparison metrics — when calculating predicted short-term and long-term price movement for AI stocks. These metrics aren’t displayed directly on the Cluenex platform, but they’re core signals in the AI’s sector-specific forecasting models.</p>
+<p>When all four key metrics improve simultaneously alongside a bullish price structure, the AI’s confidence in a sustained move increases significantly. When metrics deteriorate alongside technical breakdown, the AI’s downside risk weighting increases. Cluenex AI digests all of these inputs — even those not shown on the frontend — to deliver the most accurate short-term and long-term price movement forecasts for AI sector stocks.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -403,26 +401,78 @@ Corrects, yes. Bubble burst? Unlikely in long term (AI is real). But valuation c
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#the-4-ai-stock-metrics" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>The 4 AI Stock Metrics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#ai-stock-trading-framework" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>AI Stock Trading Framework</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-ai-leader-(nvidia%2C-nvda)" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Example: AI Leader (Nvidia, NVDA)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-ai-stock-analysis" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>How Cluenex Uses AI Stock Analysis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -433,6 +483,387 @@ Corrects, yes. Bubble burst? Unlikely in long term (AI is real). But valuation c
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/candlestick-patterns/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">The 12 Most Reliable Candlestick Patterns: How to Identify Reversals Before They Happen</div>
+                    <div class="related-desc">Candlestick patterns reveal buyer/seller control at inflection points. The 12 most reliable patterns — hammer, shooting star, engulfing, harami, morning star, evening star — trigger reversals before price confirms them. Learn to identify each and time high-probability entries.</div>
+                </a>
                 
             </div>
         </section>

@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "What is RSI: How Traders Use Momentum to Time Entries and Exits",             "item": "https://cluenex.com/learn/technical-analysis/rsi-explained/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "What is RSI: How Traders Use Momentum to Time Entries and Exits", "item": "https://cluenex.com/learn/technical-analysis/rsi-explained/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What’s the difference between a 14-period RSI and a 7-period RSI?","acceptedAnswer":{"@type":"Answer","text":"A 14-period RSI is slower and less responsive, producing fewer signals and fewer false positives. A 7-period RSI reacts faster to recent price action, producing more signals but also more false signals. Use 14 for swing trading (days to weeks) and 7 or 9 for day trading or scalping."}},{"@type":"Question","name":"Is RSI more effective on stocks or crypto?","acceptedAnswer":{"@type":"Answer","text":"RSI works on both, but crypto exhibits more extreme moves. Cryptoassets stay above RSI 70 and below RSI 30 longer than equities, so crypto traders often adjust thresholds to 80/20 instead of 70/30. Equities tend to respect the traditional 70/30 levels more consistently."}},{"@type":"Question","name":"Can RSI predict a crash?","acceptedAnswer":{"@type":"Answer","text":"RSI cannot predict the magnitude or timing of crashes, but extreme RSI readings (above 85 or below 15) combined with bearish divergence often precede sharp reversals. During market crashes, RSI may hit 5–10, but trying to bottom-pick with only RSI is dangerous. Always use stop losses."}},{"@type":"Question","name":"Should I use RSI on a 1-minute chart?","acceptedAnswer":{"@type":"Answer","text":"Yes, but use a 5 or 7-period RSI instead of 14. Shorter timeframes require shorter lookback windows. A 14-period RSI on a 1-minute chart is too slow and lags price moves, making entries late."}},{"@type":"Question","name":"What’s the success rate of RSI overbought/oversold signals?","acceptedAnswer":{"@type":"Answer","text":"Overbought and oversold signals alone have a roughly 50% win rate — little better than a coin flip. When combined with divergence, price action confirmation, or additional indicators (volume, sentiment scores), the win rate climbs to 65–75%."}},{"@type":"Question","name":"Does RSI work on all stocks or only liquid ones?","acceptedAnswer":{"@type":"Answer","text":"RSI works best on liquid, heavily-traded stocks (AAPL, MSFT, NVDA, TSLA). Illiquid or low-volume stocks produce choppy RSI that whipsaws frequently. Always check average daily volume before relying on RSI signals."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">What is RSI: How Traders Use Momentum to Time Entries and Exits</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 What is RSI: How Traders Use Momentum to Time Entries and Exits
@@ -168,7 +174,7 @@
                 
                 <li><strong>Divergence</strong> — price hits a new extreme but RSI does not — is the highest-probability RSI signal and often precedes trend reversals.</li>
                 
-                <li>On Cluenex, RSI is displayed alongside real-time sentiment scores to confirm momentum shifts across the top 1,000 US-listed stocks.</li>
+                <li>Cluenex AI ingests RSI to calculate predicted short-term and long-term price movement. While RSI isn't displayed directly on the platform, every sentiment score you see on Cluenex already reflects RSI analysis under the hood.</li>
                 
             </ul>
         </aside>
@@ -206,7 +212,7 @@ RS  = Average Gain (14 periods) ÷ Average Loss (14 periods)
 <li><strong>14 periods (default)</strong> — standard for swing trading (days to weeks).</li>
 <li><strong>21–28 periods</strong> — slower, fewer but higher-confidence setups. Suited for position trading and weekly charts.</li>
 </ul>
-<p>RSI is mean-reverting: extreme readings above 80 or below 20 rarely persist. On Cluenex, RSI is calculated in real time across the top 1,000 US-listed stocks, displayed alongside real-time sentiment intensity scores.</p>
+<p>RSI is mean-reverting: extreme readings above 80 or below 20 rarely persist. Cluenex AI ingests RSI across the top 1,000 US-listed stocks as part of its prediction engine — the resulting short-term and long-term sentiment scores on the platform reflect RSI conditions without displaying the raw indicator.</p>
 <h2 id="rsi-threshold-reference" tabindex="-1">RSI Threshold Reference</h2>
 <p>Each RSI zone carries a distinct interpretation:</p>
 <div class="threshold-grid" role="list" aria-label="RSI threshold zones">
@@ -310,7 +316,7 @@ A 14-period RSI on a 1-minute chart is too slow. Use 5–7 periods for sub-hourl
 <div class="callout callout-red">
 <div class="callout-label">✗ Mistake 4</div>
 <p class="callout-text"><strong>"I should trade RSI in isolation."</strong><br>
-RSI alone leads to whipsaws. Pair with volume, trend direction, support/resistance, or — on Cluenex — real-time sentiment scores for confirmation.</p>
+RSI alone leads to whipsaws. Pair with volume, trend direction, support/resistance, or — on Cluenex — check the short-term and long-term sentiment scores, which already incorporate RSI analysis.</p>
 </div>
 <h2 id="example%3A-bearish-divergence-on-nvda" tabindex="-1">Example: Bearish Divergence on NVDA</h2>
 <p>Bearish divergence signal on <strong>NVDA</strong> daily chart, November 2024:</p>
@@ -333,14 +339,14 @@ RSI alone leads to whipsaws. Pair with volume, trend direction, support/resistan
 <tr>
 <td><time datetime="2024-11-08">Nov 8</time></td>
 <td data-price="143.50">$143.50</td>
-<td><span class="rsi-val" style="color:#f97316">65</span></td>
+<td><span class="rsi-val" style="color:#c2410c">65</span></td>
 <td>Approaching overbought. Sentiment bullish (72).</td>
 <td>—</td>
 </tr>
 <tr class="signal-row">
 <td><time datetime="2024-11-12">Nov 12</time></td>
 <td data-price="148.20"><strong>$148.20 ↑ new high</strong></td>
-<td><span class="rsi-val" style="color:#f97316">76 ↓ lower</span></td>
+<td><span class="rsi-val" style="color:#c2410c">76 ↓ lower</span></td>
 <td>🔴 <strong>Bearish Divergence</strong> — price new high, RSI lower high. Signal confirmed.</td>
 <td>—</td>
 </tr>
@@ -361,7 +367,7 @@ RSI alone leads to whipsaws. Pair with volume, trend direction, support/resistan
 <tr>
 <td><time datetime="2024-11-15">Nov 15</time></td>
 <td data-price="142.10">$142.10</td>
-<td><span class="rsi-val" style="color:#34d399">38</span></td>
+<td><span class="rsi-val" style="color:#059669">38</span></td>
 <td>Exit remaining position at $142.50.</td>
 <td><span class="pos">+4.0% total</span></td>
 </tr>
@@ -373,8 +379,8 @@ RSI alone leads to whipsaws. Pair with volume, trend direction, support/resistan
 <p class="callout-text">The divergence signal captured a <data value="6.10">$6.10</data> move ($148.20 → $142.10) with defined risk via stop at $149.00. A trader shorting at RSI 70 on Nov 12 without divergence confirmation would have entered a day too early and likely been stopped out before the move materialized.</p>
 </div>
 <h2 id="how-cluenex-uses-rsi" tabindex="-1">How Cluenex Uses RSI</h2>
-<p>Cluenex displays RSI alongside real-time sentiment scores across the top 1,000 US-listed stocks. When RSI above 70 aligns with a sentiment score drop, the probability of a reversal increases significantly.</p>
-<p>Cluenex’s <abbr title="Artificial Intelligence">AI</abbr> snapshot generator also flags <em>momentum divergences</em> — situations where RSI and sentiment readings diverge, signaling a potential reversal before price action becomes obvious. This multi-signal approach reduces whipsaws and improves entry quality for traders.</p>
+<p>Cluenex AI ingests RSI as one of its core inputs when calculating predicted short-term and long-term price movement for each stock. While RSI itself isn’t displayed directly on the Cluenex platform, the AI digests it — alongside dozens of other signals — so every sentiment score and price forecast you see already reflects RSI momentum analysis beneath the surface.</p>
+<p>When RSI signals overbought or oversold conditions, or when divergence forms, those signals feed directly into Cluenex’s short-term and long-term prediction models. The sentiment scores visible on the platform are the AI’s synthesized output of all these inputs, including RSI. Cluenex AI also processes all of this even for metrics not visible on the frontend — because the AI digests everything to deliver the most accurate prediction.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -415,26 +421,85 @@ RSI works best on liquid, heavily-traded stocks (AAPL, MSFT, NVDA, TSLA). Illiqu
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-rsi-works" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>How RSI Works</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#rsi-threshold-reference" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>RSI Threshold Reference</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-use-rsi-in-practice" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>How to Use RSI in Practice</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-bearish-divergence-on-nvda" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: Bearish Divergence on NVDA</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-rsi" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses RSI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -445,6 +510,387 @@ RSI works best on liquid, heavily-traded stocks (AAPL, MSFT, NVDA, TSLA). Illiqu
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

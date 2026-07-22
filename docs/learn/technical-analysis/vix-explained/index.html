@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "What is the VIX? The Stock Market&#39;s Fear Index Explained for Traders",             "item": "https://cluenex.com/learn/technical-analysis/vix-explained/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "What is the VIX? The Stock Market&#39;s Fear Index Explained for Traders", "item": "https://cluenex.com/learn/technical-analysis/vix-explained/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I trade VIX directly?","acceptedAnswer":{"@type":"Answer","text":"VIX is an index, not a stock. You can trade VIX options or futures (advanced), or VIX ETFs (simplified). For beginners: use VIX as signal to trade S&P 500 or tech stocks, not VIX itself."}},{"@type":"Question","name":"What does a VIX of 25 mean?","acceptedAnswer":{"@type":"Answer","text":"Normal, slightly elevated volatility. Market expecting 5–10% swing over next 30 days. No special signal; normal trading."}},{"@type":"Question","name":"Is VIX a leading indicator?","acceptedAnswer":{"@type":"Answer","text":"Not really. VIX often spikes during downturns, not before. Use VIX spike + support hold together for real signal, not alone."}},{"@type":"Question","name":"Should I buy VIX calls as portfolio insurance?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only for short-term (weeks, not months). VIX calls decay quickly. Use for temporary hedges during market stress. Not for long-term holdings."}},{"@type":"Question","name":"Why does VIX sometimes spike on good news?","acceptedAnswer":{"@type":"Answer","text":"Rare but happens. Options markets can get confused by surprise earnings beats. Ignore short VIX spikes (<data value=\"2\">2\">2 hours); focus on sustained spikes (days+)."}},{"@type":"Question","name":"Is low VIX bad for traders?","acceptedAnswer":{"@type":"Answer","text":"Not bad, just boring. VIX below 15 = range-bound market. Use mean-reversion trades (buy dips, sell rallies) in low-VIX environments."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">What is the VIX? The Stock Market&#39;s Fear Index Explained for Traders</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 What is the VIX? The Stock Market&#39;s Fear Index Explained for Traders
@@ -168,7 +174,7 @@
                 
                 <li><strong>VIX spike + S&P 500 support hold = <data value="70">70</data>%+ probability</strong> market bottom forms within <data value="5">5</data> days. This is the highest-probability market-timing signal available.</li>
                 
-                <li>On Cluenex, VIX displays alongside S&P 500. When VIX spikes to <data value="35">35</data>+ and S&P closes above support, traders receive "market bottom" alerts (<data value="75">75">75</data>% accuracy historically).</li>
+                <li>Cluenex AI ingests VIX data to calculate predicted short-term and long-term price movement. VIX isn't displayed on the platform but extreme fear/complacency readings are key inputs in the AI's reversal probability models.</li>
                 
             </ul>
         </aside>
@@ -380,15 +386,8 @@ VIX ETFs decay quickly (bad for long holds). They work only for short-term hedge
 <p class="callout-text">The VIX spike to 42 on Mar 15 was the exact signal. Traders buying S&P at 4,820 (support level) when VIX was in panic captured a <data value=\"360\">$360</data> move (<data value=\"5180\">5,180</data> − <data value=\"4820\">4,820</data>) in just 2 weeks. The combination of VIX spike (fear) + S&P testing support (value) = highest probability market bottom. This trades 70%+ of the time.</p>
 </div>
 <h2 id="how-cluenex-uses-vix" tabindex="-1">How Cluenex Uses VIX</h2>
-<p>Cluenex displays VIX real-time alongside S&amp;P 500 performance for all traders. When VIX spikes above 35 and S&amp;P tests key support:</p>
-<ul>
-<li>Alert: “Market Fear High. Support Level: 4,850”</li>
-<li>Shows prior VIX spikes and outcomes (accuracy tracking)</li>
-<li>Displays put/call ratio alongside VIX (additional fear gauge)</li>
-<li>Real-time sentiment scores alongside VIX level</li>
-<li>Probability of bounce within 5 days based on historical VIX patterns</li>
-</ul>
-<p>Traders see the complete panic signal before making buy/sell decisions.</p>
+<p>Cluenex AI ingests VIX data — including current levels, VIX spike patterns, and put/call ratios — as inputs when calculating predicted short-term and long-term price movement. VIX isn’t displayed directly on the Cluenex platform, but extreme fear readings (VIX above 35) and complacency signals feed directly into the AI’s reversal probability models.</p>
+<p>When VIX spikes alongside market support tests, the AI’s confidence in a short-term bounce increases. When VIX is suppressed at multi-year lows, that feeds into the AI’s downside risk models. The sentiment scores and price forecasts visible on Cluenex already reflect VIX analysis — Cluenex AI digests all of these metrics, even those not shown on the frontend.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -429,26 +428,85 @@ Not bad, just boring. VIX below 15 = range-bound market. Use mean-reversion trad
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#understanding-vix-levels" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>Understanding VIX Levels</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#vix-inverse-relationship-to-s%26p-500" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>VIX Inverse Relationship to S&amp;amp;P 500</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-trade-vix-spikes" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>How to Trade VIX Spikes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-vix-spike-and-market-bottom-(march-2024)" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: VIX Spike and Market Bottom (March 2024)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-vix" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses VIX</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -459,6 +517,387 @@ Not bad, just boring. VIX below 15 = range-bound market. Use mean-reversion trad
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

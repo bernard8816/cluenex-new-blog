@@ -57,16 +57,61 @@ module.exports = function(eleventyConfig) {
 
   // Filter: Extract headings for TOC
   eleventyConfig.addFilter('extractHeadings', (content) => {
-    const headingRegex = /<h2[^>]*?id="([^"]*)"[^>]*?>([^<]+)<\/h2>/g;
+    const headingRegex = /<h2[^>]*?id="([^"]*)"[^>]*?>([\s\S]*?)<\/h2>/g;
     const headings = [];
     let match;
     while ((match = headingRegex.exec(content)) !== null) {
-      headings.push({
-        id: match[1],
-        text: match[2].replace(/<[^>]*>/g, '')
-      });
+      const text = match[2].replace(/<[^>]*>/g, '').trim();
+      if (text) headings.push({ id: match[1], text });
     }
     return headings;
+  });
+
+  // Filter: Limit an array to the first N items
+  eleventyConfig.addFilter('limit', (arr, n) => (arr || []).slice(0, n));
+
+  // Helper: decode a small set of HTML entities for clean JSON-LD text
+  const decodeEntities = (str) => str
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(+d))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
+
+  // Filter: Build FAQPage JSON-LD from the rendered FAQ section
+  // (enables LLM / answer-engine citation of Q&A pairs)
+  eleventyConfig.addFilter('faqSchema', (content) => {
+    if (!content) return '';
+    const idx = content.search(/<h2[^>]*id="frequently-asked-questions"/i);
+    if (idx === -1) return '';
+    const ul = content.slice(idx).match(/<ul>([\s\S]*?)<\/ul>/i);
+    if (!ul) return '';
+    const faqs = [];
+    const liRegex = /<li>([\s\S]*?)<\/li>/gi;
+    let li;
+    while ((li = liRegex.exec(ul[1])) !== null) {
+      const q = li[1].match(/<strong>([\s\S]*?)<\/strong>/i);
+      if (!q) continue;
+      const question = decodeEntities(q[1].replace(/<[^>]+>/g, '')).trim();
+      const answer = decodeEntities(
+        li[1].replace(/<strong>[\s\S]*?<\/strong>/i, '').replace(/<[^>]+>/g, ' ')
+      ).replace(/\s+/g, ' ').trim();
+      if (question && answer) {
+        faqs.push({
+          '@type': 'Question',
+          name: question,
+          acceptedAnswer: { '@type': 'Answer', text: answer }
+        });
+      }
+    }
+    if (!faqs.length) return '';
+    return JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs
+    });
   });
 
   // Collection: All posts

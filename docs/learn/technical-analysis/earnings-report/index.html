@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "How to Read an Earnings Report: EPS, Revenue Beat/Miss, and Guidance Explained",             "item": "https://cluenex.com/learn/technical-analysis/earnings-report/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "How to Read an Earnings Report: EPS, Revenue Beat/Miss, and Guidance Explained", "item": "https://cluenex.com/learn/technical-analysis/earnings-report/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When should I enter before earnings?","acceptedAnswer":{"@type":"Answer","text":"3–5 days before if setup strong (track record of beats, estimates rising). 1 day before = too late; IV crush reduces upside."}},{"@type":"Question","name":"Should I hold through earnings or exit before?","acceptedAnswer":{"@type":"Answer","text":"Depends on conviction. Strong setup (beat likely + guidance raise) = hold. Weak setup = exit day before. Overnight earnings gap risk is real."}},{"@type":"Question","name":"How does IV (implied volatility) affect earnings moves?","acceptedAnswer":{"@type":"Answer","text":"High IV = option prices high = earnings move already priced in. IV expansion day-of can reduce stock move. Enter when IV low (3–5 days before)."}},{"@type":"Question","name":"What’s more important — beating EPS or revenue?","acceptedAnswer":{"@type":"Answer","text":"EPS beats matter more for stock move. But declining revenue growth even with EPS beat = warning."}},{"@type":"Question","name":"Can earnings report be delayed/changed after release?","acceptedAnswer":{"@type":"Answer","text":"Rare, but restatements happen (accounting errors). Usually benefit of doubt first day. Restatements hit second earnings season."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">How to Read an Earnings Report: EPS, Revenue Beat/Miss, and Guidance Explained</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 How to Read an Earnings Report: EPS, Revenue Beat/Miss, and Guidance Explained
@@ -168,7 +174,7 @@
                 
                 <li><strong>Margins matter</strong>: Gross margin improving = pricing power / efficiency. Operating margin improving = scale. If EPS beat but margins declining = red flag. Beat is hollow if costs rising.</li>
                 
-                <li>On Cluenex, earnings calendar + beat/miss probabilities display. When stock likely to beat + guidance raising + sentiment bullish = <data value="70">70</data>–<data value="75">75</data>% probability 5–15% gain within 5 days of earnings.</li>
+                <li>On Cluenex, earnings dates and full financial metrics are displayed for every covered stock. Beat/miss probabilities, guidance trend analysis, and post-earnings move forecasts are calculated by Cluenex AI as part of its short-term and long-term price prediction models.</li>
                 
             </ul>
         </aside>
@@ -374,16 +380,8 @@ Consensus can be wrong (too high or too low). Check if estimates have been risin
 <p class="callout-text">NVDA beat EPS by 35%, raised guidance, and expanded margins — a trifecta. Traders who bought on earnings announcement captured a +12% gain in 5 days. The combination of (1) large EPS beat, (2) guidance raise, (3) margin expansion = highest probability earnings move. This is why reading all three metrics matters: EPS alone would be +3–5%, but guidance + margins added another +7–9%.</p>
 </div>
 <h2 id="how-cluenex-uses-earnings-data" tabindex="-1">How Cluenex Uses Earnings Data</h2>
-<p>Cluenex displays:</p>
-<ul>
-<li>Earnings calendar (dates, estimates)</li>
-<li>Estimate revisions (trending up/down)</li>
-<li>Analyst surprise probability (beating or missing likely?)</li>
-<li>Historical beat/miss rates by company</li>
-<li>Guidance history (raised/lowered trend)</li>
-<li>Post-earnings move stats (typical % move on beat/miss)</li>
-</ul>
-<p>When stock likely to beat + guidance raising + margins improving = “Strong Earnings Setup” alert.</p>
+<p>Cluenex displays earnings dates and a full suite of financial metrics directly on the platform for every covered stock — including revenue, EPS, margins, and guidance data from the latest earnings report. These are visible to every user.</p>
+<p>Cluenex AI goes further, ingesting additional earnings signals as inputs for its short-term and long-term price movement predictions: estimate revision trends (are analysts raising or lowering expectations?), historical beat/miss rates by company, guidance trajectory (raised vs. lowered history), and typical post-earnings price move statistics. These aren’t displayed as standalone fields but feed directly into the AI’s earnings probability models — so the sentiment scores and price forecasts you see on Cluenex already reflect earnings setup quality. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate price movement predictions around earnings events.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -420,26 +418,85 @@ Rare, but restatements happen (accounting errors). Usually benefit of doubt firs
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#the-3-key-earnings-metrics" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>The 3 Key Earnings Metrics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-read-earnings-report-key-sections" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>How to Read Earnings Report Key Sections</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-trade-earnings" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>How to Trade Earnings</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-beat-%2B-raised-guidance-(nvda)" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: Beat + Raised Guidance (NVDA)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-earnings-data" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses Earnings Data</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -450,6 +507,387 @@ Rare, but restatements happen (accounting errors). Usually benefit of doubt firs
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>

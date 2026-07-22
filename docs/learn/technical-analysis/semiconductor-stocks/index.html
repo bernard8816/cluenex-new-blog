@@ -57,13 +57,19 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://cluenex.com" },
-        { "@type": "ListItem", "position": 2, "name": "Learn",                   "item": "https://cluenex.com/learn" },
-        { "@type": "ListItem", "position": 3, "name": "Education", "item": "https://cluenex.com/learn/" },
-        { "@type": "ListItem", "position": 4, "name": "How to Analyze Semiconductor Stocks: Wafer Starts, Lead Times, and Inventory Cycles",             "item": "https://cluenex.com/learn/technical-analysis/semiconductor-stocks/" }
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
+        { "@type": "ListItem", "position": 3, "name": "Technical Analysis", "item": "https://learn.cluenex.com/learn/technical-analysis/" },
+        { "@type": "ListItem", "position": 4, "name": "How to Analyze Semiconductor Stocks: Wafer Starts, Lead Times, and Inventory Cycles", "item": "https://cluenex.com/learn/technical-analysis/semiconductor-stocks/" }
       ]
     }
     </script>
+
+    <!-- JSON-LD: FAQPage (generated from the article's FAQ section) -->
+    
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which semis track the cycle best?","acceptedAnswer":{"@type":"Answer","text":"Large-cap memory (NAND/DRAM) semis cycle most purely: SK Hynix, Samsung, Micron. Logic semis (TSMC, Samsung) less pure (AI capex can override cycle). NVDA somewhat cycle-immune (AI demand trumps cycles)."}},{"@type":"Question","name":"How often do semi cycles repeat?","acceptedAnswer":{"@type":"Answer","text":"Every 2–4 years typical. 2021–2022 shortage, 2023 bear, 2024 recovery forming = typical 3-year cycle."}},{"@type":"Question","name":"Can I predict semi cycles from macro data?","acceptedAnswer":{"@type":"Answer","text":"Yes. Strong macro (GDP growth, capex rising) = cycle inflationary (shortage likely). Weak macro = cycle recessionary (oversupply likely)."}},{"@type":"Question","name":"What’s the best semi stock to own in bull cycle?","acceptedAnswer":{"@type":"Answer","text":"NVDA (AI demand + cycle bull = double leverage). In bear cycle, avoid semis entirely; wait for recovery inflection."}},{"@type":"Question","name":"Can one short semis in bear cycle?","acceptedAnswer":{"@type":"Answer","text":"Possible but risky. Semis recover fast once inventory digests. Short window = 2–4 months. Then bulls take over."}}]}</script>
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,14 +92,14 @@
                     <button class="nav-toggle" aria-expanded="false">Education</button>
                     <ul class="nav-submenu" role="list">
                         <li><a href="https://learn.cluenex.com/learn/technical-analysis">Technical Analysis</a></li>
-                        <li><a href="#">Fundamental Analysis</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/fundamental-analysis">Fundamental Analysis</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/portfolio-management">Portfolio Management</a></li>
                     </ul>
                 </li>
                 <li class="nav-dropdown">
                     <button class="nav-toggle" aria-expanded="false">Tools</button>
                     <ul class="nav-submenu" role="list">
-                        <li><a href="#">Markets</a></li>
+                        <li><a href="https://learn.cluenex.com/learn/markets">Markets</a></li>
                         <li><a href="#">Screener</a></li>
                         <li><a href="#">Stock Screening</a></li>
                     </ul>
@@ -121,16 +127,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="https://learn.cluenex.com">Home</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
-            <span class="breadcrumb-category">Education</span>
+            <a href="https://learn.cluenex.com/learn/technical-analysis/" class="breadcrumb-category">Technical Analysis</a>
             <span class="breadcrumb-sep" aria-hidden="true">›</span>
             <span class="breadcrumb-cur">How to Analyze Semiconductor Stocks: Wafer Starts, Lead Times, and Inventory Cycles</span>
         </nav>
 
         <!-- ARTICLE HEADER -->
         <header class="article-header">
-            <a href="https://cluenex.com/learn/" class="cat-badge">
-                Education
-            </a>
+            <span class="cat-badge">
+                Technical Analysis
+            </span>
 
             <h1 class="article-title" itemprop="headline">
                 How to Analyze Semiconductor Stocks: Wafer Starts, Lead Times, and Inventory Cycles
@@ -168,7 +174,7 @@
                 
                 <li><strong>Inventory levels</strong> = customer buffer stock. Rising inventory = demand weakening (customers stopping buys = excess). Falling inventory = demand strong (customers buying fast = shortage). Inventory turns in 3–6 months.</li>
                 
-                <li>On Cluenex, wafer starts + lead times + inventory levels display. When lead times rising + wafer starts stable/falling + inventory low = 'Semi Bull Signal' (<data value="70">70">%+ accuracy).</li>
+                <li>Cluenex AI ingests semiconductor cycle data — wafer starts, lead times, and inventory levels — to calculate predicted short-term and long-term price movement for semi stocks. These inputs aren't displayed on the platform but drive the AI's cycle-aware forecasting models.</li>
                 
             </ul>
         </aside>
@@ -393,15 +399,8 @@ Bears market can wipe <data value=\"30\">30\">–<data value=\"40\">40</data>% f
 <p class="callout-text">The 2022–2023 semi cycle moved Q1 2022 (SOX 3,100) → Q4 2022 (SOX 1,850) = 40% decline. Traders who sold at Q2 2022 warning signs (wafer starts accelerating, inventory rising) avoided most of decline. Traders who recognized Q1 2023 recovery setup (lead times stabilized, wafer starts being cut) bought the bottom and captured +40% recovery into 2023. Cycle knowledge = 3–6 month advance on price.</p>
 </div>
 <h2 id="how-cluenex-uses-semiconductor-analysis" tabindex="-1">How Cluenex Uses Semiconductor Analysis</h2>
-<p>Cluenex displays:</p>
-<ul>
-<li>Current lead times (industry average)</li>
-<li>Wafer starts trend (rising/falling)</li>
-<li>Inventory levels (customer stock position)</li>
-<li>SOX/semi index performance</li>
-<li>Cycle position (shortage/oversupply/recovery)</li>
-</ul>
-<p>When lead times rising + wafer starts stable/falling + inventory low = “Semi Bull Cycle” signal.</p>
+<p>Cluenex AI ingests semiconductor cycle data — including lead times, wafer starts trends, inventory levels, and SOX/semi index performance — as inputs when calculating predicted short-term and long-term price movement for semiconductor stocks. These cycle metrics aren’t displayed directly on the Cluenex platform, but they’re core inputs in the AI’s sector-specific forecasting models.</p>
+<p>When lead times rise, wafer starts stabilize, and inventory falls (classic shortage setup), those signals shift the AI’s probability weighting toward bullish for semi stocks. When the cycle reverses (inventory builds, lead times collapse), the AI’s models update to reflect rising downside risk. Cluenex AI digests all of these metrics, even those not shown on the frontend, to deliver the most accurate sector-level price movement forecasts.</p>
 <h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
 <ul>
 <li>
@@ -438,26 +437,85 @@ Possible but risky. Semis recover fast once inventory digests. Short window = 2�
             </article>
 
             <!-- SIDEBAR - TABLE OF CONTENTS -->
+            
             <aside class="toc-sidebar" aria-label="Table of contents">
+                
                 <div class="toc-head">On this page</div>
                 <nav>
                     <ul class="toc-nav" role="list">
-                        <li><a href="#definition" class="toc-link">01 — Definition</a></li>
-                        <li><a href="#how-rsi-works" class="toc-link">02 — How It Works</a></li>
-                        <li><a href="#rsi-threshold-reference" class="toc-link">03 — Thresholds</a></li>
-                        <li><a href="#how-to-use-rsi-in-practice" class="toc-link">04 — How to Use</a></li>
-                        <li><a href="#common-mistakes" class="toc-link">05 — Mistakes</a></li>
-                        <li><a href="#example-bearish-divergence-on-nvda" class="toc-link">06 — Example</a></li>
-                        <li><a href="#how-cluenex-uses-rsi" class="toc-link">07 — Cluenex</a></li>
-                        <li><a href="#frequently-asked-questions" class="toc-link">08 — FAQ</a></li>
+                        
+                        <li>
+                            <a href="#definition" class="toc-link">
+                                <span class="toc-num">01</span>
+                                <span>Definition</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#the-semiconductor-cycle%3A-4-phases" class="toc-link">
+                                <span class="toc-num">02</span>
+                                <span>The Semiconductor Cycle: 4 Phases</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#key-indicators-for-semi-analysis" class="toc-link">
+                                <span class="toc-num">03</span>
+                                <span>Key Indicators for Semi Analysis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-to-trade-semiconductor-cycles" class="toc-link">
+                                <span class="toc-num">04</span>
+                                <span>How to Trade Semiconductor Cycles</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#common-mistakes" class="toc-link">
+                                <span class="toc-num">05</span>
+                                <span>Common Mistakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#example%3A-2022%E2%80%932023-semi-cycle-(peak-to-trough)" class="toc-link">
+                                <span class="toc-num">06</span>
+                                <span>Example: 2022–2023 Semi Cycle (Peak to Trough)</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#how-cluenex-uses-semiconductor-analysis" class="toc-link">
+                                <span class="toc-num">07</span>
+                                <span>How Cluenex Uses Semiconductor Analysis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#frequently-asked-questions" class="toc-link">
+                                <span class="toc-num">08</span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#related-concepts" class="toc-link">
+                                <span class="toc-num">09</span>
+                                <span>Related Concepts</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
 
                 <div class="toc-rule"></div>
+                
 
                 <div class="toc-cta">
                     <div class="toc-cta-label">Try Cluenex</div>
-                    <p class="toc-cta-text">See RSI alongside real-time sentiment scores on the top 1,000+ US stocks.</p>
+                    <p class="toc-cta-text">Track real-time sentiment, valuation, and smart-money signals on the top 1,000+ US-listed stocks.</p>
                     <a href="https://cluenex.com/signup" class="btn-sm">Start Free</a>
                 </div>
             </aside>
@@ -468,6 +526,387 @@ Possible but risky. Semis recover fast once inventory digests. Short window = 2�
         <section class="related" aria-labelledby="related-head">
             <div class="related-head" id="related-head">Continue Learning</div>
             <div class="related-grid">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                
+                <a href="/learn/technical-analysis/ai-stocks-valuation/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">How to Evaluate AI Stocks: Metrics That Actually Matter Beyond the Hype</div>
+                    <div class="related-desc">AI stocks require different valuation: ignore traditional P/E (not profitable yet). Focus on: capex cycle (investment in AI infrastructure), GPU shipments (demand indicator), AI revenue growth (traction proof). Differentiate real AI leaders from hype.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/bollinger-bands/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Bollinger Bands Explained: How to Read Squeezes and Breakouts for High-Probability Trades</div>
+                    <div class="related-desc">Bollinger Bands are a volatility indicator that plots three lines: a 20-period moving average (middle band) with upper and lower bands 2 standard deviations away. Squeezes (bands close together) precede breakouts; expansion (bands widening) confirms trend strength.</div>
+                </a>
+                
+                <a href="/learn/technical-analysis/breakout-vs-fakeout/" class="related-card">
+                    <div class="related-tag">Technical Analysis</div>
+                    <div class="related-title">Breakout vs Fakeout: How to Identify Real Breakouts and Avoid False Breakouts with 70%+ Accuracy</div>
+                    <div class="related-desc">Most breakouts fail. Real breakouts break on 2x+ volume, close above range on first bar, and hold above range on second day. Fakeouts reverse within 1-3 bars on low volume.</div>
+                </a>
                 
             </div>
         </section>
