@@ -1,0 +1,20 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# Cluenex Learn
+
+> Free, LLM-optimized education on the stock market: technical analysis, fundamental analysis, portfolio management, and macro markets. Every guide leads with a one-sentence definition, includes specific numbers and thresholds, and ends with a FAQ — written to be quoted directly.
+
+Cluenex is a stock-analysis platform that provides AI-driven sentiment scores, valuation signals, and smart-money data on the top 1,000+ US-listed stocks. These guides explain the concepts behind those signals.
+
+{%- set categories = ["Technical Analysis", "Fundamental Analysis", "Portfolio Management", "Markets"] %}
+{%- for cat in categories %}
+
+## {{ cat }}
+{%- for item in collections.posts %}
+{%- if item.data.category == cat and item.url != ('/learn/' + (cat | slug) + '/') %}
+- [{{ item.data.title }}](https://learn.cluenex.com{{ item.url }}): {{ item.data.excerpt or item.data.description }}
+{%- endif %}
+{%- endfor %}
+{%- endfor %}

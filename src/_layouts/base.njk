@@ -9,14 +9,14 @@
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://cluenex.com{{ page.url }}">
+    <meta property="og:url" content="https://learn.cluenex.com{{ page.url }}">
     <meta property="og:site_name" content="Cluenex">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title }}">
     <meta name="twitter:description" content="{{ description }}">
     <meta name="author" content="Cluenex">
     <meta name="keywords" content="{{ keywords | join(', ') }}">
-    <link rel="canonical" href="https://cluenex.com{{ page.url }}">
+    <link rel="canonical" href="https://learn.cluenex.com{{ page.url }}">
 
     <title>{{ title }} | Cluenex Learn</title>
 
@@ -29,7 +29,7 @@
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://cluenex.com{{ page.url }}"
+        "@id": "https://learn.cluenex.com{{ page.url }}"
       },
       "headline": "{{ title }}",
       "description": "{{ description }}",
@@ -60,7 +60,7 @@
         { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://cluenex.com" },
         { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.cluenex.com/learn" },
         { "@type": "ListItem", "position": 3, "name": "{{ category }}", "item": "https://learn.cluenex.com/learn/{{ category | slug }}/" },
-        { "@type": "ListItem", "position": 4, "name": "{{ title }}", "item": "https://cluenex.com{{ page.url }}" }
+        { "@type": "ListItem", "position": 4, "name": "{{ title }}", "item": "https://learn.cluenex.com{{ page.url }}" }
       ]
     }
     </script>
@@ -149,7 +149,7 @@
                 <span class="meta-sep">·</span>
                 <span>{{ readingTime }} min read</span>
                 <span class="meta-sep">·</span>
-                <span class="meta-url">cluenex.com{{ page.url }}</span>
+                <span class="meta-url">learn.cluenex.com{{ page.url }}</span>
             </div>
 
             <p class="article-lead">
@@ -182,7 +182,7 @@
                 <meta itemprop="headline" content="{{ title }}">
                 <meta itemprop="datePublished" content="{{ date | isoDate }}">
                 <meta itemprop="author" content="{{ author }}">
-                <meta itemprop="url" content="https://cluenex.com{{ page.url }}">
+                <meta itemprop="url" content="https://learn.cluenex.com{{ page.url }}">
 
                 {{ content | safe }}
 

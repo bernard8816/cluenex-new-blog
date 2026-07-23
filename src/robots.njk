@@ -1,0 +1,57 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+# Cluenex Learn — robots.txt
+# This site WELCOMES AI crawlers. Content is educational and meant to be
+# indexed, cited, and referenced by AI answer engines and search engines.
+
+# Default: allow everyone
+User-agent: *
+Allow: /
+
+# --- AI search / answer-engine crawlers (real-time citation) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- AI training crawlers (long-term ingestion into model weights) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://learn.cluenex.com/sitemap.xml

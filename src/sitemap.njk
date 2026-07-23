@@ -1,0 +1,19 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}
+  {%- if item.url %}
+  <url>
+    <loc>https://learn.cluenex.com{{ item.url }}</loc>
+    {%- if item.data.dateModified or item.date %}
+    <lastmod>{{ (item.data.dateModified or item.date) | isoDate }}</lastmod>
+    {%- endif %}
+    <changefreq>monthly</changefreq>
+    <priority>{% if item.url == '/' %}1.0{% elif item.data.category %}0.8{% else %}0.6{% endif %}</priority>
+  </url>
+  {%- endif %}
+{%- endfor %}
+</urlset>
