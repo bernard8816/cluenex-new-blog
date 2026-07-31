@@ -6,6 +6,9 @@ dist/
 docs/
 .eleventy.cache/
 
+# Raw article drafts (see _inbox/README.md)
+_inbox/
+
 # OS files
 .DS_Store
 Thumbs.db
