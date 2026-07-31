@@ -11,12 +11,36 @@ Repo: `bernard8816/cluenex-new-blog` · branch `main` · build `npm run build` (
 
 ## Steps
 
-### 1. Read the inbox
+### 1. Read the inbox and pick the batch
 
-Process every file directly inside `_inbox/` (ignore `README.md`, `processed/`, `failed/`).
-If there are none, stop — no commit, no output.
+List files directly inside `_inbox/` (ignore `README.md`, `processed/`, `failed/`,
+`.processed-log.tsv`, and anything already recorded in that log). If there are none, stop —
+no build, no commit, no output.
 
-### 2. Parse the draft
+**Batch size is 10 per run.** Sort candidates oldest-first by file modification time and take
+the first 10. Anything beyond that stays in `_inbox/` untouched and is picked up by the next
+run, still oldest-first — so nothing is skipped and nothing is processed twice.
+
+### 2. Check whether it's already published
+
+Before writing anything, build an index of what exists: for every `src/content/**/*.md`, read
+`title`, `permalink`, `category`, `date`, `dateModified`. `src/content/` is the source of truth,
+not the live site — it includes articles committed but not yet pushed.
+
+Match each draft against that index on topic, not just filename: compare the draft's slug and
+title, and check for an existing article covering the same concept under a different name
+(e.g. a draft on "jobs report revisions" overlaps an existing "labor force participation" guide).
+
+- **No match** → new article. Continue to step 3.
+- **Match** → **update the existing file in place.** Merge the draft's new material into it,
+  refresh any figures that have gone stale, and apply the same house rules and fact-checking.
+  Keep the original `permalink`, `date`, and file path. Set `dateModified` to the run date.
+  Never create a second page for a topic already covered — two pages competing for one query
+  weakens both in search and in LLM citation.
+- **Ambiguous overlap** (related but arguably distinct) → treat as new, and say so in the report
+  with the URL of the article it sits closest to, so Bernard can merge them later if he disagrees.
+
+### 3. Parse the draft
 
 Read optional hint lines from the top (`Title:`, `Category:`, `Slug:`, `Date:`, `Format:`, `Update:`),
 then treat the rest as the body. Infer anything not given:
@@ -26,7 +50,27 @@ then treat the rest as the body. Infer anything not given:
 - **Slug** — kebab-case from the title, stopwords trimmed, ≤5 words.
 - **Format** — default `learn` guide.
 
-### 3. Rewrite to house rules
+### 4. Fact-check before rewriting
+
+Every factual claim gets verified against a primary source before it reaches the page. This is
+what makes the content citable, and it is not optional.
+
+- Search for the current value of every figure the draft asserts. Data ages: a draft written
+  last week may quote a number that has since been revised.
+- Prefer primary sources — BLS, BEA, Federal Reserve, SEC filings, company IR — over
+  secondary coverage. Cite the primary source in the text where a source is named.
+- Replace vague claims with the specific current number, and add the surrounding figures that
+  make the point concrete (the draft says "participation fell"; the page says what it fell to,
+  from what, and what the comparable measures did).
+- Where the draft's causal explanation is disputed by the people covering it, keep the draft's
+  framing but add the dispute — usually in Common Mistakes. Acknowledged limitations increase
+  citation rates.
+- Anything that cannot be supported gets cut, not softened. Never publish a number, quote,
+  study, or attribution that wasn't verified.
+
+Note in the report which claims were corrected, contested, or cut.
+
+### 5. Rewrite to house rules
 
 Read `SKILL.md` in full and apply it. `EXAMPLE_OUTPUT.md` and
 `src/content/rsi-explained.md` are the quality bar — match their density, not their topic.
@@ -50,7 +94,7 @@ Non-negotiables from SKILL.md:
 - Do not invent statistics, prices, or study results. Facts must be verifiable, and cited
   where a source is named. If a claim can't be supported, cut it.
 
-### 4. Write the frontmatter
+### 6. Write the frontmatter
 
 ```yaml
 ---
@@ -80,12 +124,10 @@ Markets → `markets`.
 File path: `src/content/<slug>.md` (flat — subfolders in `src/content/` are reserved for
 category index pages).
 
-### 5. Check for collisions
+On an update (step 2), keep the existing `title`, `permalink`, `date` and file path; change
+`dateModified` to the run date and revise the other fields only where the content changed.
 
-If `src/content/<slug>.md` or that permalink already exists: treat as an update only if the
-draft said `Update:`. Otherwise fail the draft rather than overwrite.
-
-### 6. Build
+### 7. Build
 
 ```bash
 npm run build
@@ -98,7 +140,7 @@ Category indexes, sitemap and llms.txt are generated from collections — never 
 If the build fails, revert that file, move the draft to `_inbox/failed/` with a note, and
 carry on with the others.
 
-### 7. Commit (do not push)
+### 8. Commit (do not push)
 
 Stage **only `src/content/`**. Article commits never include build output — Cloudflare runs
 the build itself (confirmed: commits `54308ee` and `c962448`, which added 10 articles each,
@@ -109,13 +151,26 @@ so a build dirties them. After committing, discard that noise so Bernard's tree 
 
 ```bash
 git add src/content
-git commit -m "Add <N> article(s): <title-1>; <title-2>"
+git commit -F <message-file>
 git restore docs        # drop build-time churn in the legacy tracked files
 ```
 
-Leave the commit unpushed on `main`. Bernard reviews `git show --stat HEAD` and runs `git push`.
+One commit per run, covering the whole batch. Subject line, then a blank line, then one bullet
+per article:
 
-### 8. Move the drafts and report
+```
+Add 8 articles, update 2 (2026-08-01)
+
+- What Is Labor Force Participation — /learn/markets/labor-force-participation-rate/
+- ...
+```
+
+Use `Add <N> articles` when all are new, `Add <N> articles, update <M>` when the batch mixes
+new pages with updates to existing ones, `Update <M> articles` when none are new.
+
+Leave the commit unpushed on `main`.
+
+### 9. Move the drafts and report
 
 Processed drafts → `_inbox/processed/`. Failures → `_inbox/failed/` plus
 `<name>.note.txt` explaining what went wrong.
@@ -126,8 +181,19 @@ to `_inbox/.processed-log.tsv` (`<iso-timestamp>\t<draft-filename>\t<output-path
 any inbox file already listed there on future runs. Say so in the report so Bernard can clear
 `_inbox/` himself.
 
-Report back: what was created, the live URLs it will have, word counts, anything that needed a
-judgment call, and anything that failed.
+The report is scannable, no preamble. Per article: title, live URL, new-or-update, word count,
+and any judgment call worth knowing (category chosen, claims corrected or cut, disputes added,
+near-duplicates flagged). Then, in order:
+
+1. Anything that failed and why.
+2. How many drafts remain in `_inbox/` for the next run.
+3. The push command, last, on its own:
+
+```
+cd "C:\Users\user\Documents\Claude\Projects\Cluenex Content"; git push origin main
+```
+
+Review command to offer alongside it: `git show --stat HEAD`.
 
 ---
 
@@ -138,7 +204,9 @@ judgment call, and anything that failed.
 - The sandbox may refuse `rm`/`mv` inside the mounted folder with `Operation not permitted`.
   Call the file-delete permission tool for the folder, or use the copy + ledger fallback above.
 - Never push. Never force-push. Never touch `docs/` by hand.
-- Never rewrite an existing article unless the draft explicitly says `Update:`.
+- Never create a second page for a topic already covered in `src/content/` — update the
+  existing page instead (step 2).
+- Never process more than 10 drafts in one run, and never skip ahead in the queue.
 - Never fabricate data to fill a template section — drop the section instead.
 - If a draft is too thin to reach the quality bar (under ~400 words of real substance for a
   learn guide), fail it with a note rather than padding it out.
