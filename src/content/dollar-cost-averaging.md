@@ -15,13 +15,13 @@ breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-05-25
-dateModified: 2026-05-25
-readingTime: 9
+dateModified: 2026-08-02
+readingTime: 10
 keyTakeaways:
   - "<strong>DCA definition</strong>: Invest a fixed dollar amount (e.g., $500) at fixed intervals (weekly, monthly) regardless of price. Automatically buys more shares when price is low, fewer when high."
   - "<strong>DCA reduces timing risk</strong> by spreading entry price across multiple points. Average cost per share is always lower than the arithmetic average price across purchase dates — the mathematical basis for DCA's benefit."
-  - "<strong>Lump-sum beats DCA 68% of the time</strong> in diversified equity markets over 10+ year periods (Vanguard 2012 study). Reason: markets trend up over time; staying invested compounds at the higher average return."
-  - "<strong>DCA wins when</strong>: Markets decline during the investment period; investor lacks capital for lump-sum; investor is behavioral risk — prone to panic selling; investing in volatile single stocks."
+  - "<strong>Lump-sum beats DCA roughly 68% of the time</strong> over rolling 12-month periods in diversified equity markets (Vanguard Research, US/UK/Australia), by an average margin of about 2.3%. Extending the DCA comparison window to 36 months pushes lump-sum's win rate closer to 90%, because the lump sum simply has more time compounding in the market."
+  - "<strong>DCA wins when</strong>: markets decline during the investment period (Vanguard's own research flags 2008 as a case where DCA outperformed); the investor lacks capital for a lump sum; the investor is prone to panic-selling a large sudden loss; the asset is a single volatile stock rather than a diversified fund."
   - "Cluenex displays financial health and long-term sentiment for covered stocks — use these signals to validate that the asset being DCA'd into has improving fundamentals, not a permanently deteriorating business."
 layout: base.njk
 permalink: /learn/portfolio-management/dollar-cost-averaging/
@@ -88,6 +88,14 @@ DCA cost ($84.20) is lower than the simple average price ($88.00). This is the h
 </tbody>
 </table>
 </div>
+
+## Deciding Between a Lump Sum and DCA for a Windfall
+
+For an investor holding a large lump sum — an inheritance, a bonus, or a home sale — the decision reduces to one honest question: if the full amount were invested today and the market fell 20–30% within the following month, would the investor hold calmly, or sell in a panic?
+
+An investor who would hold calmly is better served by the mathematics favoring lump-sum investing. An investor who would panic-sell is better served by DCA, even at the average cost of underperforming lump-sum roughly two-thirds of the time — the reduced risk of a costly emotional decision outweighs the average mathematical drag.
+
+A middle path exists for investors uncertain of their own reaction: invest a large majority of the windfall immediately — commonly one-half to two-thirds — and spread the remainder across several months. This captures most of lump-sum's mathematical advantage while reducing the single-point timing risk that makes DCA psychologically easier to hold through a downturn.
 
 ## How DCA Works in Practice
 
@@ -170,6 +178,9 @@ Before adding to a position through a DCA plan, Cluenex displays current financi
 
 - **Should I stop DCA if the market is falling?**
   No — stopping DCA in falling markets defeats the entire purpose of the strategy. The falling market is precisely when DCA is accumulating more shares at lower prices. DCA is designed to feel psychologically difficult during market drops; disciplined continuation is what produces the benefit.
+
+- **I just received a large windfall — should I invest it all at once or spread it out?**
+  Vanguard's research finds lump-sum investing outperforms DCA roughly 68% of the time over 12-month periods in diversified equity markets, with the win rate rising toward 90% over 36-month comparison windows, because the invested lump sum simply spends more time compounding. The exception is an investor who would panic-sell during a sharp early drawdown — for that investor, DCA's lower average return is a reasonable price for a plan they can actually stick to. A blended approach, investing the majority immediately and spreading the remainder over several months, is a common middle path.
 
 ## Related Concepts
 

@@ -1,7 +1,7 @@
 ---
 title: "How to Diversify a Stock Portfolio: Sector Allocation and Correlation Explained"
-description: "Portfolio diversification reduces risk by spreading capital across assets that don't move together. Learn optimal sector weights, correlation-based diversification, and how many stocks eliminate unsystematic risk."
-excerpt: "Diversification eliminates company-specific risk but not market risk. 20–30 low-correlation stocks across 5+ sectors reduces unsystematic risk by ~90%. Over-diversification beyond 50 stocks adds complexity without additional risk reduction."
+description: "Portfolio diversification reduces risk by spreading capital across assets that don't move together. Technology's S&P 500 weight hit a record ~36% in 2026, above the dot-com peak, making single-theme concentration — like AI — a live risk, not a textbook one."
+excerpt: "Diversification eliminates company-specific risk but not market risk. 20–30 low-correlation stocks across 5+ sectors reduces unsystematic risk by roughly 90%. In 2026, Technology's S&P 500 weight reached a record near 36%, exceeding the 2000 dot-com peak, and the index's correlation with the Nasdaq-100 hit an all-time high — evidence that owning many AI-linked names is not the diversification it appears to be."
 keywords:
   - portfolio diversification
   - sector allocation
@@ -10,19 +10,21 @@ keywords:
   - unsystematic risk
   - portfolio construction
   - how many stocks to own
+  - AI stock concentration
+  - defensive stocks
 category: "Portfolio Management"
 breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-05-25
-dateModified: 2026-05-25
-readingTime: 10
+dateModified: 2026-08-02
+readingTime: 11
 keyTakeaways:
-  - "<strong>Diversification eliminates unsystematic risk</strong> (company-specific) but not systematic risk (market-wide). 20–30 stocks across 5+ sectors eliminates ~90% of unsystematic risk per Markowitz research."
-  - "<strong>Sector correlation matters more than stock count</strong>. Owning 30 tech stocks is not diversified — tech sector correlates 0.85–0.95 internally. True diversification requires low inter-sector correlation (tech vs utilities = 0.30–0.40)."
-  - "<strong>S&P 500 sector weights</strong> (approximate 2024): Technology 30%, Healthcare 13%, Financials 13%, Consumer Discretionary 11%, Industrials 9%, Communication 9%, Consumer Staples 7%, Energy 4%, Materials 2.5%, Real Estate 2%, Utilities 2.5%."
-  - "<strong>Equal weighting vs market-cap weighting</strong>: Equal weight (5% per sector) reduces concentration risk; market-cap weight mirrors the index. Blend: overweight 3–4 high-conviction sectors, underweight the rest."
-  - "Cluenex displays financial health, sentiment, and valuation metrics for individual stocks — use these to select the strongest names within each sector allocation bucket rather than buying indiscriminately."
+  - "<strong>Diversification eliminates unsystematic risk</strong> (company-specific) but not systematic risk (market-wide). 20–30 stocks across 5+ sectors eliminates roughly 90% of unsystematic risk per Markowitz-style portfolio theory."
+  - "<strong>Sector correlation matters more than stock count</strong>. Owning 30 AI-linked or tech stocks is not diversified — the sector correlates 0.85–0.95 internally. True diversification requires low inter-sector correlation (tech vs utilities = 0.30–0.40)."
+  - "<strong>Technology's S&P 500 weight reached a record near 36% in 2026</strong>, exceeding the prior dot-com-era peak, while the index's 12-month rolling correlation with the Nasdaq-100 hit an all-time high of 0.98 in March 2026 — the S&P 500 is behaving increasingly like a concentrated tech index."
+  - "<strong>Defensive stocks</strong> — companies selling goods people buy regardless of economic conditions, such as consumer staples and utilities — tend to hold up or outperform when a dominant theme like AI sells off, because their earnings do not depend on that theme's continuation."
+  - "Cluenex displays financial health, sentiment, and valuation metrics for individual stocks — use these to select the strongest names within each sector allocation bucket, including defensive sectors, rather than buying indiscriminately within one hot theme."
 layout: base.njk
 permalink: /learn/portfolio-management/portfolio-diversification/
 ---
@@ -37,6 +39,8 @@ permalink: /learn/portfolio-management/portfolio-diversification/
 </div>
 
 Diversification is the only "free lunch" in investing — it reduces risk without proportionally reducing expected return. The key mechanism: when one stock falls, an uncorrelated stock may rise or stay flat, smoothing total portfolio returns. Diversification does not prevent losses in bear markets (systematic risk affects all stocks), but it eliminates the risk of one bad company destroying the portfolio.
+
+**Why this is not a textbook problem in 2026.** Technology's share of the S&P 500 reached a record near <data value="36">36%</data> in 2026, exceeding the previous peak set during the dot-com era, and Technology, Media, and Telecom names together account for close to half the index's total market value — roughly 9 percentage points above the 2000 peak. The S&P 500's 12-month rolling correlation with the Nasdaq-100 hit an all-time high of <data value="0.98">0.98</data> in March 2026. An investor who believes they are diversified because they hold "the market" is, in practice, holding a portfolio that behaves increasingly like a concentrated technology and AI-linked index. Owning several individually-named AI beneficiaries on top of a broad index fund compounds that concentration rather than offsetting it.
 
 ## The Two Types of Risk Diversification Addresses
 
@@ -61,9 +65,11 @@ Beyond 30–40 low-correlation stocks, each additional stock provides diminishin
 
 ### S&P 500 Sector Weights (Reference)
 
+*Technology's weight below reflects its record 2026 level; other sector weights are approximate and shift as Technology's share expands.*
+
 | Sector | S&P 500 Weight | Typical Correlation (Internal) | Beta to Market |
 |--------|---------------|-------------------------------|----------------|
-| **Technology** | ~30% | 0.85–0.95 | 1.2–1.4 |
+| **Technology** | ~36% (record high, 2026) | 0.85–0.95 | 1.2–1.4 |
 | **Healthcare** | ~13% | 0.50–0.70 | 0.6–0.9 |
 | **Financials** | ~13% | 0.70–0.85 | 1.0–1.3 |
 | **Consumer Disc.** | ~11% | 0.65–0.80 | 1.1–1.3 |
@@ -151,6 +157,12 @@ Mirroring the S&P 500 exposes a 30%+ allocation to tech — concentration in the
 Beyond 30–40 uncorrelated positions, additional stocks provide diminishing risk reduction. Owning 100 stocks dilutes each position so that even a 10× winner contributes 1% to portfolio returns. Concentrated diversification (20–30 high-conviction, low-correlation names) outperforms over-diversification in most studies.</p>
 </div>
 
+<div class="callout callout-red">
+<div class="callout-label">✗ Mistake 4</div>
+<p class="callout-text"><strong>"I own many different AI stocks, so I'm diversified."</strong><br>
+Owning several individually-named AI infrastructure, chip, and software beneficiaries is concentration in one theme wearing several tickers, not diversification. When the AI theme cools, these names have historically moved together because their earnings depend on the same underlying demand story. Genuine diversification requires exposure to sectors whose earnings do not depend on AI capital spending continuing at its current pace — including <strong>defensive stocks</strong>, companies selling goods people buy regardless of the economic cycle, such as consumer staples, utilities, and healthcare.</p>
+</div>
+
 ## Example: Concentrated vs Diversified Portfolio in 2022
 
 <div class="trade-log">
@@ -194,6 +206,9 @@ Cluenex displays sector-level sentiment, financial health, and valuation metrics
 
 - **What is the difference between diversification and hedging?**
   Diversification spreads risk across uncorrelated assets — when one falls, others stay flat or rise. Hedging uses instruments (options, inverse ETFs) explicitly designed to profit when other holdings fall. Diversification is passive; hedging is active and costs money (option premiums, short costs).
+
+- **Is it risky to have most of my portfolio in AI-related stocks?**
+  Yes, more than most investors realize. Technology's S&P 500 weight reached a record near 36% in 2026, and the index's correlation with the tech-heavy Nasdaq-100 hit an all-time high the same year, meaning even a portfolio that mirrors the broad market carries substantial AI-theme concentration. Adding individually-picked AI stocks on top of a broad index fund increases that concentration further rather than diversifying away from it. Mixing in defensive sectors — consumer staples, utilities, healthcare — whose earnings don't depend on continued AI capital spending is the more reliable offset.
 
 - **Can you over-diversify?**
   Yes. Over-diversification (50+ stocks, many ETFs) results in "diworsification" — diluted positions where individual wins barely affect portfolio returns. Concentrated diversification in 20–30 high-conviction, cross-sector names provides better risk-adjusted returns than holding a mutual fund equivalent.
