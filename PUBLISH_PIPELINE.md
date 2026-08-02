@@ -187,13 +187,15 @@ near-duplicates flagged). Then, in order:
 
 1. Anything that failed and why.
 2. How many drafts remain in `_inbox/` for the next run.
-3. The push command, last, on its own:
+3. The push command, last, on its own. Bernard uses **Command Prompt (cmd.exe), not
+   PowerShell** — use `&&`, never `;`, or the path breaks:
 
 ```
-cd "C:\Users\user\Documents\Claude\Projects\Cluenex Content"; git push origin main
+cd /d "C:\Users\user\Documents\Claude\Projects\Cluenex Content" && git push
 ```
 
-Review command to offer alongside it: `git show --stat HEAD`.
+Review command to offer alongside it, as a separate line to run after the `cd`:
+`git show --stat HEAD`.
 
 ---
 
