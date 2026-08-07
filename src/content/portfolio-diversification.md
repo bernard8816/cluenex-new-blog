@@ -17,7 +17,7 @@ breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-05-25
-dateModified: 2026-08-02
+dateModified: 2026-08-07
 readingTime: 11
 keyTakeaways:
   - "<strong>Diversification eliminates unsystematic risk</strong> (company-specific) but not systematic risk (market-wide). 20–30 stocks across 5+ sectors eliminates roughly 90% of unsystematic risk per Markowitz-style portfolio theory."
@@ -188,6 +188,14 @@ Owning several individually-named AI infrastructure, chip, and software benefici
 <div class="callout-label">Key Insight</div>
 <p class="callout-text">Energy sector returned +65% in 2022 while tech fell 33%. An investor with 20% energy exposure offset the bulk of tech losses. No single allocation is always right — but owning low-correlation sectors means that one sector's crash is partially offset by another's rally. Diversification doesn't prevent losses; it prevents one bad sector from destroying the portfolio.</p>
 </div>
+
+## Example: Selling One Winner to Buy Two "Different" Names
+
+A common but mistaken version of diversification: an investor holds a large, appreciated position in one mega-cap technology stock, sells it entirely, and splits the proceeds evenly between two other mega-cap technology names in adjacent industries — say, one in cloud software and one in streaming media. On the surface this looks like textbook diversification — spreading capital across "different" companies instead of concentrating in one.
+
+It is not, because all three names typically carry the same **Technology ↔ Communication** correlation profile shown in the table above (+0.82), driven by the same underlying sensitivity to interest rates: a large share of each company's valuation reflects profits expected years into the future, and higher borrowing costs reduce the present value of those future profits for all three simultaneously. If a broad tech selloff hits the first stock for that reason, the same mechanism typically hits the other two the same week, for the same reason. Three mega-cap technology names is concentration in one macro sensitivity wearing three tickers, not diversification — the exact pattern the "Mistake 4" callout above describes for AI-linked stocks specifically, and the same logic applies to any cluster of same-sector mega-caps regardless of which theme connects them.
+
+Genuine risk reduction from that starting position would mean rotating at least part of the proceeds into a low-correlation sector — utilities, consumer staples, or healthcare, per the cross-sector correlation table above — rather than into two more names that share the original holding's core macro exposure.
 
 ## How Cluenex Supports Diversification Analysis
 
