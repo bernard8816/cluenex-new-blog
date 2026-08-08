@@ -16,7 +16,7 @@ breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-05-20
-dateModified: 2026-05-20
+dateModified: 2026-08-09
 readingTime: 10
 keyTakeaways:
   - "<strong>Earnings report</strong> = company's quarterly financial performance. Three key metrics: (1) EPS (earnings per share, profit), (2) Revenue (sales), (3) Guidance (next quarter outlook)."
@@ -40,6 +40,8 @@ permalink: /learn/technical-analysis/earnings-report/
 Earnings reports move stocks <data value="5">5</data>–<data value="15">15</data>% in a single day. Understanding what drives those moves — beat/miss, guidance, margins — separates informed traders from gamblers.
 
 Most important: guidance surprise (future outlook) often matters more than current quarter performance.
+
+A stock's price already assumes a company will hit the analyst estimate before results are announced — investors are pricing in what they expect the *next* report to show, weeks in advance. This is why a company can post its best-ever quarter and still see the stock fall: the comparison that moves price is actual results versus priced-in expectations, not actual results versus last year. Think of buying a home because a new train station is coming next year. If it opens on schedule, the price barely moves, because everyone already priced it in. If it's delayed six months, the price can drop even though the neighborhood hasn't gotten worse — the disappointment is reality falling short of what was already assumed, not reality getting worse.
 
 ## The 3 Key Earnings Metrics
 
@@ -146,6 +148,12 @@ Often misses the biggest post-earnings move (days 2–5). Stock can gap up next 
 Consensus can be wrong (too high or too low). Check if estimates have been rising/falling into earnings. Reality: Look at estimate revisions (trending up = beat likely, trending down = miss likely).</p>
 </div>
 
+<div class="callout callout-red">
+<div class="callout-label">✗ Mistake 4</div>
+<p class="callout-text"><strong>"A record profit number means the quarter was good."</strong><br>
+The dollar amount alone doesn't say where the profit came from. Reality: Check the <strong>quality of earnings</strong> — did the number come from the core business, or from a one-time item like an asset sale or a tax benefit? For banks specifically, watch <strong>loan loss provisions</strong> (money set aside for loans that may never be repaid). A bank raising its provisions sharply is flagging that customers are falling behind, even in a quarter with record headline profit. Rising provisions plus decelerating guidance is a weaker setup than the raw profit number suggests.</p>
+</div>
+
 ## Example: Beat + Raised Guidance (NVDA)
 
 Nvidia earnings: beat on EPS + raised guidance = massive rally:
@@ -203,6 +211,63 @@ Nvidia earnings: beat on EPS + raised guidance = massive rally:
 <p class="callout-text">NVDA beat EPS by 35%, raised guidance, and expanded margins — a trifecta. Traders who bought on earnings announcement captured a +12% gain in 5 days. The combination of (1) large EPS beat, (2) guidance raise, (3) margin expansion = highest probability earnings move. This is why reading all three metrics matters: EPS alone would be +3–5%, but guidance + margins added another +7–9%.</p>
 </div>
 
+## Example: Mixed Beat/Miss and a Falling Stock (WFC)
+
+Wells Fargo's fourth-quarter 2025 report shows how a headline profit number and the stock reaction can point in opposite directions.
+
+<div class="trade-log">
+<div class="tl-header">
+<span class="tl-title">Trade Log: Mixed Beat/Miss, Guidance Undershoot</span>
+<span class="tl-ticker">WFC · Q4 2025 Earnings</span>
+</div>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Estimate</th>
+<th>Actual</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GAAP EPS</strong></td>
+<td data-est="$1.66">$1.66</td>
+<td data-act="$1.62"><strong>$1.62</strong></td>
+<td>🔴 Miss by $0.04</td>
+</tr>
+<tr>
+<td><strong>Adjusted EPS (ex-severance)</strong></td>
+<td data-est="$1.69">$1.69</td>
+<td data-act="$1.76"><strong>$1.76</strong></td>
+<td>🟢 Beat by $0.07 (+4.4%)</td>
+</tr>
+<tr>
+<td><strong>Revenue</strong></td>
+<td data-est="$21.65B">$21.65B</td>
+<td data-act="$21.29B"><strong>$21.29B</strong></td>
+<td>🔴 Miss by $0.36B (-1.6%)</td>
+</tr>
+<tr>
+<td><strong>2026 NII Guidance</strong></td>
+<td data-est="$50.2B">$50.2B</td>
+<td data-act="$50B"><strong>~$50B</strong></td>
+<td>🔴 Guided slightly below consensus</td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;"><strong>Stock Reaction</strong></td>
+</tr>
+<tr>
+<td colspan="4">Shares fell as much as 4.8% intraday on the report</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-teal">
+<div class="callout-label">Key Insight</div>
+<p class="callout-text">Wells Fargo's full-year 2025 net income rose to $21.3 billion, one of its strongest annual results in a decade, following the removal of the Federal Reserve's asset cap. But the quarter itself told a more mixed story: GAAP EPS of $1.62 missed the $1.66 consensus, and only beat on an adjusted basis once $612 million in severance costs were excluded — a quality-of-earnings distinction, not a core-business improvement. Revenue of $21.29 billion missed estimates, and 2026 net interest income guidance of roughly $50 billion came in slightly below the $50.2 billion analysts expected. Loan-loss provisions were flat to slightly down at $1.04 billion, so credit quality wasn't the concern — the miss on revenue and the light guidance were. The stock fell up to 4.8% intraday despite a healthy full-year profit number, because the quarter's inputs were judged against consensus and forward guidance, not against the prior year alone.</p>
+</div>
+
 ## How Cluenex Uses Earnings Data
 
 Cluenex displays earnings dates and a full suite of financial metrics directly on the platform for every covered stock — including revenue, EPS, margins, and guidance data from the latest earnings report. These are visible to every user.
@@ -225,6 +290,9 @@ Cluenex AI goes further, ingesting additional earnings signals as inputs for its
 
 - **Can earnings report be delayed/changed after release?**
   Rare, but restatements happen (accounting errors). Usually benefit of doubt first day. Restatements hit second earnings season.
+
+- **Why can a company report record profit and still see its stock fall?**
+  Because the stock price already assumes the company will hit the analyst estimate before results are announced. A "record" dollar figure that still falls short of consensus is a miss relative to what was priced in, even though it's a record relative to the prior year. Guidance and earnings quality (core business vs. one-time gains) compound the effect — Wells Fargo's Q4 2025 net income was strong for the year, but the stock still fell 4.8% on a quarterly revenue miss and light 2026 guidance.
 
 ## Related Concepts
 
