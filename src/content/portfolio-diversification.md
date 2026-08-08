@@ -17,7 +17,7 @@ breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-05-25
-dateModified: 2026-08-07
+dateModified: 2026-08-08
 readingTime: 11
 keyTakeaways:
   - "<strong>Diversification eliminates unsystematic risk</strong> (company-specific) but not systematic risk (market-wide). 20–30 stocks across 5+ sectors eliminates roughly 90% of unsystematic risk per Markowitz-style portfolio theory."
@@ -197,11 +197,24 @@ It is not, because all three names typically carry the same **Technology ↔ Com
 
 Genuine risk reduction from that starting position would mean rotating at least part of the proceeds into a low-correlation sector — utilities, consumer staples, or healthcare, per the cross-sector correlation table above — rather than into two more names that share the original holding's core macro exposure.
 
+## Asset-Class Diversification: Bonds and Cash as Ballast
+
+Sector diversification alone does not protect a portfolio the way many investors assume, because equity correlations spike toward 1.0 during severe market-wide selloffs — sector diversification helps most in normal conditions and helps least exactly when protection matters most. Genuine crash protection requires diversifying across asset classes, not just across sectors within stocks.
+
+Bonds — loans investors make to governments or companies in exchange for regular interest payments — and cash function as ballast: weight that does not increase returns in good years but keeps a portfolio from capsizing in bad ones. In both 2008 and 2022, US stock indices fell 20% to 40% within months. An all-stock portfolio, however well diversified across sectors, absorbed the full force of both declines. A portfolio holding a meaningful allocation to bonds or cash absorbed less, because neither asset class is driven by the same equity-market selloff dynamics.
+
+Long-duration US Treasury bonds (tracked by ETFs like TLT) have historically shown a correlation to the S&P 500 of roughly −0.15 to −0.35 — a genuine offset, not just a lower-volatility version of the same risk. Gold has shown a correlation near 0.05 to −0.15 with US equities over the same period. Cash carries no market correlation at all in dollar terms, though inflation erodes its purchasing power over time it sits idle.
+
+**How to size the ballast:** the appropriate bond and cash allocation depends on time horizon, not risk tolerance alone. An investor decades from needing the money can typically hold a higher equity allocation and treat any bond or cash position as a smaller stabilizer. An investor within five to ten years of needing to draw on the portfolio — nearing or in retirement — benefits from a larger allocation to bonds and cash specifically because a severe equity drawdown timed badly against required withdrawals can permanently impair the portfolio in a way a younger investor's decades-long horizon would recover from.
+
 ## How Cluenex Supports Diversification Analysis
 
 Cluenex displays sector-level sentiment, financial health, and valuation metrics for each covered stock. When constructing a diversified portfolio, use Cluenex to identify the highest-quality names in underrepresented sectors — stocks with strong financial health, positive long-term sentiment, and attractive valuations relative to their sector peers. This converts a mechanical allocation (I need 10% healthcare) into a quality-filtered selection (which healthcare names have the strongest fundamentals and sentiment right now).
 
 ## Frequently Asked Questions
+
+- **Do I need bonds or cash if I'm already diversified across stock sectors?**
+  Yes, for crash protection specifically. Sector diversification reduces company- and industry-specific risk, but equity sector correlations rise sharply during broad market selloffs, meaning a portfolio of only stocks — however well spread across sectors — still absorbs the full force of a market-wide decline. Bonds and cash are the asset classes that behave differently enough from equities to provide protection precisely when sector diversification alone stops working.
 
 - **How many stocks should I own?**
   20–30 stocks across 5+ sectors eliminates roughly 90% of unsystematic risk. More than 40 provides minimal additional diversification benefit while making portfolio monitoring difficult. Under 15 stocks (especially in a single sector) leaves significant company-specific risk.

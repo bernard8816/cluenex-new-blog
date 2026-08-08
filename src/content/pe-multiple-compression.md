@@ -16,7 +16,7 @@ breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-08-07
-dateModified: 2026-08-07
+dateModified: 2026-08-08
 readingTime: 8
 keyTakeaways:
   - "<strong>P/E multiple compression</strong> occurs when a stock's price-to-earnings ratio falls even as its earnings rise, so the share price can decline or stagnate despite genuinely improving business results."
@@ -59,6 +59,14 @@ Three conditions drive a multiple lower without any change in the underlying bus
 **Growth expectations cool.** A stock priced for 50% earnings growth that delivers a genuinely strong 25% can still see its multiple compress, because the price already reflected the higher number. The gap between what was priced in and what was delivered — not the delivered number in isolation — determines the reaction.
 
 **The whole sector re-rates.** Regulatory risk, a shift in sentiment, or a slowing end-market can pull down the multiple assigned to every company in an industry, independent of any one company's execution.
+
+## Growth Deceleration: The Second-Order Effect Behind Many "Beat but Fell" Headlines
+
+Multiple compression explains the mechanism — price falls because the multiple falls faster than earnings rise. A related, narrower pattern explains why the multiple often falls in the first place after a headline earnings beat: growth **deceleration**.
+
+The distinction borrows from a rate-of-change idea. A company's earnings growth rate is the first-order measure — is profit higher than a year ago. Whether that growth rate is itself speeding up or slowing down is the second-order measure. A company growing earnings 20% this year after growing 40% last year is still growing, and may still have beaten the specific number analysts modeled for the quarter — but the deceleration in the growth rate itself is frequently what the market re-rates on, because a stock priced for a given growth trajectory gets repriced when that trajectory bends, even while remaining positive.
+
+This is why a stock can report profit that exceeds analyst estimates and still fall the same day: the market was not pricing the quarter in isolation, it was pricing a growth trend, and the guidance or trajectory implied by the report revised that trend downward even as the historical number came in ahead of expectations.
 
 ## The 2022 Case: Multiple Compression at the Index Level
 
@@ -131,6 +139,9 @@ A stock whose owner earnings estimate has risen in step with its price has not r
 
 - **How can I tell whether a stock drop is about the business or the multiple?**
   Compare the trailing and forward P/E to the company's own multi-year history and to its sector peers. If earnings and revenue are still growing but the multiple has fallen relative to its own history, the decline is largely a re-rating. If earnings themselves have declined or guidance has been cut, the decline reflects the business.
+
+- **Why does a stock sometimes fall even when it beats earnings estimates?**
+  Beating an estimate means the reported quarter exceeded analyst expectations for that single quarter. The stock's price, however, reflects a bet on the trajectory of future earnings, not just the quarter just completed. If the report or accompanying guidance reveals that the growth rate itself is decelerating — even while remaining positive — the market frequently re-rates the multiple downward to reflect the slower trajectory, and that re-rating can outweigh the beat.
 
 - **Does multiple compression reverse over time?**
   It can, particularly for companies that keep growing earnings through the period of compression, since a lower multiple applied to steadily rising earnings eventually produces a higher price again. It is not guaranteed — a permanently slower growth outlook can justify a permanently lower multiple.

@@ -16,7 +16,7 @@ breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-08-07
-dateModified: 2026-08-07
+dateModified: 2026-08-08
 readingTime: 8
 keyTakeaways:
   - "<strong>Loss aversion</strong> is the tendency to feel the pain of a loss roughly <data value=\"2\">twice</data> as intensely as the pleasure of an equivalent gain, a coefficient that experimental studies place between <data value=\"1.5\">1.5</data> and <data value=\"2.5\">2.5</data>."
@@ -41,6 +41,8 @@ permalink: /learn/portfolio-management/loss-aversion-selling-winners/
 Experimental estimates of the loss-aversion coefficient cluster between <data value="1.5">1.5</data> and <data value="2.5">2.5</data>, with <data value="2.0">2.0</data> treated as the standard reference value: losing $100 hurts about twice as much as gaining $100 feels good. Kahneman and Tversky documented this asymmetry in 1979 and used it to explain why people make choices that a purely rational, wealth-maximizing model cannot.
 
 Applied to a portfolio, loss aversion does not just make losses painful. It distorts the decision to sell a winner, because holding on preserves the *possibility* of a bigger gain, while selling and then watching the price keep rising feels like a loss the investor caused.
+
+A simple version of the asymmetry: finding a $20 bill on the street and then losing a $20 bill an hour later are financially identical events, yet most people report the loss hurting distinctly more than the find felt good. That gap between equal-sized gains and losses is the entire mechanism behind the disposition effect described below.
 
 ## How Loss Aversion Works in a Portfolio
 
@@ -95,6 +97,9 @@ Cluenex does not make the sell decision for a user, but it addresses the input l
 Checking those scores against a position that has run up gives an investor a external, unemotional reading of whether the original thesis is intact — the same question the trim-rule framework asks, answered with data rather than with how the gain feels.
 
 ## Frequently Asked Questions
+
+- **Why does losing money feel worse than gaining the same amount feels good?**
+  This is the core empirical finding of prospect theory: the brain evaluates gains and losses using different reference-dependent curves, and the curve for losses is steeper. A $20 loss and a $20 gain are mathematically identical changes in wealth, but experimental subjects consistently rate the loss as more painful than the gain is pleasurable, which is why the loss-aversion coefficient is reliably greater than 1.0 across studies.
 
 - **What is the difference between loss aversion and risk aversion?**
   Risk aversion is a preference for a certain outcome over a gamble with the same expected value, even for gains. Loss aversion specifically describes the asymmetry between how gains and losses of equal size are felt — losses register as roughly twice as painful as equivalent gains feel good. A person can be loss-averse without being generally risk-averse.
