@@ -16,8 +16,8 @@ breadcrumbs:
   - "Education"
 author: "Cluenex"
 date: 2026-05-24
-dateModified: 2026-05-24
-readingTime: 9
+dateModified: 2026-08-11
+readingTime: 10
 keyTakeaways:
   - "<strong>Insider</strong> = corporate officer (CEO, CFO, COO), director, or shareholder owning 10%+ of shares. All must report transactions to the SEC via Form 4 within 2 business days."
   - "Insider buying is a stronger signal than insider selling. Insiders buy for one primary reason: they believe the stock is undervalued. Insiders sell for many reasons (diversification, taxes, estate planning) that don't reflect bearish conviction."
@@ -177,6 +177,18 @@ Insiders think in 12–24 month horizons, not days. Insider buying signals value
 </tbody>
 </table>
 </div>
+
+## Example: A Real Headline That Needed Context — Sony, July 2026
+
+On July 1, 2026, Sony announced PlayStation would phase out new physical game discs by January 2028. Two days later, on July 3, CEO Hiroki Totoki sold 225,000 Sony shares for roughly $4.73 million — about 56% of his directly held stake. The same day, chief strategy officer Toshimoto Mitomo sold 25,000 shares, and chairman Kenichiro Yoshida sold 400,000 shares. Combined insider sales around the announcement totaled roughly $10.5 million.
+
+The headline framing — "CEO sells over half his stock days after controversial decision" — is exactly the pattern this article warns about. Applying the checklist above to what is publicly known:
+
+- **Multiple insiders sold within days of each other** (CEO, CSO, and chairman), which raises the signal weight compared to a single seller — but a cluster of sales still needs the same 10b5-1 check applied to each individual.
+- **Whether these were pre-scheduled 10b5-1 sales or discretionary open-market sales was not disclosed in initial reporting**, which is itself the key unresolved variable — the same Form 4 filings that reveal the transaction type for any US-listed company would resolve this for Sony's ADR-related disclosures.
+- **The stock's reaction was muted, not negative.** Sony shares traded around $21.20 and were up about 6% in the eight days following the disc-phase-out announcement, despite the insider selling and a public backlash that included a petition nearing 100,000 signatures and a reported €400 million lawsuit threat over the decision itself.
+
+The muted, positive stock reaction is the detail a headline alone would not surface, and it is consistent with markets treating this round of selling as less informative than the "over half his stock" framing implied — exactly why checking market reaction, not just the sale size, is part of the process.
 
 ## How Cluenex Displays Insider Trades
 
